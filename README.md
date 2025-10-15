@@ -21,8 +21,9 @@ Getting it running on your machine is really not that hard 😊. The AI features
 ![Alt text](screen_shots/edit-card.png "The vault")
 ![Alt text](screen_shots/edit-card-2.png "The vault")
 
-**AI**
+**AI - Creation**
 ![Alt text](screen_shots/AI-1.png "The vault")
+**AI - Output**
 ![Alt text](screen_shots/AI-2.png "The vault")
 
 ## Features
@@ -40,7 +41,7 @@ Getting it running on your machine is really not that hard 😊. The AI features
 
 ### Key Features
 -- Multiple content blocks per card side (max 10 blocks)
-- Drag-and-drop block reordering
+- Block reordering
 - Progress tracking and study statistics
 - Set import/export functionality
 - Vault backup and restore
