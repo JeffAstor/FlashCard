@@ -58,17 +58,87 @@ LAVFilters provides ffmpeg-based DirectShow splitter and decoders that enable th
 
 ## Installation
 
-1. **Clone or download the application files**
+### Option 1: Automated Installation (Recommended)
 
-2. **Install Python dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+The project includes automated installation scripts that handle virtual environment creation and dependency installation:
 
-3. **Run the application:**
-   ```bash
-   python flashcards.py
-   ```
+**Windows (PowerShell):**
+```powershell
+.\install_flashcards_windows.ps1
+```
+
+**macOS/Linux (Bash):**
+```bash
+chmod +x install_flashcards.sh
+./install_flashcards.sh
+```
+
+These scripts will:
+- Create a Python virtual environment named `flash_cards`
+- Activate the environment
+- Upgrade pip to the latest version
+- Install all required dependencies from `requirements.txt`
+
+### Option 2: Manual Installation
+
+**1. Clone or download the application files**
+
+**2. Create and activate a virtual environment (recommended):**
+
+Windows (Command Prompt):
+```cmd
+python -m venv flash_cards
+flash_cards\Scripts\activate
+```
+
+Windows (PowerShell):
+```powershell
+python -m venv flash_cards
+.\flash_cards\Scripts\Activate.ps1
+```
+
+macOS/Linux:
+```bash
+python3 -m venv flash_cards
+source flash_cards/bin/activate
+```
+
+**3. Install Python dependencies:**
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+**4. Run the application:**
+```bash
+python flashcards.py
+```
+
+### Running the Application
+
+After installation, you can use the provided run scripts:
+
+**Windows:**
+```powershell
+.\run_flashcards_windows.ps1
+```
+
+**macOS/Linux:**
+```bash
+chmod +x run_flashcards.sh
+./run_flashcards.sh
+```
+
+Or manually activate the environment and run:
+```bash
+# Windows
+.\flash_cards\Scripts\Activate.ps1
+python flashcards.py
+
+# macOS/Linux
+source flash_cards/bin/activate
+python flashcards.py
+```
 
 ## Directory Structure
 
