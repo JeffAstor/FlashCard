@@ -6,7 +6,7 @@ import uuid
 from datetime import datetime
 from abc import ABC, abstractmethod
 from pathlib import Path
-from PyQt5.QtWidgets import QWidget, QLabel, QTextEdit, QPushButton, QVBoxLayout, QHBoxLayout, QFileDialog, QApplication
+from PyQt5.QtWidgets import QWidget, QLabel, QTextEdit, QPushButton, QVBoxLayout, QHBoxLayout, QFileDialog, QApplication, QFrame, QSpinBox, QComboBox
 from PyQt5.QtCore import Qt, pyqtSignal, QTimer
 from PyQt5.QtGui import QPixmap, QFont
 
@@ -473,6 +473,33 @@ class TextBlockEditWidget(QWidget):
     def setup_ui(self):
         layout = QVBoxLayout()
         
+        # Formatting controls
+        format_frame = QFrame()
+        format_frame.setFrameStyle(QFrame.StyledPanel)
+        format_layout = QHBoxLayout()
+        
+        # Font size control
+        format_layout.addWidget(QLabel("Font Size:"))
+        self.font_size_spinbox = QSpinBox()
+        self.font_size_spinbox.setRange(8, 72)
+        self.font_size_spinbox.setValue(self.text_block.font_size)
+        self.font_size_spinbox.valueChanged.connect(self.on_font_size_changed)
+        format_layout.addWidget(self.font_size_spinbox)
+        
+        format_layout.addStretch()
+        
+        # Alignment control
+        format_layout.addWidget(QLabel("Alignment:"))
+        self.alignment_combo = QComboBox()
+        self.alignment_combo.addItems(["left", "center", "right"])
+        self.alignment_combo.setCurrentText(self.text_block.alignment)
+        self.alignment_combo.currentTextChanged.connect(self.on_alignment_changed)
+        format_layout.addWidget(self.alignment_combo)
+        
+        format_frame.setLayout(format_layout)
+        layout.addWidget(format_frame)
+        
+        # Text content editor
         self.text_edit = QTextEdit()
         self.text_edit.setPlainText(self.text_block.text_content)
         self.text_edit.textChanged.connect(self.on_text_changed)
@@ -480,9 +507,37 @@ class TextBlockEditWidget(QWidget):
         layout.addWidget(self.text_edit)
         self.setLayout(layout)
         
+        # Update preview with current formatting
+        self.update_text_preview()
+        
     def on_text_changed(self):
         self.text_block.text_content = self.text_edit.toPlainText()
         self.content_changed.emit()
+        
+    def on_font_size_changed(self, value):
+        self.text_block.font_size = value
+        self.update_text_preview()
+        self.content_changed.emit()
+        
+    def on_alignment_changed(self, alignment):
+        self.text_block.alignment = alignment
+        self.update_text_preview()
+        self.content_changed.emit()
+        
+    def update_text_preview(self):
+        """Update the text edit widget to show formatting preview"""
+        # Set font size in the editor for preview
+        font = self.text_edit.font()
+        font.setPointSize(self.text_block.font_size)
+        self.text_edit.setFont(font)
+        
+        # Set alignment in the editor for preview
+        if self.text_block.alignment == "center":
+            self.text_edit.setAlignment(Qt.AlignCenter)
+        elif self.text_block.alignment == "right":
+            self.text_edit.setAlignment(Qt.AlignRight)
+        else:
+            self.text_edit.setAlignment(Qt.AlignLeft)
 
 
 class ImageBlockEditWidget(QWidget):
@@ -511,7 +566,7 @@ class ImageBlockEditWidget(QWidget):
         layout = QVBoxLayout()
         
         self.preview_label = QLabel("No image selected")
-        self.preview_label.setMinimumHeight(150)
+        self.preview_label.setMinimumHeight(450)
         self.preview_label.setMinimumWidth(200)
         self.preview_label.setAlignment(Qt.AlignCenter)
         self.preview_label.setStyleSheet("border: 1px solid gray; background-color: #f0f0f0;")
@@ -536,6 +591,14 @@ class ImageBlockEditWidget(QWidget):
         super().showEvent(event)
         # Delay the update slightly to ensure the widget is fully rendered
         QTimer.singleShot(50, self.update_preview)  # 50ms delay
+        
+    def resizeEvent(self, event):
+        """Called when the widget is resized - update image scaling"""
+        super().resizeEvent(event)
+        # Only update if we have an image loaded
+        if self.image_block.image_path:
+            # Delay slightly to ensure layout is complete
+            QTimer.singleShot(10, self.update_preview)
         
     def select_image(self):
         file_path, _ = QFileDialog.getOpenFileName(
@@ -577,18 +640,26 @@ class ImageBlockEditWidget(QWidget):
                     # Load and scale the image
                     pixmap = QPixmap(str(full_path))
                     if not pixmap.isNull():
-                        # Use a fixed target width for preview in edit mode
-                        target_width = 180  # Leave some margin from the 200px minimum
+                        # Scale to fit the available space while maintaining aspect ratio
+                        # Use most of the preview label size but leave some margin
+                        available_width = self.preview_label.width() - 20  # 10px margin on each side
+                        available_height = self.preview_label.height() - 20  # 10px margin top/bottom
                         
-                        # Calculate scaled size keeping aspect ratio
-                        if pixmap.width() > target_width:
-                            scaled_pixmap = pixmap.scaledToWidth(target_width, Qt.SmoothTransformation)
-                        else:
-                            scaled_pixmap = pixmap
+                        # If the label hasn't been rendered yet, use reasonable defaults
+                        if available_width <= 20:
+                            available_width = 180  # Fallback width
+                        if available_height <= 20:
+                            available_height = 430  # Fallback height (450 - 20 margin)
+                        
+                        # Scale to fit within available space while keeping aspect ratio
+                        scaled_pixmap = pixmap.scaled(
+                            available_width, available_height, 
+                            Qt.KeepAspectRatio, Qt.SmoothTransformation
+                        )
                         
                         self.preview_label.setPixmap(scaled_pixmap)
                         ## DEBUG START
-                        print(f"DEBUG: Image displayed successfully, scaled to width: {target_width}")
+                        print(f"DEBUG: Image scaled to fit {available_width}x{available_height}, result: {scaled_pixmap.width()}x{scaled_pixmap.height()}")
                         ## DEBUG END
                     else:
                         self.preview_label.setText(f"Image: {self.image_block.original_filename}\n(Could not load image)")
@@ -628,20 +699,42 @@ class AudioBlockEditWidget(QWidget):
         self.vault_path = vault_path
         self.set_name = set_name
         self.vault_manager = vault_manager
+        self.audio_player = None
         self.setup_ui()
         
     def setup_ui(self):
         layout = QVBoxLayout()
         
+        # Audio preview area
+        self.preview_frame = QFrame()
+        self.preview_frame.setFrameStyle(QFrame.StyledPanel)
+        self.preview_frame.setMinimumHeight(150)
+        self.preview_frame.setStyleSheet("background-color: #f0f0f0;")
+        
+        preview_layout = QVBoxLayout()
+        
         self.info_label = QLabel("No audio selected")
+        self.info_label.setAlignment(Qt.AlignCenter)
+        preview_layout.addWidget(self.info_label)
+        
+        # Container for audio player (will be added when audio is loaded)
+        self.player_container = QWidget()
+        self.player_layout = QVBoxLayout()
+        self.player_container.setLayout(self.player_layout)
+        preview_layout.addWidget(self.player_container)
+        
+        self.preview_frame.setLayout(preview_layout)
+        layout.addWidget(self.preview_frame)
+        
+        # File selection button
         self.select_button = QPushButton("Select Audio")
         self.select_button.clicked.connect(self.select_audio)
-        
-        layout.addWidget(self.info_label)
         layout.addWidget(self.select_button)
+        
         self.setLayout(layout)
         
-        self.update_info()
+        # Initialize with current audio if available
+        self.update_preview()
         
     def select_audio(self):
         file_path, _ = QFileDialog.getOpenFileName(
@@ -651,17 +744,51 @@ class AudioBlockEditWidget(QWidget):
         if file_path:
             try:
                 self.audio_block.set_audio(file_path, self.vault_manager, self.set_name)
-                self.update_info()
+                self.update_preview()
                 self.content_changed.emit()
             except ValueError as e:
                 # TODO: Show error dialog
                 print(f"Error: {e}")
                 
-    def update_info(self):
+    def update_preview(self):
+        """Update the audio preview"""
+        # Clear existing player
+        if self.audio_player:
+            self.player_layout.removeWidget(self.audio_player)
+            self.audio_player.deleteLater()
+            self.audio_player = None
+            
         if self.audio_block.audio_path:
             self.info_label.setText(f"Audio: {self.audio_block.original_filename}")
+            
+            # Try to create audio player if audio file exists
+            if self.vault_path and self.set_name:
+                full_path = self.audio_block.get_full_path(self.vault_path, self.set_name)
+                if full_path and full_path.exists():
+                    try:
+                        # Import here to avoid circular imports
+                        from ui.media_widgets import SimpleMediaPlayerWidget
+                        
+                        self.audio_player = SimpleMediaPlayerWidget("audio")
+                        self.audio_player.load_media(str(full_path))
+                        self.player_layout.addWidget(self.audio_player)
+                        
+                        # Show the audio player and hide/minimize the info label
+                        self.info_label.hide()
+                        
+                    except Exception as e:
+                        print(f"Error creating audio player: {e}")
+                        self.info_label.setText(f"Audio: {self.audio_block.original_filename}\n(Preview not available)")
+                        self.info_label.show()
+                else:
+                    self.info_label.setText(f"Audio: {self.audio_block.original_filename}\n(File not found)")
+                    self.info_label.show()
+            else:
+                self.info_label.setText(f"Audio: {self.audio_block.original_filename}\n(Preview not available)")
+                self.info_label.show()
         else:
             self.info_label.setText("No audio selected")
+            self.info_label.show()
 
 
 class VideoBlockEditWidget(QWidget):
@@ -674,20 +801,42 @@ class VideoBlockEditWidget(QWidget):
         self.vault_path = vault_path
         self.set_name = set_name
         self.vault_manager = vault_manager
+        self.video_player = None
         self.setup_ui()
         
     def setup_ui(self):
         layout = QVBoxLayout()
         
+        # Video preview area
+        self.preview_frame = QFrame()
+        self.preview_frame.setFrameStyle(QFrame.StyledPanel)
+        self.preview_frame.setMinimumHeight(500)
+        self.preview_frame.setStyleSheet("background-color: #f0f0f0;")
+        
+        preview_layout = QVBoxLayout()
+        
         self.info_label = QLabel("No video selected")
+        self.info_label.setAlignment(Qt.AlignCenter)
+        preview_layout.addWidget(self.info_label)
+        
+        # Container for video player (will be added when video is loaded)
+        self.player_container = QWidget()
+        self.player_layout = QVBoxLayout()
+        self.player_container.setLayout(self.player_layout)
+        preview_layout.addWidget(self.player_container)
+        
+        self.preview_frame.setLayout(preview_layout)
+        layout.addWidget(self.preview_frame)
+        
+        # File selection button
         self.select_button = QPushButton("Select Video")
         self.select_button.clicked.connect(self.select_video)
-        
-        layout.addWidget(self.info_label)
         layout.addWidget(self.select_button)
+        
         self.setLayout(layout)
         
-        self.update_info()
+        # Initialize with current video if available
+        self.update_preview()
         
     def select_video(self):
         file_path, _ = QFileDialog.getOpenFileName(
@@ -697,17 +846,51 @@ class VideoBlockEditWidget(QWidget):
         if file_path:
             try:
                 self.video_block.set_video(file_path, self.vault_manager, self.set_name)
-                self.update_info()
+                self.update_preview()
                 self.content_changed.emit()
             except ValueError as e:
                 # TODO: Show error dialog
                 print(f"Error: {e}")
                 
-    def update_info(self):
+    def update_preview(self):
+        """Update the video preview"""
+        # Clear existing player
+        if self.video_player:
+            self.player_layout.removeWidget(self.video_player)
+            self.video_player.deleteLater()
+            self.video_player = None
+            
         if self.video_block.video_path:
             self.info_label.setText(f"Video: {self.video_block.original_filename}")
+            
+            # Try to create video player if video file exists
+            if self.vault_path and self.set_name:
+                full_path = self.video_block.get_full_path(self.vault_path, self.set_name)
+                if full_path and full_path.exists():
+                    try:
+                        # Import here to avoid circular imports
+                        from ui.media_widgets import SimpleMediaPlayerWidget
+                        
+                        self.video_player = SimpleMediaPlayerWidget("video")
+                        self.video_player.load_media(str(full_path))
+                        self.player_layout.addWidget(self.video_player)
+                        
+                        # Show the video player and hide/minimize the info label
+                        self.info_label.hide()
+                        
+                    except Exception as e:
+                        print(f"Error creating video player: {e}")
+                        self.info_label.setText(f"Video: {self.video_block.original_filename}\n(Preview not available)")
+                        self.info_label.show()
+                else:
+                    self.info_label.setText(f"Video: {self.video_block.original_filename}\n(File not found)")
+                    self.info_label.show()
+            else:
+                self.info_label.setText(f"Video: {self.video_block.original_filename}\n(Preview not available)")
+                self.info_label.show()
         else:
             self.info_label.setText("No video selected")
+            self.info_label.show()
 
 
 def create_block_from_type(block_type):

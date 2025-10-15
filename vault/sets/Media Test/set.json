@@ -1,0 +1,12 @@
+{
+  "name": "Media Test",
+  "description": "A set of cards to test media playback",
+  "icon_set": "custom_media_test",
+  "tags": [
+    "testing"
+  ],
+  "difficulty_level": 1,
+  "created_date": "2025-10-15T22:39:31.573864",
+  "last_accessed": "2025-10-15T23:37:08.650793",
+  "card_count": 2
+}

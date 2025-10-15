@@ -13,7 +13,8 @@ Getting it running on your machine is really not that hard 😊. The AI features
 **Platform Notes:**
 - **macOS**: Works seamlessly out of the box
 - **Windows**: Requires **LAVFilters** installation for audio/video playback (the app runs without it, but Qt5 needs codec support for media files)  
-
+## Screen shots
+![Alt text](screen_shots/thevault.png "The vault")
 ## Features
 
 ### Application Modes

@@ -6,7 +6,7 @@
         {
           "block_id": "fs-001-info",
           "block_type": "text",
-          "text_content": "What is the root directory in Linux and how is it represented?",
+          "text_content": "What is the root directory in Linux and how is it represented",
           "font_size": 14,
           "alignment": "left",
           "created_date": "2025-10-14T16:45:01.000000"

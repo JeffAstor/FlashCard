@@ -121,7 +121,7 @@ class ViewModeWidget(QWidget):
         """Create progress indicators"""
         self.progress_frame = QFrame()
         self.progress_frame.setFrameStyle(QFrame.StyledPanel)
-        self.progress_frame.setMaximumHeight(30)
+        self.progress_frame.setMaximumHeight(60)
 
         layout = QHBoxLayout()
 

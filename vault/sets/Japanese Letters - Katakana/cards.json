@@ -1,0 +1,1382 @@
+{
+  "cards": [
+    {
+      "card_id": "kata-001",
+      "information_side": [
+        {
+          "block_id": "kata-001-info",
+          "block_type": "text",
+          "text_content": "ア",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:01.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-001-answer",
+          "block_type": "text",
+          "text_content": "Romaji: a\nPronunciation: ah (like 'father')",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:01.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:01.000000",
+      "last_studied": "2025-10-15T22:06:10.373386"
+    },
+    {
+      "card_id": "kata-002",
+      "information_side": [
+        {
+          "block_id": "kata-002-info",
+          "block_type": "text",
+          "text_content": "イ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:02.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-002-answer",
+          "block_type": "text",
+          "text_content": "Romaji: i\nPronunciation: ee (like 'bee')",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:02.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:02.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-003",
+      "information_side": [
+        {
+          "block_id": "kata-003-info",
+          "block_type": "text",
+          "text_content": "ウ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:03.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-003-answer",
+          "block_type": "text",
+          "text_content": "Romaji: u\nPronunciation: oo (like 'book')",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:03.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:03.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-004",
+      "information_side": [
+        {
+          "block_id": "kata-004-info",
+          "block_type": "text",
+          "text_content": "エ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:04.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-004-answer",
+          "block_type": "text",
+          "text_content": "Romaji: e\nPronunciation: eh (like 'bed')",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:04.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:04.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-005",
+      "information_side": [
+        {
+          "block_id": "kata-005-info",
+          "block_type": "text",
+          "text_content": "オ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:05.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-005-answer",
+          "block_type": "text",
+          "text_content": "Romaji: o\nPronunciation: oh (like 'coat')",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:05.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:05.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-006",
+      "information_side": [
+        {
+          "block_id": "kata-006-info",
+          "block_type": "text",
+          "text_content": "カ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:06.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-006-answer",
+          "block_type": "text",
+          "text_content": "Romaji: ka\nPronunciation: kah",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:06.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:06.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-007",
+      "information_side": [
+        {
+          "block_id": "kata-007-info",
+          "block_type": "text",
+          "text_content": "キ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:07.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-007-answer",
+          "block_type": "text",
+          "text_content": "Romaji: ki\nPronunciation: kee",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:07.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:07.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-008",
+      "information_side": [
+        {
+          "block_id": "kata-008-info",
+          "block_type": "text",
+          "text_content": "ク",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:08.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-008-answer",
+          "block_type": "text",
+          "text_content": "Romaji: ku\nPronunciation: koo",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:08.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:08.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-009",
+      "information_side": [
+        {
+          "block_id": "kata-009-info",
+          "block_type": "text",
+          "text_content": "ケ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:09.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-009-answer",
+          "block_type": "text",
+          "text_content": "Romaji: ke\nPronunciation: keh",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:09.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:09.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-010",
+      "information_side": [
+        {
+          "block_id": "kata-010-info",
+          "block_type": "text",
+          "text_content": "コ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:10.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-010-answer",
+          "block_type": "text",
+          "text_content": "Romaji: ko\nPronunciation: koh",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:10.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:10.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-011",
+      "information_side": [
+        {
+          "block_id": "kata-011-info",
+          "block_type": "text",
+          "text_content": "サ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:11.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-011-answer",
+          "block_type": "text",
+          "text_content": "Romaji: sa\nPronunciation: sah",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:11.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:11.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-012",
+      "information_side": [
+        {
+          "block_id": "kata-012-info",
+          "block_type": "text",
+          "text_content": "シ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:12.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-012-answer",
+          "block_type": "text",
+          "text_content": "Romaji: shi\nPronunciation: shee",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:12.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:12.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-013",
+      "information_side": [
+        {
+          "block_id": "kata-013-info",
+          "block_type": "text",
+          "text_content": "ス",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:13.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-013-answer",
+          "block_type": "text",
+          "text_content": "Romaji: su\nPronunciation: soo",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:13.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:13.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-014",
+      "information_side": [
+        {
+          "block_id": "kata-014-info",
+          "block_type": "text",
+          "text_content": "セ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:14.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-014-answer",
+          "block_type": "text",
+          "text_content": "Romaji: se\nPronunciation: seh",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:14.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:14.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-015",
+      "information_side": [
+        {
+          "block_id": "kata-015-info",
+          "block_type": "text",
+          "text_content": "ソ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:15.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-015-answer",
+          "block_type": "text",
+          "text_content": "Romaji: so\nPronunciation: soh",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:15.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:15.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-016",
+      "information_side": [
+        {
+          "block_id": "kata-016-info",
+          "block_type": "text",
+          "text_content": "タ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:16.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-016-answer",
+          "block_type": "text",
+          "text_content": "Romaji: ta\nPronunciation: tah",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:16.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:16.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-017",
+      "information_side": [
+        {
+          "block_id": "kata-017-info",
+          "block_type": "text",
+          "text_content": "チ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:17.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-017-answer",
+          "block_type": "text",
+          "text_content": "Romaji: chi\nPronunciation: chee",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:17.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:17.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-018",
+      "information_side": [
+        {
+          "block_id": "kata-018-info",
+          "block_type": "text",
+          "text_content": "ツ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:18.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-018-answer",
+          "block_type": "text",
+          "text_content": "Romaji: tsu\nPronunciation: tsoo",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:18.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:18.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-019",
+      "information_side": [
+        {
+          "block_id": "kata-019-info",
+          "block_type": "text",
+          "text_content": "テ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:19.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-019-answer",
+          "block_type": "text",
+          "text_content": "Romaji: te\nPronunciation: teh",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:19.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:19.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-020",
+      "information_side": [
+        {
+          "block_id": "kata-020-info",
+          "block_type": "text",
+          "text_content": "ト",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:20.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-020-answer",
+          "block_type": "text",
+          "text_content": "Romaji: to\nPronunciation: toh",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:20.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:20.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-021",
+      "information_side": [
+        {
+          "block_id": "kata-021-info",
+          "block_type": "text",
+          "text_content": "ナ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:21.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-021-answer",
+          "block_type": "text",
+          "text_content": "Romaji: na\nPronunciation: nah",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:21.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:21.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-022",
+      "information_side": [
+        {
+          "block_id": "kata-022-info",
+          "block_type": "text",
+          "text_content": "ニ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:22.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-022-answer",
+          "block_type": "text",
+          "text_content": "Romaji: ni\nPronunciation: nee",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:22.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:22.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-023",
+      "information_side": [
+        {
+          "block_id": "kata-023-info",
+          "block_type": "text",
+          "text_content": "ヌ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:23.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-023-answer",
+          "block_type": "text",
+          "text_content": "Romaji: nu\nPronunciation: noo",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:23.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:23.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-024",
+      "information_side": [
+        {
+          "block_id": "kata-024-info",
+          "block_type": "text",
+          "text_content": "ネ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:24.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-024-answer",
+          "block_type": "text",
+          "text_content": "Romaji: ne\nPronunciation: neh",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:24.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:24.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-025",
+      "information_side": [
+        {
+          "block_id": "kata-025-info",
+          "block_type": "text",
+          "text_content": "ノ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:25.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-025-answer",
+          "block_type": "text",
+          "text_content": "Romaji: no\nPronunciation: noh",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:25.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:25.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-026",
+      "information_side": [
+        {
+          "block_id": "kata-026-info",
+          "block_type": "text",
+          "text_content": "ハ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:26.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-026-answer",
+          "block_type": "text",
+          "text_content": "Romaji: ha\nPronunciation: hah",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:26.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:26.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-027",
+      "information_side": [
+        {
+          "block_id": "kata-027-info",
+          "block_type": "text",
+          "text_content": "ヒ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:27.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-027-answer",
+          "block_type": "text",
+          "text_content": "Romaji: hi\nPronunciation: hee",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:27.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:27.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-028",
+      "information_side": [
+        {
+          "block_id": "kata-028-info",
+          "block_type": "text",
+          "text_content": "フ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:28.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-028-answer",
+          "block_type": "text",
+          "text_content": "Romaji: fu\nPronunciation: foo",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:28.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:28.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-029",
+      "information_side": [
+        {
+          "block_id": "kata-029-info",
+          "block_type": "text",
+          "text_content": "ヘ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:29.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-029-answer",
+          "block_type": "text",
+          "text_content": "Romaji: he\nPronunciation: heh",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:29.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:29.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-030",
+      "information_side": [
+        {
+          "block_id": "kata-030-info",
+          "block_type": "text",
+          "text_content": "ホ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:30.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-030-answer",
+          "block_type": "text",
+          "text_content": "Romaji: ho\nPronunciation: hoh",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:30.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:30.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-031",
+      "information_side": [
+        {
+          "block_id": "kata-031-info",
+          "block_type": "text",
+          "text_content": "マ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:31.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-031-answer",
+          "block_type": "text",
+          "text_content": "Romaji: ma\nPronunciation: mah",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:31.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:31.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-032",
+      "information_side": [
+        {
+          "block_id": "kata-032-info",
+          "block_type": "text",
+          "text_content": "ミ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:32.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-032-answer",
+          "block_type": "text",
+          "text_content": "Romaji: mi\nPronunciation: mee",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:32.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:32.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-033",
+      "information_side": [
+        {
+          "block_id": "kata-033-info",
+          "block_type": "text",
+          "text_content": "ム",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:33.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-033-answer",
+          "block_type": "text",
+          "text_content": "Romaji: mu\nPronunciation: moo",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:33.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:33.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-034",
+      "information_side": [
+        {
+          "block_id": "kata-034-info",
+          "block_type": "text",
+          "text_content": "メ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:34.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-034-answer",
+          "block_type": "text",
+          "text_content": "Romaji: me\nPronunciation: meh",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:34.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:34.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-035",
+      "information_side": [
+        {
+          "block_id": "kata-035-info",
+          "block_type": "text",
+          "text_content": "モ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:35.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-035-answer",
+          "block_type": "text",
+          "text_content": "Romaji: mo\nPronunciation: moh",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:35.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:35.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-036",
+      "information_side": [
+        {
+          "block_id": "kata-036-info",
+          "block_type": "text",
+          "text_content": "ヤ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:36.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-036-answer",
+          "block_type": "text",
+          "text_content": "Romaji: ya\nPronunciation: yah",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:36.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:36.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-037",
+      "information_side": [
+        {
+          "block_id": "kata-037-info",
+          "block_type": "text",
+          "text_content": "ユ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:37.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-037-answer",
+          "block_type": "text",
+          "text_content": "Romaji: yu\nPronunciation: yoo",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:37.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:37.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-038",
+      "information_side": [
+        {
+          "block_id": "kata-038-info",
+          "block_type": "text",
+          "text_content": "ヨ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:38.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-038-answer",
+          "block_type": "text",
+          "text_content": "Romaji: yo\nPronunciation: yoh",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:38.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:38.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-039",
+      "information_side": [
+        {
+          "block_id": "kata-039-info",
+          "block_type": "text",
+          "text_content": "ラ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:39.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-039-answer",
+          "block_type": "text",
+          "text_content": "Romaji: ra\nPronunciation: rah",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:39.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:39.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-040",
+      "information_side": [
+        {
+          "block_id": "kata-040-info",
+          "block_type": "text",
+          "text_content": "リ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:40.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-040-answer",
+          "block_type": "text",
+          "text_content": "Romaji: ri\nPronunciation: ree",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:40.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:40.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-041",
+      "information_side": [
+        {
+          "block_id": "kata-041-info",
+          "block_type": "text",
+          "text_content": "ル",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:41.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-041-answer",
+          "block_type": "text",
+          "text_content": "Romaji: ru\nPronunciation: roo",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:41.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:41.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-042",
+      "information_side": [
+        {
+          "block_id": "kata-042-info",
+          "block_type": "text",
+          "text_content": "レ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:42.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-042-answer",
+          "block_type": "text",
+          "text_content": "Romaji: re\nPronunciation: reh",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:42.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:42.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-043",
+      "information_side": [
+        {
+          "block_id": "kata-043-info",
+          "block_type": "text",
+          "text_content": "ロ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:43.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-043-answer",
+          "block_type": "text",
+          "text_content": "Romaji: ro\nPronunciation: roh",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:43.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:43.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-044",
+      "information_side": [
+        {
+          "block_id": "kata-044-info",
+          "block_type": "text",
+          "text_content": "ワ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:44.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-044-answer",
+          "block_type": "text",
+          "text_content": "Romaji: wa\nPronunciation: wah",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:44.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:44.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-045",
+      "information_side": [
+        {
+          "block_id": "kata-045-info",
+          "block_type": "text",
+          "text_content": "ヲ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:45.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-045-answer",
+          "block_type": "text",
+          "text_content": "Romaji: wo\nPronunciation: woh (rarely used)",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:45.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:45.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-046",
+      "information_side": [
+        {
+          "block_id": "kata-046-info",
+          "block_type": "text",
+          "text_content": "ン",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:46.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-046-answer",
+          "block_type": "text",
+          "text_content": "Romaji: n\nPronunciation: n (moraic nasal)",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:46.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:46.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-047",
+      "information_side": [
+        {
+          "block_id": "kata-047-info",
+          "block_type": "text",
+          "text_content": "ガ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:47.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-047-answer",
+          "block_type": "text",
+          "text_content": "Romaji: ga\nPronunciation: gah (voiced ka)",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:47.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:47.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-048",
+      "information_side": [
+        {
+          "block_id": "kata-048-info",
+          "block_type": "text",
+          "text_content": "ギ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:48.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-048-answer",
+          "block_type": "text",
+          "text_content": "Romaji: gi\nPronunciation: gee (voiced ki)",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:48.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:48.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-049",
+      "information_side": [
+        {
+          "block_id": "kata-049-info",
+          "block_type": "text",
+          "text_content": "グ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:49.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-049-answer",
+          "block_type": "text",
+          "text_content": "Romaji: gu\nPronunciation: goo (voiced ku)",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:49.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:49.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-050",
+      "information_side": [
+        {
+          "block_id": "kata-050-info",
+          "block_type": "text",
+          "text_content": "ゲ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:50.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-050-answer",
+          "block_type": "text",
+          "text_content": "Romaji: ge\nPronunciation: geh (voiced ke)",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:50.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:50.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-051",
+      "information_side": [
+        {
+          "block_id": "kata-051-info",
+          "block_type": "text",
+          "text_content": "ゴ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:51.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-051-answer",
+          "block_type": "text",
+          "text_content": "Romaji: go\nPronunciation: goh (voiced ko)",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:51.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:51.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-052",
+      "information_side": [
+        {
+          "block_id": "kata-052-info",
+          "block_type": "text",
+          "text_content": "ザ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:52.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-052-answer",
+          "block_type": "text",
+          "text_content": "Romaji: za\nPronunciation: zah (voiced sa)",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:52.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:52.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "kata-053",
+      "information_side": [
+        {
+          "block_id": "kata-053-info",
+          "block_type": "text",
+          "text_content": "ジ",
+          "font_size": 48,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:53.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "kata-053-answer",
+          "block_type": "text",
+          "text_content": "Romaji: ji\nPronunciation: jee (voiced shi)",
+          "font_size": 14,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:53.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:53.000000",
+      "last_studied": null
+    }
+  ]
+}

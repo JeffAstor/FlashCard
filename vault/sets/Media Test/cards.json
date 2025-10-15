@@ -1,0 +1,64 @@
+{
+  "cards": [
+    {
+      "card_id": "871efc42-b178-4010-8ea0-10e78b5b2782",
+      "information_side": [
+        {
+          "block_id": "831dd9d2-096a-4f8d-b34b-73fc1b5308d8",
+          "block_type": "video",
+          "video_path": "sample-5s.mp4",
+          "original_filename": "sample-5s.mp4",
+          "duration": 0,
+          "thumbnail_path": "",
+          "created_date": "2025-10-15T22:39:38.456877"
+        },
+        {
+          "block_id": "60e388a1-f219-4048-8c38-035e0808a7c5",
+          "block_type": "text",
+          "text_content": "How many blue cars are there?",
+          "font_size": 26,
+          "alignment": "center",
+          "created_date": "2025-10-15T22:40:42.796775"
+        }
+      ],
+      "answer_side": [],
+      "status": "Unknown",
+      "created_date": "2025-10-15T22:39:31.573864",
+      "last_studied": null
+    },
+    {
+      "card_id": "3e83849d-0cf6-422d-9757-5b3659a17d04",
+      "information_side": [
+        {
+          "block_id": "c8c60dd2-49aa-41b8-80c6-b9f9a9d6a9bd",
+          "block_type": "audio",
+          "audio_path": "chapter 1.mp3",
+          "original_filename": "chapter 1.mp3",
+          "duration": 0,
+          "created_date": "2025-10-15T23:10:48.689338"
+        },
+        {
+          "block_id": "fcc99b08-8f5f-4491-9482-b2e927678fb0",
+          "block_type": "text",
+          "text_content": "Young Jeff's amazing computer adventure",
+          "font_size": 37,
+          "alignment": "center",
+          "created_date": "2025-10-15T23:11:39.425795"
+        },
+        {
+          "block_id": "618f6e16-80d2-4dc0-aff0-ab557572e7b8",
+          "block_type": "image",
+          "image_path": "00022-2894758696.png",
+          "original_filename": "00022-2894758696.png",
+          "width": 1024,
+          "height": 512,
+          "created_date": "2025-10-15T23:32:37.007630"
+        }
+      ],
+      "answer_side": [],
+      "status": "Unknown",
+      "created_date": "2025-10-15T23:10:43.605765",
+      "last_studied": null
+    }
+  ]
+}

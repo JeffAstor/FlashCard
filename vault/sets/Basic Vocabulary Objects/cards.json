@@ -1,0 +1,550 @@
+{
+  "cards": [
+    {
+      "card_id": "obj-001",
+      "information_side": [
+        {
+          "block_id": "obj-001-info",
+          "block_type": "text",
+          "text_content": "Japanese: テーブル\nRomaji: teeburu",
+          "font_size": 35,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:01.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "obj-001-answer",
+          "block_type": "text",
+          "text_content": "English: Table\nA piece of furniture with a flat top and one or more legs.",
+          "font_size": 27,
+          "alignment": "center",
+          "created_date": "2025-10-15T00:00:01.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:01.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "obj-002",
+      "information_side": [
+        {
+          "block_id": "obj-002-info",
+          "block_type": "text",
+          "text_content": "Japanese: 椅子\nRomaji: isu",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:02.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "obj-002-answer",
+          "block_type": "text",
+          "text_content": "English: Chair\nA piece of furniture for one person to sit on.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:02.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:02.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "obj-003",
+      "information_side": [
+        {
+          "block_id": "obj-003-info",
+          "block_type": "text",
+          "text_content": "Japanese: 本\nRomaji: hon",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:03.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "obj-003-answer",
+          "block_type": "text",
+          "text_content": "English: Book\nA set of written or printed pages bound together.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:03.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:03.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "obj-004",
+      "information_side": [
+        {
+          "block_id": "obj-004-info",
+          "block_type": "text",
+          "text_content": "Japanese: ペン\nRomaji: pen",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:04.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "obj-004-answer",
+          "block_type": "text",
+          "text_content": "English: Pen\nA writing instrument that uses ink.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:04.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:04.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "obj-005",
+      "information_side": [
+        {
+          "block_id": "obj-005-info",
+          "block_type": "text",
+          "text_content": "Japanese: 時計\nRomaji: tokei",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:05.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "obj-005-answer",
+          "block_type": "text",
+          "text_content": "English: Clock\nA device used to measure and indicate time.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:05.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:05.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "obj-006",
+      "information_side": [
+        {
+          "block_id": "obj-006-info",
+          "block_type": "text",
+          "text_content": "Japanese: 冷蔵庫\nRomaji: reizoko",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:06.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "obj-006-answer",
+          "block_type": "text",
+          "text_content": "English: Refrigerator\nAn appliance used to keep food and drinks cold.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:06.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:06.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "obj-007",
+      "information_side": [
+        {
+          "block_id": "obj-007-info",
+          "block_type": "text",
+          "text_content": "Japanese: ベッド\nRomaji: beddo",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:07.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "obj-007-answer",
+          "block_type": "text",
+          "text_content": "English: Bed\nA piece of furniture for sleeping on.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:07.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:07.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "obj-008",
+      "information_side": [
+        {
+          "block_id": "obj-008-info",
+          "block_type": "text",
+          "text_content": "Japanese: 窓\nRomaji: mado",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:08.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "obj-008-answer",
+          "block_type": "text",
+          "text_content": "English: Window\nAn opening in a wall or roof fitted with glass.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:08.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:08.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "obj-009",
+      "information_side": [
+        {
+          "block_id": "obj-009-info",
+          "block_type": "text",
+          "text_content": "Japanese: ドア\nRomaji: doa",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:09.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "obj-009-answer",
+          "block_type": "text",
+          "text_content": "English: Door\nA movable barrier used to open and close an entrance.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:09.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:09.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "obj-010",
+      "information_side": [
+        {
+          "block_id": "obj-010-info",
+          "block_type": "text",
+          "text_content": "Japanese: ランプ\nRomaji: ranpu",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:10.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "obj-010-answer",
+          "block_type": "text",
+          "text_content": "English: Lamp\nA device that produces light.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:10.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:10.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "obj-011",
+      "information_side": [
+        {
+          "block_id": "obj-011-info",
+          "block_type": "text",
+          "text_content": "Japanese: 鏡\nRomaji: kagami",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:11.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "obj-011-answer",
+          "block_type": "text",
+          "text_content": "English: Mirror\nA reflective surface, typically made of glass.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:11.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:11.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "obj-012",
+      "information_side": [
+        {
+          "block_id": "obj-012-info",
+          "block_type": "text",
+          "text_content": "Japanese: カーペット\nRomaji: kaapetto",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:12.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "obj-012-answer",
+          "block_type": "text",
+          "text_content": "English: Carpet\nA floor covering made from thick woven fabric.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:12.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:12.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "obj-013",
+      "information_side": [
+        {
+          "block_id": "obj-013-info",
+          "block_type": "text",
+          "text_content": "Japanese: 枕\nRomaji: makura",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:13.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "obj-013-answer",
+          "block_type": "text",
+          "text_content": "English: Pillow\nA cushion used to support the head while sleeping.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:13.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:13.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "obj-014",
+      "information_side": [
+        {
+          "block_id": "obj-014-info",
+          "block_type": "text",
+          "text_content": "Japanese: 毛布\nRomaji: moufu",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:14.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "obj-014-answer",
+          "block_type": "text",
+          "text_content": "English: Blanket\nA large piece of fabric used to keep warm.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:14.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:14.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "obj-015",
+      "information_side": [
+        {
+          "block_id": "obj-015-info",
+          "block_type": "text",
+          "text_content": "Japanese: 扇風機\nRomaji: senpuuki",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:15.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "obj-015-answer",
+          "block_type": "text",
+          "text_content": "English: Fan\nA device that creates a current of air.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:15.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:15.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "obj-016",
+      "information_side": [
+        {
+          "block_id": "obj-016-info",
+          "block_type": "text",
+          "text_content": "Japanese: テレビ\nRomaji: terebi",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:16.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "obj-016-answer",
+          "block_type": "text",
+          "text_content": "English: Television\nAn electronic device for viewing video content.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:16.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:16.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "obj-017",
+      "information_side": [
+        {
+          "block_id": "obj-017-info",
+          "block_type": "text",
+          "text_content": "Japanese: 電話\nRomaji: denwa",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:17.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "obj-017-answer",
+          "block_type": "text",
+          "text_content": "English: Phone\nA device used for voice communication.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:17.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:17.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "obj-018",
+      "information_side": [
+        {
+          "block_id": "obj-018-info",
+          "block_type": "text",
+          "text_content": "Japanese: コンピュータ\nRomaji: konpyuuta",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:18.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "obj-018-answer",
+          "block_type": "text",
+          "text_content": "English: Computer\nAn electronic device for processing data.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:18.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:18.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "obj-019",
+      "information_side": [
+        {
+          "block_id": "obj-019-info",
+          "block_type": "text",
+          "text_content": "Japanese: リュックサック\nRomaji: ryukkusakku",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:19.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "obj-019-answer",
+          "block_type": "text",
+          "text_content": "English: Backpack\nA bag carried on the back, typically with two straps.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:19.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:19.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "obj-020",
+      "information_side": [
+        {
+          "block_id": "obj-020-info",
+          "block_type": "text",
+          "text_content": "Japanese: グラス\nRomaji: gurasu",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:20.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "obj-020-answer",
+          "block_type": "text",
+          "text_content": "English: Glass\nA container used for drinking liquids.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-15T00:00:20.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T00:00:20.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "ca62f098-51dc-4d4d-a564-a43def800466",
+      "information_side": [
+        {
+          "block_id": "9e300b41-f82a-4b4f-919a-50379e750ad0",
+          "block_type": "text",
+          "text_content": "Japanese: 本, Romaji: hon, A written or printed work consisting of pages glued or sewn together.",
+          "font_size": 26,
+          "alignment": "center",
+          "created_date": "2025-10-15T22:24:22.530575"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "d4d3d7a1-7a56-4911-b299-ec441f78ffb1",
+          "block_type": "text",
+          "text_content": "English: Book",
+          "font_size": 12,
+          "alignment": "left",
+          "created_date": "2025-10-15T22:24:22.530575"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T22:24:22.530575",
+      "last_studied": null
+    }
+  ]
+}
