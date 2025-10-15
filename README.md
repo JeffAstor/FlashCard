@@ -18,8 +18,8 @@ Getting it running on your machine is really not that hard 😊. The AI features
 ![Alt text](screen_shots/thevault.png "The vault")
 
 **Card Editing** 
-![Alt text](screen_shots/edit card.png "The vault")
-![Alt text](screen_shots/edit card 2.png "The vault")
+![Alt text](screen_shots/edit-card.png "The vault")
+![Alt text](screen_shots/edit-card-2.png "The vault")
 
 **AI**
 ![Alt text](screen_shots/AI-1.png "The vault")
