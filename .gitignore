@@ -1,1 +1,5 @@
 flash_cards/
+ui/__pycache__/
+models/__pycache__/
+utils/__pycache__/
+vault/__pycache__/
