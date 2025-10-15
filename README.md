@@ -1,6 +1,6 @@
 # FlashCard Application
 
-A comprehensive PyQt5-based flash card application for creating, editing, and studying flash card sets with multimedia content support.
+An advanced PyQt5-based flash card application for creating, editing, and studying flash card sets with multimedia content support and AI-powered card generation.
 
 ## Features
 
@@ -16,13 +16,14 @@ A comprehensive PyQt5-based flash card application for creating, editing, and st
 - **Video blocks**: MP4 video files (max 5 minutes) with player controls
 
 ### Key Features
-- Multiple content blocks per card side (max 10 blocks)
+-- Multiple content blocks per card side (max 10 blocks)
 - Drag-and-drop block reordering
 - Progress tracking and study statistics
 - Set import/export functionality
 - Vault backup and restore
 - Custom icon support
 - Multiple study modes (Sequential, Random, Review)
+- **AI Card Generation**: Automatically generate flash cards using AI (Together.ai integration). Create cards from concepts, summaries, or questions with a single click.
 
 ## Requirements
 
@@ -83,6 +84,15 @@ FlashCards/
 2. Enter set name, description, and metadata
 3. Select or upload a custom icon
 4. The application will create the set and switch to edit mode
+
+### AI Card Generation
+
+1. In Edit Mode, click the "Generate with AI" button to create new flash cards automatically.
+2. Enter a concept, topic, or question prompt.
+3. The application will use the integrated AI server to generate flash card content (question/answer, explanations, or study guides).
+4. Review and edit the generated card before saving.
+
+**Note:** The AI server must be running and configured with a valid Together.ai API key. See `flask_app_pa_v2.py` and `AI_SERVER_README.md` for setup instructions.
 
 ### Editing Flash Cards
 
