@@ -8,6 +8,8 @@ Thank you for checking out my application! What started as a simple need to crea
 
 The project was developed using Claude Sonnet 4 over approximately 10 hours, resulting in about 8,000 lines of code (roughly 1,000 lines per hour!).  For reference the average programmer might write 20 to 200 lines per day.  I wanted this project to demonstrates the level of productivity possible with AI-assisted development.
 
+The project comes with 6 test card sets.  They took an extra couple of hours, there are about 250 cards.
+
 Getting it running on your machine is really not that hard 😊. The AI features work out of the box since they connect to my hosted server. For full details about the AI server architecture, check out `AI_SERVER_README.md`—it's a Flask server hosted on PythonAnywhere.
 
 **Platform Notes:**
