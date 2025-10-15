@@ -2,6 +2,18 @@
 
 An advanced PyQt5-based flash card application for creating, editing, and studying flash card sets with multimedia content support and AI-powered card generation.
 
+## Comments
+
+Thank you for checking out my application! What started as a simple need to create flash cards turned into a Python development project. This entire application was built using AI-assisted development—I create the plans and guide the AI through implementation.
+
+The project was developed using Claude Sonnet 4 over approximately 10 hours, resulting in about 8,000 lines of code (roughly 1,000 lines per hour!).  For reference the average programmer might write 20 to 200 lines per day.  I wanted this project to demonstrates the level of productivity possible with AI-assisted development.
+
+Getting it running on your machine is really not that hard 😊. The AI features work out of the box since they connect to my hosted server. For full details about the AI server architecture, check out `AI_SERVER_README.md`—it's a Flask server hosted on PythonAnywhere.
+
+**Platform Notes:**
+- **macOS**: Works seamlessly out of the box
+- **Windows**: Requires **LAVFilters** installation for audio/video playback (the app runs without it, but Qt5 needs codec support for media files)  
+
 ## Features
 
 ### Application Modes

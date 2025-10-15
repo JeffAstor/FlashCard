@@ -1,0 +1,38 @@
+﻿FlashCard Project - Python Files Line Count Report
+Generated: 10/15/2025 19:44:23
+================================================
+
+SUMMARY:
+- Total Python files: 28
+- Total lines of code: 8045
+
+DETAILED BREAKDOWN:
+  ui\edit_mode.py: 1087 lines (43.15 KB)
+  ui\vault_mode.py: 1051 lines (39.45 KB)
+  vault\vault_manager.py: 810 lines (34.96 KB)
+  models\content_blocks.py: 801 lines (30.28 KB)
+  flask_app_pa_v2.py: 657 lines (24.32 KB)
+  ui\view_mode.py: 600 lines (21.76 KB)
+  ai_server.py: 546 lines (19.42 KB)
+  ui\media_widgets.py: 352 lines (12.31 KB)
+  test_pa_v2.py: 341 lines (12.52 KB)
+  vault\icon_manager.py: 283 lines (10.31 KB)
+  models\flashcard.py: 270 lines (9.96 KB)
+  flashcards.py: 268 lines (9.47 KB)
+  utils\file_manager.py: 209 lines (7.61 KB)
+  test_zscaler.py: 178 lines (6.01 KB)
+  utils\error_logger.py: 163 lines (5.05 KB)
+  test_ai_server.py: 121 lines (4.26 KB)
+  test_connection.py: 112 lines (3.37 KB)
+  utils\config_manager.py: 87 lines (2.62 KB)
+  test_new_feature.py: 77 lines (2.96 KB)
+  wsgi_config.py: 20 lines (0.69 KB)
+  __MACOSX\._ai_server.py: 2 lines (0.21 KB)
+  __MACOSX\._flask_app.py: 2 lines (0.21 KB)
+  __MACOSX\._flask_app_pa_v2.py: 2 lines (0.21 KB)
+  __MACOSX\._test_ai_server.py: 2 lines (0.21 KB)
+  utils\__init__.py: 1 lines (0.05 KB)
+  vault\__init__.py: 1 lines (0.05 KB)
+  models\__init__.py: 1 lines (0.05 KB)
+  ui\__init__.py: 1 lines (0.04 KB)
+
