@@ -17,3 +17,4 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 Write-Host "Setup complete."
+Write-Host "Remember to install LAVFilters for multimedia support on Windows.  See README.md for details."
