@@ -31,6 +31,19 @@ An advanced PyQt5-based flash card application for creating, editing, and studyi
 - PyQt5 >= 5.15.0
 - Pillow >= 8.0.0
 
+### Windows-Specific Requirements
+
+For proper audio and video playback on Windows systems, **LAVFilters** must be installed:
+
+- **LAVFilters**: DirectShow multimedia filters for enhanced audio/video codec support
+  - Download from: https://github.com/Nevcairiel/LAVFilters/releases
+  - Installation file included: `LAVFilters-0.80-Installer.exe`
+  - Additional installation resources: `windows_install/` folder
+  - **Required for**: MP4, AVI, MOV, MKV video playback and various audio formats
+  - **Installation**: Run as Administrator and follow the installer prompts
+
+LAVFilters provides ffmpeg-based DirectShow splitter and decoders that enable the FlashCard application to play virtually any multimedia format on Windows systems.
+
 ## Installation
 
 1. **Clone or download the application files**
@@ -50,6 +63,8 @@ An advanced PyQt5-based flash card application for creating, editing, and studyi
 ```
 FlashCards/
 ├── flashcards.py              # Main application entry point
+├── LAVFilters-0.80-Installer.exe # Windows multimedia codec installer
+├── windows_install/           # Windows-specific installation resources
 ├── config/
 │   └── app_config.json       # Application configuration
 ├── models/                    # Data models
@@ -191,6 +206,7 @@ Flash card data is stored in JSON format:
    - Check console for error messages
 
 2. **Media files not playing**
+   - **Windows**: Ensure LAVFilters is installed (see Requirements section)
    - Verify file format is supported
    - Check file permissions
    - Ensure PyQt5 multimedia components are installed
