@@ -1,0 +1,1642 @@
+{
+  "cards": [
+    {
+      "card_id": "fs-001",
+      "information_side": [
+        {
+          "block_id": "fs-001-info",
+          "block_type": "text",
+          "text_content": "What is the root directory in Linux and how is it represented?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:01.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-001-answer",
+          "block_type": "text",
+          "text_content": "The root directory is the top-level directory in the Linux file system hierarchy. It is represented by a forward slash (/) and contains all other directories and files in the system.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:01.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:01.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-002",
+      "information_side": [
+        {
+          "block_id": "fs-002-info",
+          "block_type": "text",
+          "text_content": "What command displays your current working directory?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:02.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-002-answer",
+          "block_type": "text",
+          "text_content": "pwd (Print Working Directory)\n\nExample:\n$ pwd\n/home/username/Documents",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:02.000000"
+        }
+      ],
+      "status": "Known",
+      "created_date": "2025-10-14T16:45:02.000000",
+      "last_studied": "2025-10-14T18:54:40.588319"
+    },
+    {
+      "card_id": "fs-003",
+      "information_side": [
+        {
+          "block_id": "fs-003-info",
+          "block_type": "text",
+          "text_content": "What is the purpose of the /home directory?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:03.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-003-answer",
+          "block_type": "text",
+          "text_content": "The /home directory contains the home directories for all regular users on the system. Each user has their own subdirectory (e.g., /home/john, /home/mary) where they can store personal files and configurations.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:03.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:03.000000",
+      "last_studied": "2025-10-14T16:59:23.608500"
+    },
+    {
+      "card_id": "fs-004",
+      "information_side": [
+        {
+          "block_id": "fs-004-info",
+          "block_type": "text",
+          "text_content": "How do you list all files in a directory, including hidden files?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:04.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-004-answer",
+          "block_type": "text",
+          "text_content": "ls -a\n\nThe -a flag shows all files, including hidden files (those starting with a dot). You can also use 'ls -la' for a detailed listing with permissions and file information.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:04.000000"
+        }
+      ],
+      "status": "Known",
+      "created_date": "2025-10-14T16:45:04.000000",
+      "last_studied": "2025-10-14T16:58:45.550384"
+    },
+    {
+      "card_id": "fs-005",
+      "information_side": [
+        {
+          "block_id": "fs-005-info",
+          "block_type": "text",
+          "text_content": "What is the difference between absolute and relative paths?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:05.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-005-answer",
+          "block_type": "text",
+          "text_content": "Absolute path: Starts from the root directory (/). Example: /home/user/documents/file.txt\n\nRelative path: Starts from the current directory. Example: documents/file.txt or ../file.txt\n\n.. means parent directory\n. means current directory",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:05.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:05.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-006",
+      "information_side": [
+        {
+          "block_id": "fs-006-info",
+          "block_type": "text",
+          "text_content": "What directory contains system configuration files?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:06.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-006-answer",
+          "block_type": "text",
+          "text_content": "/etc directory\n\nThis directory contains system-wide configuration files and shell scripts that are used to boot and initialize system settings. Examples include /etc/passwd, /etc/hosts, /etc/fstab.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:06.000000"
+        }
+      ],
+      "status": "Review",
+      "created_date": "2025-10-14T16:45:06.000000",
+      "last_studied": "2025-10-14T18:54:32.845760"
+    },
+    {
+      "card_id": "fs-007",
+      "information_side": [
+        {
+          "block_id": "fs-007-info",
+          "block_type": "text",
+          "text_content": "How do you create a new directory?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:07.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-007-answer",
+          "block_type": "text",
+          "text_content": "mkdir directory_name\n\nExamples:\nmkdir newdir\nmkdir -p parent/child/grandchild  (creates parent directories if they don't exist)\nmkdir dir1 dir2 dir3  (creates multiple directories)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:07.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:07.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-008",
+      "information_side": [
+        {
+          "block_id": "fs-008-info",
+          "block_type": "text",
+          "text_content": "What command is used to copy files and directories?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:08.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-008-answer",
+          "block_type": "text",
+          "text_content": "cp command\n\nExamples:\ncp file1.txt file2.txt  (copy file)\ncp file.txt /home/user/  (copy to directory)\ncp -r directory1 directory2  (copy directory recursively)\ncp -i file.txt backup.txt  (interactive mode, prompts before overwrite)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:08.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:08.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-009",
+      "information_side": [
+        {
+          "block_id": "fs-009-info",
+          "block_type": "text",
+          "text_content": "What is the purpose of the /var directory?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:09.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-009-answer",
+          "block_type": "text",
+          "text_content": "The /var directory contains variable data files that change during system operation. This includes:\n- Log files (/var/log)\n- Spool directories (/var/spool)\n- Temporary files (/var/tmp)\n- Cache data (/var/cache)\n- Database files (/var/lib)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:09.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:09.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-010",
+      "information_side": [
+        {
+          "block_id": "fs-010-info",
+          "block_type": "text",
+          "text_content": "How do you move or rename files and directories?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:10.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-010-answer",
+          "block_type": "text",
+          "text_content": "mv command (move/rename)\n\nExamples:\nmv oldname.txt newname.txt  (rename file)\nmv file.txt /home/user/  (move file to directory)\nmv directory1 directory2  (rename/move directory)\nmv file1.txt file2.txt /backup/  (move multiple files)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:10.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:10.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-011",
+      "information_side": [
+        {
+          "block_id": "fs-011-info",
+          "block_type": "text",
+          "text_content": "How do you remove/delete files and directories?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:11.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-011-answer",
+          "block_type": "text",
+          "text_content": "rm command (remove files)\nrmdir command (remove empty directories)\n\nExamples:\nrm file.txt  (delete file)\nrm -i file.txt  (interactive deletion)\nrm -r directory/  (delete directory and contents)\nrm -rf directory/  (force delete, no prompts)\nrmdir empty_directory  (remove empty directory only)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:11.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:11.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-012",
+      "information_side": [
+        {
+          "block_id": "fs-012-info",
+          "block_type": "text",
+          "text_content": "What command finds files and directories by name?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:12.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-012-answer",
+          "block_type": "text",
+          "text_content": "find command\n\nExamples:\nfind /home -name \"*.txt\"  (find all .txt files in /home)\nfind . -name \"file.txt\"  (find file.txt in current directory tree)\nfind /var -type d -name \"log*\"  (find directories starting with 'log')\nfind . -size +100M  (find files larger than 100MB)\nfind . -mtime -7  (find files modified in last 7 days)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:12.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:12.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-013",
+      "information_side": [
+        {
+          "block_id": "fs-013-info",
+          "block_type": "text",
+          "text_content": "What is the purpose of the /usr directory?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:13.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-013-answer",
+          "block_type": "text",
+          "text_content": "The /usr directory contains user-related programs and data. It includes:\n- /usr/bin (user binaries/programs)\n- /usr/sbin (system administration binaries)\n- /usr/lib (libraries for programs)\n- /usr/share (shared data like documentation)\n- /usr/local (locally installed software)\n- /usr/include (header files for programming)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:13.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:13.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-014",
+      "information_side": [
+        {
+          "block_id": "fs-014-info",
+          "block_type": "text",
+          "text_content": "How do you view the contents of a file?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:14.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-014-answer",
+          "block_type": "text",
+          "text_content": "Multiple commands available:\n\ncat file.txt  (display entire file)\nless file.txt  (page through file, q to quit)\nmore file.txt  (page through file, older version)\nhead file.txt  (first 10 lines)\nhead -n 20 file.txt  (first 20 lines)\ntail file.txt  (last 10 lines)\ntail -f file.txt  (follow file as it grows)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:14.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:14.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-015",
+      "information_side": [
+        {
+          "block_id": "fs-015-info",
+          "block_type": "text",
+          "text_content": "What does the /tmp directory contain?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:15.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-015-answer",
+          "block_type": "text",
+          "text_content": "The /tmp directory contains temporary files that are typically deleted on system reboot. It's used by:\n- Applications for temporary storage\n- System processes for temporary data\n- Users for temporary file storage\n\nFiles here are usually accessible by all users with proper permissions. Some systems clean /tmp automatically.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:15.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:15.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-016",
+      "information_side": [
+        {
+          "block_id": "fs-016-info",
+          "block_type": "text",
+          "text_content": "How do you search for text within files?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:16.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-016-answer",
+          "block_type": "text",
+          "text_content": "grep command\n\nExamples:\ngrep \"text\" file.txt  (search for 'text' in file)\ngrep -i \"TEXT\" file.txt  (case-insensitive search)\ngrep -r \"pattern\" /path/  (recursive search in directory)\ngrep -n \"text\" file.txt  (show line numbers)\ngrep -v \"unwanted\" file.txt  (show lines NOT containing 'unwanted')\ngrep \"^start\" file.txt  (lines starting with 'start')",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:16.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:16.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-017",
+      "information_side": [
+        {
+          "block_id": "fs-017-info",
+          "block_type": "text",
+          "text_content": "What are file permissions in Linux and how are they represented?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:17.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-017-answer",
+          "block_type": "text",
+          "text_content": "File permissions control who can read, write, or execute files.\n\nFormat: rwxrwxrwx (9 characters)\n- First 3: owner permissions\n- Next 3: group permissions\n- Last 3: other permissions\n\nr = read (4), w = write (2), x = execute (1)\nExample: -rwxr-xr-- means owner can read/write/execute, group can read/execute, others can read only.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:17.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:17.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-018",
+      "information_side": [
+        {
+          "block_id": "fs-018-info",
+          "block_type": "text",
+          "text_content": "How do you change file permissions?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:18.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-018-answer",
+          "block_type": "text",
+          "text_content": "chmod command\n\nNumeric method:\nchmod 755 file.txt  (rwxr-xr-x)\nchmod 644 file.txt  (rw-r--r--)\nchmod 600 file.txt  (rw-------)\n\nSymbolic method:\nchmod u+x file.txt  (add execute for user)\nchmod g-w file.txt  (remove write for group)\nchmod o=r file.txt  (set others to read only)\nchmod a+r file.txt  (add read for all)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:18.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:18.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-019",
+      "information_side": [
+        {
+          "block_id": "fs-019-info",
+          "block_type": "text",
+          "text_content": "What is the purpose of the /opt directory?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:19.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-019-answer",
+          "block_type": "text",
+          "text_content": "The /opt directory is for optional software packages that are not part of the default installation. It typically contains:\n- Third-party applications\n- Commercial software\n- Large software packages\n- Software that doesn't fit standard locations\n\nEach package usually gets its own subdirectory (e.g., /opt/google, /opt/vmware).",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:19.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:19.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-020",
+      "information_side": [
+        {
+          "block_id": "fs-020-info",
+          "block_type": "text",
+          "text_content": "How do you change file and directory ownership?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:20.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-020-answer",
+          "block_type": "text",
+          "text_content": "chown command (change owner)\nchgrp command (change group)\n\nExamples:\nchown user file.txt  (change owner to 'user')\nchown user:group file.txt  (change owner and group)\nchown -R user:group directory/  (recursive change)\nchgrp group file.txt  (change group only)\nchown :group file.txt  (change group only, alternative)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:20.000000"
+        }
+      ],
+      "status": "Review",
+      "created_date": "2025-10-14T16:45:20.000000",
+      "last_studied": "2025-10-14T19:00:27.456769"
+    },
+    {
+      "card_id": "fs-021",
+      "information_side": [
+        {
+          "block_id": "fs-021-info",
+          "block_type": "text",
+          "text_content": "What is the difference between a hard link and a symbolic link?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:21.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-021-answer",
+          "block_type": "text",
+          "text_content": "Hard link: Points directly to file data on disk. Multiple names for same file. If original is deleted, hard link still works.\n\nSymbolic link (symlink): Points to filename/path. Like a shortcut. If original is deleted, symlink becomes broken.\n\nCreate hard link: ln file.txt hardlink.txt\nCreate symlink: ln -s file.txt symlink.txt",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:21.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:21.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-022",
+      "information_side": [
+        {
+          "block_id": "fs-022-info",
+          "block_type": "text",
+          "text_content": "What command shows detailed file information including size, permissions, and timestamps?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:22.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-022-answer",
+          "block_type": "text",
+          "text_content": "ls -l (long format)\n\nExample output:\n-rw-r--r-- 1 user group 1024 Oct 14 16:45 file.txt\n\nShows: permissions, links, owner, group, size, date/time, filename\n\nUseful variations:\nls -la (include hidden files)\nls -lh (human-readable sizes)\nls -lt (sort by time)\nls -lS (sort by size)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:22.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:22.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-023",
+      "information_side": [
+        {
+          "block_id": "fs-023-info",
+          "block_type": "text",
+          "text_content": "What is the purpose of the /bin directory?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:23.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-023-answer",
+          "block_type": "text",
+          "text_content": "The /bin directory contains essential user binaries (executable programs) that are needed for basic system operation. These include:\n- Basic commands like ls, cp, mv, rm\n- Shell programs like bash\n- System utilities like cat, grep, tar\n\nThese programs are available to all users and needed for system boot and single-user mode.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:23.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:23.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-024",
+      "information_side": [
+        {
+          "block_id": "fs-024-info",
+          "block_type": "text",
+          "text_content": "How do you quickly navigate to the previous directory you were in?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:24.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-024-answer",
+          "block_type": "text",
+          "text_content": "cd - (dash)\n\nThis switches between the current directory and the previous directory you were in.\n\nExample:\n$ cd /home/user\n$ cd /etc\n$ cd -    # returns to /home/user\n$ cd -    # returns to /etc\n\nYou can also use: cd $OLDPWD",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:24.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:24.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-025",
+      "information_side": [
+        {
+          "block_id": "fs-025-info",
+          "block_type": "text",
+          "text_content": "What does the /sbin directory contain?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:25.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-025-answer",
+          "block_type": "text",
+          "text_content": "The /sbin directory contains system binaries - essential programs for system administration that are typically used by the root user. Examples include:\n- ifconfig (network configuration)\n- mount/umount (filesystem mounting)\n- fdisk (disk partitioning)\n- iptables (firewall)\n- init/systemctl (system initialization)\n\nThese are critical system management tools.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:25.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:25.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-026",
+      "information_side": [
+        {
+          "block_id": "fs-026-info",
+          "block_type": "text",
+          "text_content": "How do you determine the file type of a file?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:26.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-026-answer",
+          "block_type": "text",
+          "text_content": "file command\n\nExamples:\nfile document.txt  # ASCII text\nfile image.jpg     # JPEG image data\nfile program       # ELF executable\nfile archive.tar   # POSIX tar archive\nfile script.sh     # shell script\n\nThe file command examines the content to determine file type, not just the extension.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:26.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:26.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-027",
+      "information_side": [
+        {
+          "block_id": "fs-027-info",
+          "block_type": "text",
+          "text_content": "What is the purpose of the /lib directory?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:27.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-027-answer",
+          "block_type": "text",
+          "text_content": "The /lib directory contains essential shared libraries needed by programs in /bin and /sbin. These include:\n- libc (C library)\n- Dynamic linker/loader\n- Kernel modules (/lib/modules)\n- Essential libraries for system boot\n\nOn 64-bit systems, you'll also find /lib64 for 64-bit libraries.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:27.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:27.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-028",
+      "information_side": [
+        {
+          "block_id": "fs-028-info",
+          "block_type": "text",
+          "text_content": "How do you display disk usage for directories and files?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:28.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-028-answer",
+          "block_type": "text",
+          "text_content": "du command (disk usage)\n\nExamples:\ndu -h /path/to/directory  (human-readable sizes)\ndu -sh /path/to/directory  (summary, just total size)\ndu -ah /path/  (all files and directories)\ndu -d 1 /path/  (depth 1, don't go into subdirectories)\ndu -sh * | sort -h  (sort directories by size)\n\n-h: human readable, -s: summary, -a: all files",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:28.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:28.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-029",
+      "information_side": [
+        {
+          "block_id": "fs-029-info",
+          "block_type": "text",
+          "text_content": "What is the /proc directory and what does it contain?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:29.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-029-answer",
+          "block_type": "text",
+          "text_content": "The /proc directory is a virtual filesystem that provides information about running processes and system information. It contains:\n- Process directories (numbered by PID)\n- System information files (/proc/cpuinfo, /proc/meminfo)\n- Kernel parameters (/proc/sys/)\n- Hardware information\n\nExample: cat /proc/cpuinfo shows CPU details\nFiles here exist only in memory, not on disk.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:29.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:29.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-030",
+      "information_side": [
+        {
+          "block_id": "fs-030-info",
+          "block_type": "text",
+          "text_content": "How do you create an empty file or update a file's timestamp?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:30.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-030-answer",
+          "block_type": "text",
+          "text_content": "touch command\n\nExamples:\ntouch newfile.txt  (create empty file)\ntouch existing.txt  (update timestamp to now)\ntouch file1 file2 file3  (create/update multiple files)\ntouch -t 202410141630 file.txt  (set specific timestamp)\ntouch -r reference.txt new.txt  (copy timestamp from reference file)\n\nIf file doesn't exist, touch creates it empty.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:30.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:30.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-031",
+      "information_side": [
+        {
+          "block_id": "fs-031-info",
+          "block_type": "text",
+          "text_content": "What is the /dev directory and what does it contain?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:31.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-031-answer",
+          "block_type": "text",
+          "text_content": "The /dev directory contains device files that represent hardware devices and virtual devices. Examples include:\n- /dev/sda1 (hard disk partitions)\n- /dev/null (null device, discards data)\n- /dev/zero (produces null bytes)\n- /dev/random (random number generator)\n- /dev/tty (terminal devices)\n- /dev/cdrom (CD-ROM drive)\n\nThese are special files that provide interface to hardware.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:31.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:31.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-032",
+      "information_side": [
+        {
+          "block_id": "fs-032-info",
+          "block_type": "text",
+          "text_content": "How do you display the directory tree structure?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:32.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-032-answer",
+          "block_type": "text",
+          "text_content": "tree command\n\nExamples:\ntree  (show tree from current directory)\ntree /path/to/directory  (show tree from specific path)\ntree -d  (directories only)\ntree -L 2  (limit depth to 2 levels)\ntree -a  (include hidden files)\ntree -I \"*.tmp\"  (ignore .tmp files)\n\nIf tree is not installed: find . -type d | sed 's/[^/]*\\//  /g'",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:32.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:32.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-033",
+      "information_side": [
+        {
+          "block_id": "fs-033-info",
+          "block_type": "text",
+          "text_content": "What command compares the contents of two files?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:33.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-033-answer",
+          "block_type": "text",
+          "text_content": "diff command\n\nExamples:\ndiff file1.txt file2.txt  (show differences)\ndiff -u file1.txt file2.txt  (unified format)\ndiff -c file1.txt file2.txt  (context format)\ndiff -r dir1/ dir2/  (recursive directory comparison)\ndiff -i file1.txt file2.txt  (ignore case)\n\nAlternatively: cmp (byte-by-byte comparison)\ncommand for quick check: cmp file1 file2",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:33.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:33.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-034",
+      "information_side": [
+        {
+          "block_id": "fs-034-info",
+          "block_type": "text",
+          "text_content": "What is the /mnt directory used for?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:34.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-034-answer",
+          "block_type": "text",
+          "text_content": "The /mnt directory is used as a temporary mount point for mounting filesystems. It's typically used by system administrators to manually mount:\n- External drives (USB, external hard drives)\n- Network filesystems (NFS, CIFS)\n- CD/DVD media\n- Other temporary storage devices\n\nExample: mount /dev/sdb1 /mnt/usb\nModern systems often use /media for removable devices.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:34.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:34.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-035",
+      "information_side": [
+        {
+          "block_id": "fs-035-info",
+          "block_type": "text",
+          "text_content": "How do you create a compressed archive of files and directories?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:35.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-035-answer",
+          "block_type": "text",
+          "text_content": "tar command with compression\n\nCreate archives:\ntar -czvf archive.tar.gz directory/  (gzip compression)\ntar -cjvf archive.tar.bz2 directory/  (bzip2 compression)\ntar -cJvf archive.tar.xz directory/  (xz compression)\n\nExtract archives:\ntar -xzvf archive.tar.gz\ntar -xjvf archive.tar.bz2\ntar -xJvf archive.tar.xz\n\n-c: create, -x: extract, -z: gzip, -j: bzip2, -J: xz, -v: verbose, -f: file",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:35.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:35.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-036",
+      "information_side": [
+        {
+          "block_id": "fs-036-info",
+          "block_type": "text",
+          "text_content": "What command shows which command will be executed when you type a command name?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:36.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-036-answer",
+          "block_type": "text",
+          "text_content": "which command or type command\n\nExamples:\nwhich ls  # shows /bin/ls\nwhich python  # shows path to python executable\ntype ls  # shows if ls is aliased, built-in, or external\ntype -a python  # shows all locations of python\n\nwhereis command shows binary, source, and manual page locations:\nwhereis ls  # shows /bin/ls /usr/share/man/man1/ls.1.gz",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:36.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:36.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-037",
+      "information_side": [
+        {
+          "block_id": "fs-037-info",
+          "block_type": "text",
+          "text_content": "How do you count lines, words, and characters in a file?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:37.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-037-answer",
+          "block_type": "text",
+          "text_content": "wc command (word count)\n\nExamples:\nwc file.txt  (shows lines, words, characters)\nwc -l file.txt  (count lines only)\nwc -w file.txt  (count words only)\nwc -c file.txt  (count characters/bytes)\nwc -m file.txt  (count characters)\nwc *.txt  (count for multiple files)\ncat file.txt | wc -l  (count lines from pipe)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:37.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:37.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-038",
+      "information_side": [
+        {
+          "block_id": "fs-038-info",
+          "block_type": "text",
+          "text_content": "What is the purpose of the /media directory?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:38.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-038-answer",
+          "block_type": "text",
+          "text_content": "The /media directory is used for mounting removable media devices. Modern Linux systems automatically mount:\n- USB drives and flash drives\n- CD/DVD discs\n- Memory cards\n- External hard drives\n- Mobile device storage\n\nExample: When you insert a USB drive, it might be automatically mounted at /media/username/USB_NAME\n\nThis is more commonly used than /mnt for removable devices.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:38.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:38.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-039",
+      "information_side": [
+        {
+          "block_id": "fs-039-info",
+          "block_type": "text",
+          "text_content": "How do you sort the contents of a file?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:39.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-039-answer",
+          "block_type": "text",
+          "text_content": "sort command\n\nExamples:\nsort file.txt  (alphabetical sort)\nsort -n file.txt  (numeric sort)\nsort -r file.txt  (reverse sort)\nsort -u file.txt  (remove duplicates while sorting)\nsort -k 2 file.txt  (sort by second column)\nsort -t ',' -k 2 file.csv  (sort CSV by second field)\nsort file.txt > sorted.txt  (save sorted output)\ncat file.txt | sort | uniq  (sort and remove duplicates)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:39.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:39.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-040",
+      "information_side": [
+        {
+          "block_id": "fs-040-info",
+          "block_type": "text",
+          "text_content": "What is the /boot directory and what does it contain?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:40.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-040-answer",
+          "block_type": "text",
+          "text_content": "The /boot directory contains files needed for system boot. It includes:\n- Kernel files (vmlinuz)\n- Initial RAM disk (initrd or initramfs)\n- Boot loader configuration (GRUB)\n- System map files\n- Boot loader files\n\nExample contents:\n- /boot/vmlinuz-5.4.0 (kernel)\n- /boot/initrd.img-5.4.0 (initial ramdisk)\n- /boot/grub/ (GRUB bootloader files)\n\nThis directory is critical for system startup.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:40.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:40.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-041",
+      "information_side": [
+        {
+          "block_id": "fs-041-info",
+          "block_type": "text",
+          "text_content": "How do you remove duplicate lines from a file?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:41.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-041-answer",
+          "block_type": "text",
+          "text_content": "uniq command (removes adjacent duplicates)\n\nExamples:\nsort file.txt | uniq  (sort first, then remove duplicates)\nuniq file.txt  (remove adjacent duplicates only)\nuniq -c file.txt  (count occurrences of each line)\nuniq -d file.txt  (show only duplicate lines)\nuniq -u file.txt  (show only unique lines)\n\nNote: uniq only removes adjacent duplicates, so sort first for all duplicates.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:41.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:41.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-042",
+      "information_side": [
+        {
+          "block_id": "fs-042-info",
+          "block_type": "text",
+          "text_content": "What command displays mounted filesystems?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:42.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-042-answer",
+          "block_type": "text",
+          "text_content": "mount command (without arguments)\n\nExamples:\nmount  (show all mounted filesystems)\nmount | grep ext4  (show only ext4 filesystems)\nmount -t ext4  (show only ext4 mounts)\nfindmnt  (tree view of mounted filesystems)\ncat /proc/mounts  (kernel view of mounts)\nlsblk  (list block devices in tree format)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:42.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:42.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-043",
+      "information_side": [
+        {
+          "block_id": "fs-043-info",
+          "block_type": "text",
+          "text_content": "How do you create a symbolic link to a file or directory?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:43.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-043-answer",
+          "block_type": "text",
+          "text_content": "ln -s command\n\nExamples:\nln -s /path/to/original /path/to/link  (create symlink)\nln -s file.txt link_to_file  (link to file in same directory)\nln -s /usr/local/bin/program ~/bin/program  (link executable)\nln -s ../config.conf current_config  (relative symlink)\nln -sf new_target existing_link  (force overwrite existing link)\n\nSymlinks point to the path, not the file data itself.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:43.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:43.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-044",
+      "information_side": [
+        {
+          "block_id": "fs-044-info",
+          "block_type": "text",
+          "text_content": "What is the /sys directory and what does it contain?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:44.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-044-answer",
+          "block_type": "text",
+          "text_content": "The /sys directory is a virtual filesystem (sysfs) that provides information about the kernel's view of the system. It contains:\n- Device information and configuration\n- Kernel modules information\n- Hardware details\n- Power management settings\n- System configuration parameters\n\nExample: /sys/class/net/ contains network interface information\n/sys/block/ contains block device information\n\nLike /proc, files here exist only in memory.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:44.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:44.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-045",
+      "information_side": [
+        {
+          "block_id": "fs-045-info",
+          "block_type": "text",
+          "text_content": "How do you display the first or last few lines of multiple files?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:45.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-045-answer",
+          "block_type": "text",
+          "text_content": "head and tail with multiple files\n\nExamples:\nhead file1.txt file2.txt  (first 10 lines of each)\nhead -n 5 *.txt  (first 5 lines of all .txt files)\ntail file1.txt file2.txt  (last 10 lines of each)\ntail -n 5 *.log  (last 5 lines of all .log files)\ntail -f file1.log file2.log  (follow multiple files)\n\nFile headers are displayed showing ==> filename <== between files.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:45.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:45.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-046",
+      "information_side": [
+        {
+          "block_id": "fs-046-info",
+          "block_type": "text",
+          "text_content": "What command shows the current disk usage of all mounted filesystems?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:46.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-046-answer",
+          "block_type": "text",
+          "text_content": "df command (disk free)\n\nExamples:\ndf  (show disk usage of all mounted filesystems)\ndf -h  (human-readable format with K, M, G)\ndf -T  (show filesystem type)\ndf -i  (show inode usage instead of block usage)\ndf /path  (show usage of filesystem containing /path)\ndf --total  (show grand total at the end)\n\nShows: filesystem, size, used, available, use%, mount point",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:46.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:46.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-047",
+      "information_side": [
+        {
+          "block_id": "fs-047-info",
+          "block_type": "text",
+          "text_content": "How do you change the access and modification times of a file?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:47.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-047-answer",
+          "block_type": "text",
+          "text_content": "touch command with time options\n\nExamples:\ntouch -a file.txt  (change access time only)\ntouch -m file.txt  (change modification time only)\ntouch -t 202410141630 file.txt  (set specific time: YYMMDDhhmm)\ntouch -d \"2024-10-14 16:30\" file.txt  (set with date string)\ntouch -r reference.txt target.txt  (copy times from reference file)\ntouch -am file.txt  (change both access and modification times)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:47.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:47.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-048",
+      "information_side": [
+        {
+          "block_id": "fs-048-info",
+          "block_type": "text",
+          "text_content": "What is the /run directory used for?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:48.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-048-answer",
+          "block_type": "text",
+          "text_content": "The /run directory contains runtime data for programs and the system. It's a tmpfs (temporary filesystem) that includes:\n- Process ID files (.pid files)\n- Socket files for communication\n- Lock files\n- Runtime state information\n- System daemon data\n\nExamples: /run/systemd/, /run/user/, /run/lock/\n\nThis directory is cleared on reboot and exists only in RAM.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:48.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:48.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-049",
+      "information_side": [
+        {
+          "block_id": "fs-049-info",
+          "block_type": "text",
+          "text_content": "How do you extract specific columns from a text file?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:49.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-049-answer",
+          "block_type": "text",
+          "text_content": "cut command\n\nExamples:\ncut -d ':' -f 1 /etc/passwd  (first field, colon delimiter)\ncut -d ',' -f 2,4 file.csv  (2nd and 4th fields from CSV)\ncut -c 1-5 file.txt  (characters 1 through 5)\ncut -c 1,3,5 file.txt  (characters 1, 3, and 5)\ncut -f 2- file.tsv  (field 2 to end, tab delimiter default)\ncut -d ' ' -f 1 file.txt  (first word of each line)\n\n-d: delimiter, -f: fields, -c: characters",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:49.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:49.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-050",
+      "information_side": [
+        {
+          "block_id": "fs-050-info",
+          "block_type": "text",
+          "text_content": "What command shows file attributes and extended file information?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:50.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-050-answer",
+          "block_type": "text",
+          "text_content": "stat command\n\nExamples:\nstat file.txt  (detailed file information)\nstat -c '%n %s' file.txt  (custom format: name and size)\nstat -c '%A %U %G' file.txt  (permissions, owner, group)\nstat --format='%y' file.txt  (modification time only)\nstat /path/to/directory  (directory information)\n\nShows: size, blocks, permissions, links, owner, group, access/modify/change times, inode number",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:50.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:50.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-051",
+      "information_side": [
+        {
+          "block_id": "fs-051-info",
+          "block_type": "text",
+          "text_content": "How do you monitor changes to a file in real-time?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:51.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-051-answer",
+          "block_type": "text",
+          "text_content": "tail -f command or watch command\n\nExamples:\ntail -f /var/log/syslog  (follow log file continuously)\ntail -F /var/log/syslog  (follow even if file is rotated)\nwatch cat file.txt  (execute cat every 2 seconds)\nwatch -n 1 'ls -la'  (watch directory changes every 1 second)\nwatch -d 'df -h'  (highlight differences in disk usage)\n\n-f follows the file, -F handles file rotation, watch repeats commands",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:51.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:51.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-052",
+      "information_side": [
+        {
+          "block_id": "fs-052-info",
+          "block_type": "text",
+          "text_content": "What is the /lost+found directory?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:52.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-052-answer",
+          "block_type": "text",
+          "text_content": "The /lost+found directory is created by the filesystem check utility (fsck) to store recovered files and directories that were found during filesystem repair but couldn't be placed back in their original location.\n\nThis directory exists on ext2/ext3/ext4 filesystems and contains:\n- Orphaned files recovered during fsck\n- Files with damaged directory entries\n- Data recovered from corrupted filesystem structures\n\nFiles here are numbered (e.g., #12345) and may need manual identification.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:52.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:52.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-053",
+      "information_side": [
+        {
+          "block_id": "fs-053-info",
+          "block_type": "text",
+          "text_content": "How do you display files in reverse order (last line first)?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:53.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-053-answer",
+          "block_type": "text",
+          "text_content": "tac command (reverse of cat)\n\nExamples:\ntac file.txt  (display file with last line first)\ntac file1.txt file2.txt  (reverse display of multiple files)\ncat file.txt | tac  (pipe to tac for reversal)\ntac /var/log/syslog | head  (see most recent log entries)\n\nAlternatively:\nrev file.txt  (reverse each line character by character)\nsort -r file.txt  (reverse alphabetical sort)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:53.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:53.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-054",
+      "information_side": [
+        {
+          "block_id": "fs-054-info",
+          "block_type": "text",
+          "text_content": "How do you calculate the checksum of a file?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:54.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-054-answer",
+          "block_type": "text",
+          "text_content": "Various checksum commands:\n\nmd5sum file.txt  (MD5 hash)\nsha1sum file.txt  (SHA-1 hash)\nsha256sum file.txt  (SHA-256 hash, recommended)\nsha512sum file.txt  (SHA-512 hash)\ncksum file.txt  (CRC checksum)\n\nVerify checksums:\nsha256sum -c checksums.txt  (verify against checksum file)\necho \"expected_hash file.txt\" | sha256sum -c  (verify specific hash)\n\nChecksums verify file integrity and detect changes.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:54.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:54.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-055",
+      "information_side": [
+        {
+          "block_id": "fs-055-info",
+          "block_type": "text",
+          "text_content": "What command splits a large file into smaller pieces?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:55.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-055-answer",
+          "block_type": "text",
+          "text_content": "split command\n\nExamples:\nsplit -b 100M largefile.txt  (split into 100MB pieces)\nsplit -l 1000 file.txt  (split into files of 1000 lines each)\nsplit -n 5 file.txt  (split into 5 equal parts)\nsplit -b 1G -d largefile.zip part_  (use numeric suffixes)\n\nReassemble with:\ncat part_* > reassembled_file\n\n-b: by bytes, -l: by lines, -n: number of parts, -d: numeric suffixes",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:55.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:55.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-056",
+      "information_side": [
+        {
+          "block_id": "fs-056-info",
+          "block_type": "text",
+          "text_content": "How do you find the largest files and directories?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:56.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-056-answer",
+          "block_type": "text",
+          "text_content": "Combination of du and sort:\n\ndu -h /path | sort -hr | head -10  (top 10 largest)\ndu -sh */ | sort -hr  (largest directories in current path)\nfind /path -type f -size +100M  (files larger than 100MB)\nfind /path -type f -exec du -h {} + | sort -hr | head -20\n\nAlternatively:\nls -lSh  (list files sorted by size, largest first)\nls -lShr  (smallest first)\nncdu /path  (interactive disk usage analyzer, if installed)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:56.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:56.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-057",
+      "information_side": [
+        {
+          "block_id": "fs-057-info",
+          "block_type": "text",
+          "text_content": "What is the purpose of the /srv directory?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:57.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-057-answer",
+          "block_type": "text",
+          "text_content": "The /srv directory contains site-specific data served by the system. It's designed to hold data for services provided by the system such as:\n- Web server data (/srv/www or /srv/http)\n- FTP server data (/srv/ftp)\n- Repository data (/srv/git)\n- Database files (/srv/mysql)\n- Other service-specific data\n\nThis separates service data from application files, making system management cleaner and more organized.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:57.000000"
+        }
+      ],
+      "status": "Review",
+      "created_date": "2025-10-14T16:45:57.000000",
+      "last_studied": "2025-10-15T10:05:20.310471"
+    },
+    {
+      "card_id": "fs-058",
+      "information_side": [
+        {
+          "block_id": "fs-058-info",
+          "block_type": "text",
+          "text_content": "How do you create a directory hierarchy in one command?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:58.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-058-answer",
+          "block_type": "text",
+          "text_content": "mkdir -p command\n\nExamples:\nmkdir -p /path/to/deep/directory/structure  (creates all parent directories)\nmkdir -p project/{src,docs,tests}  (creates multiple directories)\nmkdir -p backup/2024/{01,02,03}/daily  (creates date hierarchy)\nmkdir -p ~/work/projects/{web,mobile}/{frontend,backend}\n\nThe -p flag creates parent directories as needed and doesn't error if directories already exist.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:58.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:58.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-059",
+      "information_side": [
+        {
+          "block_id": "fs-059-info",
+          "block_type": "text",
+          "text_content": "How do you find files modified within a specific time range?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:59.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-059-answer",
+          "block_type": "text",
+          "text_content": "find command with time options:\n\nfind /path -mtime -7  (modified within last 7 days)\nfind /path -mtime +30  (modified more than 30 days ago)\nfind /path -mmin -60  (modified within last 60 minutes)\nfind /path -newer reference.txt  (modified after reference file)\nfind /path -newermt \"2024-10-01\"  (modified after specific date)\nfind /path -atime -1  (accessed within last day)\nfind /path -ctime -3  (changed within last 3 days)\n\n-mtime: modification, -atime: access, -ctime: change, -min: minutes",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:59.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:59.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "fs-060",
+      "information_side": [
+        {
+          "block_id": "fs-060-info",
+          "block_type": "text",
+          "text_content": "What command shows the inode number and filesystem information for files?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:00.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "fs-060-answer",
+          "block_type": "text",
+          "text_content": "ls -i command and stat command\n\nExamples:\nls -i file.txt  (show inode number)\nls -li file.txt  (detailed listing with inode)\nstat file.txt  (comprehensive file information including inode)\nfind /path -inum 12345  (find file by inode number)\ndf -i  (show inode usage for filesystems)\n\nInode contains file metadata: permissions, ownership, timestamps, size, and data block pointers. Each file has a unique inode number on its filesystem.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:00.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:00.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "0cc8123e-6f7d-49e6-a509-3c4c99e8228d",
+      "information_side": [
+        {
+          "block_id": "edb903a9-0029-4b50-98cf-39ab9c240481",
+          "block_type": "text",
+          "text_content": "How do you navigate through the Linux file system?",
+          "font_size": 12,
+          "alignment": "left",
+          "created_date": "2025-10-15T17:02:02.636166"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "4f1cd8f8-bddd-4eb3-9221-24fffdc377d6",
+          "block_type": "text",
+          "text_content": "Navigation commands: cd, pwd, and ls. Examples: cd ~ (home directory), cd .. (parent directory), cd /path/to/directory (absolute path), pwd (print current directory), ls (list files and directories), ls -l (detailed list), ls -a (include hidden files)",
+          "font_size": 12,
+          "alignment": "left",
+          "created_date": "2025-10-15T17:02:02.636176"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T17:02:02.636143",
+      "last_studied": null
+    },
+    {
+      "card_id": "d3f034de-e091-41eb-8543-735fda9d672c",
+      "information_side": [
+        {
+          "block_id": "9883a6e0-0908-4512-b69d-ad146246cb8c",
+          "block_type": "text",
+          "text_content": "What is the purpose of the /etc directory?",
+          "font_size": 12,
+          "alignment": "left",
+          "created_date": "2025-10-15T17:02:26.312061"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "4a634943-1ed5-4096-893b-5e6b0248f6f7",
+          "block_type": "text",
+          "text_content": "The /etc directory contains configuration files and directories for the system, including user accounts, groups, network settings, and more. It holds essential system-wide configuration data, excluding user data.",
+          "font_size": 12,
+          "alignment": "left",
+          "created_date": "2025-10-15T17:02:26.312072"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T17:02:26.312035",
+      "last_studied": null
+    },
+    {
+      "card_id": "2be7127f-7b3e-4523-93a2-c26ddb094b20",
+      "information_side": [
+        {
+          "block_id": "196cb82f-4c24-4559-8d55-5a05df77c3c6",
+          "block_type": "text",
+          "text_content": "What command is used to clear the terminal screen?",
+          "font_size": 12,
+          "alignment": "left",
+          "created_date": "2025-10-15T17:02:48.492967"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "edee5ad0-adbc-49f8-a346-4610c4d75cbe",
+          "block_type": "text",
+          "text_content": "clear command. Example: clear (clears the screen, similar to Ctrl+L in some terminals)",
+          "font_size": 12,
+          "alignment": "left",
+          "created_date": "2025-10-15T17:02:48.492976"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-15T17:02:48.492939",
+      "last_studied": null
+    }
+  ]
+}

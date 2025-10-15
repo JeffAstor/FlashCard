@@ -1,0 +1,29 @@
+# Flash Card Application - Python Dependencies
+
+# Core GUI Framework
+PyQt5>=5.15.0
+
+# Image Processing and Manipulation
+Pillow>=8.0.0
+
+# AI Server Dependencies
+flask>=2.0.0
+flask-cors>=4.0.0
+together>=0.2.0
+
+# Optional Dependencies (uncomment if needed)
+# pygame>=2.0.0              # Alternative audio playback
+# send2trash>=1.8.0          # Safe file deletion to system trash
+
+# Note: The following are built-in Python modules (no installation required):
+# - json (configuration and data storage)
+# - zipfile (export/import functionality)
+# - os, pathlib (file system operations)
+# - shutil (file operations)
+# - mimetypes (file type detection)
+# - tempfile (temporary file management)
+# - hashlib (file integrity checking)
+# - datetime (timestamps and timing)
+# - re (regular expressions)
+# - logging (error logging)
+# - sys (system information)

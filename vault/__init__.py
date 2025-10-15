@@ -1,0 +1,1 @@
+# Vault package for vault management and icon handling

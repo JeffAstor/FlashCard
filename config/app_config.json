@@ -1,0 +1,15 @@
+{
+    "window": {
+        "width": 1728,
+        "height": 963,
+        "maximized": true
+    },
+    "vault": {
+        "last_opened": "",
+        "path": "./vault"
+    },
+    "preferences": {
+        "theme": "default",
+        "auto_save": true
+    }
+}

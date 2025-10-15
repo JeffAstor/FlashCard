@@ -1,0 +1,16 @@
+{
+  "name": "Linux File System & Navigation",
+  "description": "Essential file system knowledge, directory structure, and navigation commands for Linux",
+  "icon_set": "default",
+  "tags": [
+    "linux",
+    "filesystem",
+    "navigation",
+    "commands",
+    "beginner"
+  ],
+  "difficulty_level": 2,
+  "created_date": "2025-10-14T16:45:00.000000",
+  "last_accessed": "2025-10-15T17:01:46.408970",
+  "card_count": 63
+}

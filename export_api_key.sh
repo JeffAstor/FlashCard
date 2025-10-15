@@ -1,0 +1,1 @@
+export TOGETHER_API_KEY=<put your key here>

@@ -1,0 +1,254 @@
+2025-10-14 21:27:58,819 - __main__ - ERROR - TOGETHER_AI_API_KEY environment variable not set
+2025-10-14 21:28:21,906 - __main__ - ERROR - TOGETHER_AI_API_KEY environment variable not set
+2025-10-14 21:29:53,735 - __main__ - INFO - Together.ai client initialized successfully
+2025-10-14 21:29:53,745 - __main__ - INFO - Loaded app configuration from config/ai_app_config.json
+2025-10-14 21:29:53,746 - __main__ - INFO - Started 3 worker threads
+2025-10-14 21:29:53,746 - __main__ - INFO - Started cleanup thread
+2025-10-14 21:29:53,746 - __main__ - INFO - AI Server initialized successfully
+2025-10-14 21:29:53,746 - __main__ - INFO - Starting AI Server on 0.0.0.0:5000
+2025-10-14 21:29:58,762 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://100.64.0.1:5000
+2025-10-14 21:29:58,762 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-14 21:30:19,199 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:30:19] "GET /health HTTP/1.1" 200 -
+2025-10-14 21:30:19,202 - __main__ - INFO - Added job 0ad162c5-d387-44b4-9f9c-48388d69a2b5 to queue
+2025-10-14 21:30:19,202 - __main__ - INFO - Processing job 0ad162c5-d387-44b4-9f9c-48388d69a2b5
+2025-10-14 21:30:19,203 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:30:19] "POST /ai_request HTTP/1.1" 200 -
+2025-10-14 21:30:19,471 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:30:19,565 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:30:20,709 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:30:20,789 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:30:21,218 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:30:21] "GET /get_request/0ad162c5-d387-44b4-9f9c-48388d69a2b5 HTTP/1.1" 200 -
+2025-10-14 21:30:22,630 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:30:22,717 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:30:23,232 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:30:23] "GET /get_request/0ad162c5-d387-44b4-9f9c-48388d69a2b5 HTTP/1.1" 200 -
+2025-10-14 21:30:25,246 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:30:25] "GET /get_request/0ad162c5-d387-44b4-9f9c-48388d69a2b5 HTTP/1.1" 200 -
+2025-10-14 21:30:26,194 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:30:26,281 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:30:27,254 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:30:27] "GET /get_request/0ad162c5-d387-44b4-9f9c-48388d69a2b5 HTTP/1.1" 200 -
+2025-10-14 21:30:29,259 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:30:29] "GET /get_request/0ad162c5-d387-44b4-9f9c-48388d69a2b5 HTTP/1.1" 200 -
+2025-10-14 21:30:31,273 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:30:31] "GET /get_request/0ad162c5-d387-44b4-9f9c-48388d69a2b5 HTTP/1.1" 200 -
+2025-10-14 21:30:33,133 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:30:33,203 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:30:33,283 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:30:33] "GET /get_request/0ad162c5-d387-44b4-9f9c-48388d69a2b5 HTTP/1.1" 200 -
+2025-10-14 21:30:35,295 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:30:35] "GET /get_request/0ad162c5-d387-44b4-9f9c-48388d69a2b5 HTTP/1.1" 200 -
+2025-10-14 21:30:37,308 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:30:37] "GET /get_request/0ad162c5-d387-44b4-9f9c-48388d69a2b5 HTTP/1.1" 200 -
+2025-10-14 21:30:39,319 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:30:39] "GET /get_request/0ad162c5-d387-44b4-9f9c-48388d69a2b5 HTTP/1.1" 200 -
+2025-10-14 21:30:39,324 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:30:39] "[31m[1mPOST /ai_request HTTP/1.1[0m" 401 -
+2025-10-14 21:30:39,327 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:30:39] "[31m[1mPOST /ai_request HTTP/1.1[0m" 403 -
+2025-10-14 21:30:39,731 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:30:39,805 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:30:39,875 - __main__ - ERROR - Error processing job 0ad162c5-d387-44b4-9f9c-48388d69a2b5: Error communicating with API: HTTPSConnectionPool(host='api.together.xyz', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)')))
+2025-10-14 21:32:04,906 - __main__ - INFO - Together.ai client initialized successfully
+2025-10-14 21:32:04,907 - __main__ - INFO - Loaded app configuration from config/ai_app_config.json
+2025-10-14 21:32:04,907 - __main__ - INFO - Started 3 worker threads
+2025-10-14 21:32:04,907 - __main__ - INFO - Started cleanup thread
+2025-10-14 21:32:04,907 - __main__ - INFO - AI Server initialized successfully
+2025-10-14 21:32:04,907 - __main__ - INFO - Starting AI Server on 0.0.0.0:5000
+2025-10-14 21:32:04,933 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://100.64.0.1:5000
+2025-10-14 21:32:04,933 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-14 21:32:27,319 - __main__ - INFO - Together.ai client initialized successfully
+2025-10-14 21:32:27,320 - __main__ - INFO - Loaded app configuration from config/ai_app_config.json
+2025-10-14 21:32:27,320 - __main__ - INFO - Started 3 worker threads
+2025-10-14 21:32:27,320 - __main__ - INFO - Started cleanup thread
+2025-10-14 21:32:27,320 - __main__ - INFO - AI Server initialized successfully
+2025-10-14 21:32:27,320 - __main__ - INFO - Starting AI Server on 0.0.0.0:5000
+2025-10-14 21:32:27,324 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://100.64.0.1:5000
+2025-10-14 21:32:27,324 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-14 21:32:39,087 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:32:39] "GET /health HTTP/1.1" 200 -
+2025-10-14 21:32:39,090 - __main__ - INFO - Added job 567d8539-8083-4ad6-9dcc-3c08f8dc36b6 to queue
+2025-10-14 21:32:39,090 - __main__ - INFO - Processing job 567d8539-8083-4ad6-9dcc-3c08f8dc36b6
+2025-10-14 21:32:39,090 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:32:39] "POST /ai_request HTTP/1.1" 200 -
+2025-10-14 21:32:39,251 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:32:39,335 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:32:40,420 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:32:40,515 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:32:41,104 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:32:41] "GET /get_request/567d8539-8083-4ad6-9dcc-3c08f8dc36b6 HTTP/1.1" 200 -
+2025-10-14 21:32:42,608 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:32:42,695 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:32:43,117 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:32:43] "GET /get_request/567d8539-8083-4ad6-9dcc-3c08f8dc36b6 HTTP/1.1" 200 -
+2025-10-14 21:32:45,132 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:32:45] "GET /get_request/567d8539-8083-4ad6-9dcc-3c08f8dc36b6 HTTP/1.1" 200 -
+2025-10-14 21:32:45,900 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:32:45,972 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:32:47,142 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:32:47] "GET /get_request/567d8539-8083-4ad6-9dcc-3c08f8dc36b6 HTTP/1.1" 200 -
+2025-10-14 21:32:49,150 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:32:49] "GET /get_request/567d8539-8083-4ad6-9dcc-3c08f8dc36b6 HTTP/1.1" 200 -
+2025-10-14 21:32:54,130 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:32:54,202 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:33:00,840 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:33:00,915 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:33:00,983 - __main__ - ERROR - Error processing job 567d8539-8083-4ad6-9dcc-3c08f8dc36b6: Error communicating with API: HTTPSConnectionPool(host='api.together.xyz', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)')))
+2025-10-14 21:35:53,075 - __main__ - ERROR - Failed to initialize Together.ai client: Together.__init__() got an unexpected keyword argument 'http_client'
+2025-10-14 21:35:53,075 - __main__ - WARNING - Attempting to initialize Together.ai client without SSL verification
+2025-10-14 21:35:53,077 - __main__ - ERROR - Failed to initialize Together.ai client even without SSL verification: Together.__init__() got an unexpected keyword argument 'http_client'
+2025-10-14 21:37:02,231 - __main__ - INFO - Together.ai client initialized successfully with SSL certificates
+2025-10-14 21:37:02,231 - __main__ - INFO - Loaded app configuration from config/ai_app_config.json
+2025-10-14 21:37:02,231 - __main__ - INFO - Started 3 worker threads
+2025-10-14 21:37:02,231 - __main__ - INFO - Started cleanup thread
+2025-10-14 21:37:02,231 - __main__ - INFO - AI Server initialized successfully
+2025-10-14 21:37:02,232 - __main__ - INFO - Starting AI Server on 0.0.0.0:5000
+2025-10-14 21:37:02,236 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://100.64.0.1:5000
+2025-10-14 21:37:02,236 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-14 21:37:11,514 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:37:11] "GET /health HTTP/1.1" 200 -
+2025-10-14 21:37:11,517 - __main__ - INFO - Added job b575dff3-a214-41c9-879a-4eef714c1a60 to queue
+2025-10-14 21:37:11,517 - __main__ - INFO - Processing job b575dff3-a214-41c9-879a-4eef714c1a60
+2025-10-14 21:37:11,518 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:37:11] "POST /ai_request HTTP/1.1" 200 -
+2025-10-14 21:37:11,707 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:37:11,788 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:37:12,942 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:37:13,025 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:37:13,530 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:37:13] "GET /get_request/b575dff3-a214-41c9-879a-4eef714c1a60 HTTP/1.1" 200 -
+2025-10-14 21:37:14,878 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:37:14,949 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:37:15,545 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:37:15] "GET /get_request/b575dff3-a214-41c9-879a-4eef714c1a60 HTTP/1.1" 200 -
+2025-10-14 21:37:17,553 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:37:17] "GET /get_request/b575dff3-a214-41c9-879a-4eef714c1a60 HTTP/1.1" 200 -
+2025-10-14 21:37:18,229 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:37:18,307 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:37:19,565 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2025 21:37:19] "GET /get_request/b575dff3-a214-41c9-879a-4eef714c1a60 HTTP/1.1" 200 -
+2025-10-14 21:37:24,934 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:37:25,027 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:37:32,526 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:37:32,626 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)'))': /v1/chat/completions
+2025-10-14 21:37:32,716 - __main__ - ERROR - Error processing job b575dff3-a214-41c9-879a-4eef714c1a60: Error communicating with API: HTTPSConnectionPool(host='api.together.xyz', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)')))
+2025-10-15 09:16:50,086 - __main__ - INFO - Found Zscaler certificate at: /etc/ssl/certs/zscaler.pem
+2025-10-15 09:16:50,086 - __main__ - INFO - Using Zscaler certificate bundle for SSL verification
+2025-10-15 09:16:50,086 - __main__ - INFO - Together.ai client initialized successfully
+2025-10-15 09:16:50,093 - __main__ - INFO - Loaded app configuration from config/ai_app_config.json
+2025-10-15 09:16:50,093 - __main__ - INFO - Started 3 worker threads
+2025-10-15 09:16:50,093 - __main__ - INFO - Started cleanup thread
+2025-10-15 09:16:50,093 - __main__ - INFO - AI Server initialized successfully
+2025-10-15 09:16:50,093 - __main__ - INFO - Starting AI Server on 0.0.0.0:5000
+2025-10-15 09:16:55,128 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://100.64.0.1:5000
+2025-10-15 09:16:55,128 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-15 09:17:32,895 - __main__ - INFO - Found Zscaler certificate at: /etc/ssl/certs/zscaler.pem
+2025-10-15 09:17:32,895 - __main__ - INFO - Using Zscaler certificate bundle for SSL verification
+2025-10-15 09:17:32,895 - __main__ - INFO - Together.ai client initialized successfully
+2025-10-15 09:17:32,896 - __main__ - INFO - Loaded app configuration from config/ai_app_config.json
+2025-10-15 09:17:32,896 - __main__ - INFO - Started 3 worker threads
+2025-10-15 09:17:32,896 - __main__ - INFO - Started cleanup thread
+2025-10-15 09:17:32,896 - __main__ - INFO - AI Server initialized successfully
+2025-10-15 09:17:32,896 - __main__ - INFO - Starting AI Server on 0.0.0.0:5000
+2025-10-15 09:17:33,001 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://100.64.0.1:5000
+2025-10-15 09:17:33,001 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-15 09:17:42,308 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 09:17:42] "GET /health HTTP/1.1" 200 -
+2025-10-15 09:17:42,310 - __main__ - INFO - Added job 20e8f6a6-d659-48fc-962d-ba536db9e622 to queue
+2025-10-15 09:17:42,310 - __main__ - INFO - Processing job 20e8f6a6-d659-48fc-962d-ba536db9e622
+2025-10-15 09:17:42,310 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 09:17:42] "POST /ai_request HTTP/1.1" 200 -
+2025-10-15 09:17:44,320 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 09:17:44] "GET /get_request/20e8f6a6-d659-48fc-962d-ba536db9e622 HTTP/1.1" 200 -
+2025-10-15 09:17:45,424 - __main__ - INFO - Successfully processed job 20e8f6a6-d659-48fc-962d-ba536db9e622
+2025-10-15 09:17:46,332 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 09:17:46] "GET /get_request/20e8f6a6-d659-48fc-962d-ba536db9e622 HTTP/1.1" 200 -
+2025-10-15 09:17:46,337 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 09:17:46] "[31m[1mPOST /ai_request HTTP/1.1[0m" 401 -
+2025-10-15 09:17:46,340 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 09:17:46] "[31m[1mPOST /ai_request HTTP/1.1[0m" 403 -
+2025-10-15 09:17:56,535 - __main__ - INFO - Found Zscaler certificate at: /etc/ssl/certs/zscaler.pem
+2025-10-15 09:17:56,535 - __main__ - INFO - Using Zscaler certificate bundle for SSL verification
+2025-10-15 09:17:56,535 - __main__ - INFO - Together.ai client initialized successfully
+2025-10-15 09:17:56,535 - __main__ - INFO - Loaded app configuration from config/ai_app_config.json
+2025-10-15 09:17:56,536 - __main__ - INFO - Started 3 worker threads
+2025-10-15 09:17:56,536 - __main__ - INFO - Started cleanup thread
+2025-10-15 09:17:56,536 - __main__ - INFO - AI Server initialized successfully
+2025-10-15 09:17:56,536 - __main__ - INFO - Starting AI Server on 0.0.0.0:5000
+2025-10-15 09:18:32,039 - __main__ - INFO - Found Zscaler certificate at: /etc/ssl/certs/zscaler.pem
+2025-10-15 09:18:32,039 - __main__ - INFO - Using Zscaler certificate bundle for SSL verification
+2025-10-15 09:18:32,039 - __main__ - INFO - Together.ai client initialized successfully
+2025-10-15 09:18:32,039 - __main__ - INFO - Loaded app configuration from config/ai_app_config.json
+2025-10-15 09:18:32,039 - __main__ - INFO - Started 3 worker threads
+2025-10-15 09:18:32,039 - __main__ - INFO - Started cleanup thread
+2025-10-15 09:18:32,039 - __main__ - INFO - AI Server initialized successfully
+2025-10-15 09:18:32,040 - __main__ - INFO - Starting AI Server on 0.0.0.0:5000
+2025-10-15 09:18:32,043 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://100.64.0.1:5000
+2025-10-15 09:18:32,043 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-15 09:18:50,909 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 09:18:50] "GET /health HTTP/1.1" 200 -
+2025-10-15 09:18:50,913 - __main__ - INFO - Added job 1ec506ff-b6d3-4ab5-85c7-036066d20ea5 to queue
+2025-10-15 09:18:50,913 - __main__ - INFO - Processing job 1ec506ff-b6d3-4ab5-85c7-036066d20ea5
+2025-10-15 09:18:50,914 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 09:18:50] "POST /ai_request HTTP/1.1" 200 -
+2025-10-15 09:18:52,930 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 09:18:52] "GET /get_request/1ec506ff-b6d3-4ab5-85c7-036066d20ea5 HTTP/1.1" 200 -
+2025-10-15 09:18:53,062 - __main__ - INFO - Successfully processed job 1ec506ff-b6d3-4ab5-85c7-036066d20ea5
+2025-10-15 09:18:54,941 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 09:18:54] "GET /get_request/1ec506ff-b6d3-4ab5-85c7-036066d20ea5 HTTP/1.1" 200 -
+2025-10-15 09:18:54,946 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 09:18:54] "[31m[1mPOST /ai_request HTTP/1.1[0m" 401 -
+2025-10-15 09:18:54,952 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 09:18:54] "[31m[1mPOST /ai_request HTTP/1.1[0m" 403 -
+2025-10-15 09:20:00,586 - __main__ - INFO - Found Zscaler certificate at: /etc/ssl/certs/zscaler.pem
+2025-10-15 09:20:00,587 - __main__ - INFO - Using Zscaler certificate bundle for SSL verification
+2025-10-15 09:20:00,587 - __main__ - INFO - Together.ai client initialized successfully
+2025-10-15 09:20:00,587 - __main__ - INFO - Loaded app configuration from config/ai_app_config.json
+2025-10-15 09:20:00,587 - __main__ - INFO - Started 3 worker threads
+2025-10-15 09:20:00,587 - __main__ - INFO - Started cleanup thread
+2025-10-15 09:20:00,587 - __main__ - INFO - AI Server initialized successfully
+2025-10-15 09:20:00,587 - __main__ - INFO - Starting AI Server on 0.0.0.0:5000
+2025-10-15 09:20:00,591 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://100.64.0.1:5000
+2025-10-15 09:20:00,591 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-15 09:20:11,899 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 09:20:11] "GET /health HTTP/1.1" 200 -
+2025-10-15 09:20:11,901 - __main__ - INFO - Added job 28534fc1-1b0b-4c13-a9ee-37fdae75f2c2 to queue
+2025-10-15 09:20:11,902 - __main__ - INFO - Processing job 28534fc1-1b0b-4c13-a9ee-37fdae75f2c2
+2025-10-15 09:20:11,902 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 09:20:11] "POST /ai_request HTTP/1.1" 200 -
+2025-10-15 09:20:13,917 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 09:20:13] "GET /get_request/28534fc1-1b0b-4c13-a9ee-37fdae75f2c2 HTTP/1.1" 200 -
+2025-10-15 09:20:15,848 - __main__ - INFO - Successfully processed job 28534fc1-1b0b-4c13-a9ee-37fdae75f2c2
+2025-10-15 09:20:15,928 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 09:20:15] "GET /get_request/28534fc1-1b0b-4c13-a9ee-37fdae75f2c2 HTTP/1.1" 200 -
+2025-10-15 09:20:15,932 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 09:20:15] "[31m[1mPOST /ai_request HTTP/1.1[0m" 401 -
+2025-10-15 09:20:15,937 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 09:20:15] "[31m[1mPOST /ai_request HTTP/1.1[0m" 403 -
+2025-10-15 15:29:25,680 - __main__ - ERROR - TOGETHER_AI_API_KEY environment variable not set
+2025-10-15 15:29:55,038 - __main__ - INFO - Found Zscaler certificate at: /etc/ssl/certs/zscaler.pem
+2025-10-15 15:29:55,038 - __main__ - INFO - Using Zscaler certificate bundle for SSL verification
+2025-10-15 15:29:55,038 - __main__ - INFO - Together.ai client initialized successfully
+2025-10-15 15:29:55,038 - __main__ - INFO - Loaded app configuration from config/ai_app_config.json
+2025-10-15 15:29:55,038 - __main__ - INFO - Started 3 worker threads
+2025-10-15 15:29:55,038 - __main__ - INFO - Started cleanup thread
+2025-10-15 15:29:55,039 - __main__ - INFO - AI Server initialized successfully
+2025-10-15 15:29:55,039 - __main__ - INFO - Starting AI Server on 0.0.0.0:5000
+2025-10-15 15:30:00,049 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://100.64.0.1:5000
+2025-10-15 15:30:00,049 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-15 15:30:12,504 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 15:30:12] "GET /health HTTP/1.1" 200 -
+2025-10-15 15:30:12,507 - __main__ - INFO - Added job 39708747-1d0b-4247-9db6-21186eddeacf to queue
+2025-10-15 15:30:12,507 - __main__ - INFO - Processing job 39708747-1d0b-4247-9db6-21186eddeacf
+2025-10-15 15:30:12,508 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 15:30:12] "POST /ai_request HTTP/1.1" 200 -
+2025-10-15 15:30:14,524 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 15:30:14] "GET /get_request/39708747-1d0b-4247-9db6-21186eddeacf HTTP/1.1" 200 -
+2025-10-15 15:30:14,765 - __main__ - INFO - Successfully processed job 39708747-1d0b-4247-9db6-21186eddeacf
+2025-10-15 15:30:16,538 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 15:30:16] "GET /get_request/39708747-1d0b-4247-9db6-21186eddeacf HTTP/1.1" 200 -
+2025-10-15 15:30:16,542 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 15:30:16] "[31m[1mPOST /ai_request HTTP/1.1[0m" 401 -
+2025-10-15 15:30:16,545 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 15:30:16] "[31m[1mPOST /ai_request HTTP/1.1[0m" 403 -
+2025-10-15 15:36:14,959 - __main__ - INFO - Found Zscaler certificate at: /etc/ssl/certs/zscaler.pem
+2025-10-15 15:36:14,959 - __main__ - INFO - Using Zscaler certificate bundle for SSL verification
+2025-10-15 15:36:14,959 - __main__ - INFO - Together.ai client initialized successfully
+2025-10-15 15:36:14,960 - __main__ - INFO - Loaded app configuration from config/ai_app_config.json
+2025-10-15 15:36:14,960 - __main__ - INFO - Started 3 worker threads
+2025-10-15 15:36:14,960 - __main__ - INFO - Started cleanup thread
+2025-10-15 15:36:14,960 - __main__ - INFO - AI Server initialized successfully
+2025-10-15 15:36:14,960 - __main__ - INFO - Starting AI Server on 0.0.0.0:5000
+2025-10-15 15:36:15,038 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://100.64.0.1:5000
+2025-10-15 15:36:15,038 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-15 15:36:23,070 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 15:36:23] "GET /health HTTP/1.1" 200 -
+2025-10-15 15:36:23,074 - __main__ - INFO - Added job 3eebd9c9-e66b-42f5-93c5-712ec81809db to queue
+2025-10-15 15:36:23,074 - __main__ - INFO - Processing job 3eebd9c9-e66b-42f5-93c5-712ec81809db
+2025-10-15 15:36:23,075 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 15:36:23] "POST /ai_request HTTP/1.1" 200 -
+2025-10-15 15:36:25,088 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 15:36:25] "GET /get_request/3eebd9c9-e66b-42f5-93c5-712ec81809db HTTP/1.1" 200 -
+2025-10-15 15:36:27,099 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 15:36:27] "GET /get_request/3eebd9c9-e66b-42f5-93c5-712ec81809db HTTP/1.1" 200 -
+2025-10-15 15:36:28,037 - __main__ - INFO - Successfully processed job 3eebd9c9-e66b-42f5-93c5-712ec81809db
+2025-10-15 15:36:29,113 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 15:36:29] "GET /get_request/3eebd9c9-e66b-42f5-93c5-712ec81809db HTTP/1.1" 200 -
+2025-10-15 15:36:29,121 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 15:36:29] "[31m[1mPOST /ai_request HTTP/1.1[0m" 401 -
+2025-10-15 15:36:29,125 - werkzeug - INFO - 127.0.0.1 - - [15/Oct/2025 15:36:29] "[31m[1mPOST /ai_request HTTP/1.1[0m" 403 -

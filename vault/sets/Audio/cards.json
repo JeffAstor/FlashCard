@@ -1,0 +1,29 @@
+{
+  "cards": [
+    {
+      "card_id": "1c0e9c76-a332-4a09-a33b-3e7a2b80db07",
+      "information_side": [
+        {
+          "block_id": "ae29fd86-2a0c-4a88-93d3-e966a0c9df45",
+          "block_type": "text",
+          "text_content": "Translate the following into Japanese.",
+          "font_size": 12,
+          "alignment": "left",
+          "created_date": "2025-10-15T09:41:00.111893"
+        },
+        {
+          "block_id": "1f95a4e7-a222-4fbe-9efa-7ad81361ac96",
+          "block_type": "audio",
+          "audio_path": "stereo-test.mp3",
+          "original_filename": "stereo-test.mp3",
+          "duration": 0,
+          "created_date": "2025-10-14T16:32:30.076316"
+        }
+      ],
+      "answer_side": [],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:32:26.762123",
+      "last_studied": null
+    }
+  ]
+}

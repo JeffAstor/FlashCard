@@ -1,0 +1,1564 @@
+{
+  "cards": [
+    {
+      "card_id": "net-001",
+      "information_side": [
+        {
+          "block_id": "net-001-info",
+          "block_type": "text",
+          "text_content": "How do you connect to a remote server via SSH?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:21.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-001-answer",
+          "block_type": "text",
+          "text_content": "ssh username@hostname\n\nExamples:\nssh user@192.168.1.100\nssh user@server.example.com\nssh -p 2222 user@server.com  (custom port)\nssh -i ~/.ssh/private_key user@server.com  (with key)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:21.000000"
+        }
+      ],
+      "status": "Known",
+      "created_date": "2025-10-14T16:45:21.000000",
+      "last_studied": "2025-10-14T17:00:00.867036"
+    },
+    {
+      "card_id": "net-002",
+      "information_side": [
+        {
+          "block_id": "net-002-info",
+          "block_type": "text",
+          "text_content": "How do you copy files to a remote server?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:22.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-002-answer",
+          "block_type": "text",
+          "text_content": "scp (Secure Copy)\n\nExamples:\nscp file.txt user@server:/path/  (copy to remote)\nscp user@server:/path/file.txt ./  (copy from remote)\nscp -r directory/ user@server:/path/  (copy directory)\nscp -P 2222 file.txt user@server:/path/  (custom port)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:22.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:22.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-003",
+      "information_side": [
+        {
+          "block_id": "net-003-info",
+          "block_type": "text",
+          "text_content": "What command tests network connectivity to a host?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:23.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-003-answer",
+          "block_type": "text",
+          "text_content": "ping hostname\n\nExamples:\nping google.com\nping 192.168.1.1\nping -c 4 google.com  (send 4 packets only)\nping6 ipv6.google.com  (IPv6 ping)\n\nUse Ctrl+C to stop continuous ping",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:23.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:23.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-004",
+      "information_side": [
+        {
+          "block_id": "net-004-info",
+          "block_type": "text",
+          "text_content": "How do you mount a Samba/CIFS share?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:24.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-004-answer",
+          "block_type": "text",
+          "text_content": "mount -t cifs //server/share /mnt/point -o username=user\n\nExample:\nmount -t cifs //192.168.1.100/shared /mnt/shared -o username=john,password=pass\n\nPermanent mount in /etc/fstab:\n//server/share /mnt/point cifs username=user,password=pass 0 0",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:24.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:24.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-005",
+      "information_side": [
+        {
+          "block_id": "net-005-info",
+          "block_type": "text",
+          "text_content": "What file contains hostname-to-IP mappings?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:25.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-005-answer",
+          "block_type": "text",
+          "text_content": "/etc/hosts\n\nFormat: IP_address hostname [aliases]\n\nExample entries:\n127.0.0.1 localhost\n192.168.1.100 server.local server\n::1 localhost ip6-localhost\n\nThis file is checked before DNS resolution.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:25.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:25.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-006",
+      "information_side": [
+        {
+          "block_id": "net-006-info",
+          "block_type": "text",
+          "text_content": "How do you generate SSH key pairs?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:26.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-006-answer",
+          "block_type": "text",
+          "text_content": "ssh-keygen\n\nExamples:\nssh-keygen  (default RSA key)\nssh-keygen -t ed25519  (Ed25519 key, recommended)\nssh-keygen -t rsa -b 4096  (4096-bit RSA key)\nssh-keygen -f ~/.ssh/mykey  (custom filename)\n\nKeys stored in ~/.ssh/ directory",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:26.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:26.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-007",
+      "information_side": [
+        {
+          "block_id": "net-007-info",
+          "block_type": "text",
+          "text_content": "How do you copy your SSH public key to a remote server?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:27.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-007-answer",
+          "block_type": "text",
+          "text_content": "ssh-copy-id user@server\n\nAlternatively:\ncat ~/.ssh/id_rsa.pub | ssh user@server 'cat >> ~/.ssh/authorized_keys'\n\nOr manually:\nscp ~/.ssh/id_rsa.pub user@server:~/.ssh/authorized_keys\n\nEnsures passwordless SSH authentication",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:27.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:27.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-008",
+      "information_side": [
+        {
+          "block_id": "net-008-info",
+          "block_type": "text",
+          "text_content": "What command shows active network connections?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:28.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-008-answer",
+          "block_type": "text",
+          "text_content": "netstat or ss (newer)\n\nExamples:\nnetstat -tuln  (all listening ports)\nnetstat -anp  (all connections with process info)\nss -tuln  (listening ports, faster than netstat)\nss -anp  (all connections with processes)\n\n-t: TCP, -u: UDP, -l: listening, -n: numeric",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:28.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:28.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-009",
+      "information_side": [
+        {
+          "block_id": "net-009-info",
+          "block_type": "text",
+          "text_content": "How do you download files from the internet?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:29.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-009-answer",
+          "block_type": "text",
+          "text_content": "wget or curl\n\nwget examples:\nwget http://example.com/file.zip\nwget -O newname.zip http://example.com/file.zip\n\ncurl examples:\ncurl -O http://example.com/file.zip\ncurl -o newname.zip http://example.com/file.zip\ncurl -L url  (follow redirects)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:29.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:29.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-010",
+      "information_side": [
+        {
+          "block_id": "net-010-info",
+          "block_type": "text",
+          "text_content": "How do you mount an NFS share?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:30.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-010-answer",
+          "block_type": "text",
+          "text_content": "mount -t nfs server:/path /mnt/point\n\nExamples:\nmount -t nfs 192.168.1.100:/shared /mnt/nfs\nmount -t nfs4 server.com:/export /mnt/nfs4\n\nPermanent in /etc/fstab:\nserver:/path /mnt/point nfs defaults 0 0\n\nRequires nfs-utils package installed",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:30.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:30.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-011",
+      "information_side": [
+        {
+          "block_id": "net-011-info",
+          "block_type": "text",
+          "text_content": "How do you configure a static IP address in Linux?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:31.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-011-answer",
+          "block_type": "text",
+          "text_content": "Methods vary by distribution:\n\nUbuntu/Debian (netplan):\n/etc/netplan/01-config.yaml\n\nCentOS/RHEL:\n/etc/sysconfig/network-scripts/ifcfg-eth0\n\nGeneric method:\nip addr add 192.168.1.100/24 dev eth0\nip route add default via 192.168.1.1\n\nPersistent: edit /etc/network/interfaces or use NetworkManager",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:31.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:31.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-012",
+      "information_side": [
+        {
+          "block_id": "net-012-info",
+          "block_type": "text",
+          "text_content": "What command shows the routing table?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:32.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-012-answer",
+          "block_type": "text",
+          "text_content": "Multiple commands:\n\nip route show  (modern, preferred)\nroute -n  (traditional, numeric)\nnetstat -rn  (also shows routing table)\nip route  (short form)\n\nAdd routes:\nip route add 192.168.2.0/24 via 192.168.1.1\nroute add -net 192.168.2.0/24 gw 192.168.1.1\n\nDelete routes:\nip route del 192.168.2.0/24",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:32.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:32.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-013",
+      "information_side": [
+        {
+          "block_id": "net-013-info",
+          "block_type": "text",
+          "text_content": "How do you test connectivity to a specific port on a remote host?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:33.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-013-answer",
+          "block_type": "text",
+          "text_content": "Several methods:\n\ntelnet hostname port\ntelnet 192.168.1.100 80\n\nnc (netcat):\nnc -zv hostname port\nnc -zv 192.168.1.100 22\n\nnmap:\nnmap -p 80 hostname\nnmap -p 22-80 192.168.1.100\n\ntimeout 5 bash -c '</dev/tcp/host/port'  (bash only)\n\n-z: scan only, -v: verbose",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:33.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:33.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-014",
+      "information_side": [
+        {
+          "block_id": "net-014-info",
+          "block_type": "text",
+          "text_content": "How do you configure DNS servers in Linux?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:34.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-014-answer",
+          "block_type": "text",
+          "text_content": "Edit /etc/resolv.conf:\nnameserver 8.8.8.8\nnameserver 8.8.4.4\nsearch example.com\n\nSystemd-resolved systems:\nsystemd-resolve --set-dns=8.8.8.8 --interface=eth0\n\nNetworkManager:\nnmcli con mod connection_name ipv4.dns \"8.8.8.8 8.8.4.4\"\n\nNote: /etc/resolv.conf may be overwritten by DHCP or NetworkManager",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:34.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:34.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-015",
+      "information_side": [
+        {
+          "block_id": "net-015-info",
+          "block_type": "text",
+          "text_content": "What command creates an SSH tunnel for port forwarding?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:35.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-015-answer",
+          "block_type": "text",
+          "text_content": "ssh with port forwarding options:\n\nLocal forwarding:\nssh -L 8080:localhost:80 user@server\n(forwards local port 8080 to server's port 80)\n\nRemote forwarding:\nssh -R 8080:localhost:80 user@server\n(forwards server's port 8080 to local port 80)\n\nDynamic forwarding (SOCKS proxy):\nssh -D 1080 user@server\n\n-N: no remote command, -f: background",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:35.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:35.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-016",
+      "information_side": [
+        {
+          "block_id": "net-016-info",
+          "block_type": "text",
+          "text_content": "How do you share a directory using Samba?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:36.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-016-answer",
+          "block_type": "text",
+          "text_content": "Configure /etc/samba/smb.conf:\n\n[shared]\n  path = /path/to/share\n  browseable = yes\n  writable = yes\n  guest ok = no\n  valid users = username\n\nCommands:\nsudo smbpasswd -a username  (add samba user)\nsudo systemctl restart smbd nmbd\ntestparm  (test configuration)\nsmbclient -L localhost  (list shares)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:36.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:36.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-017",
+      "information_side": [
+        {
+          "block_id": "net-017-info",
+          "block_type": "text",
+          "text_content": "What command traces the network path to a destination?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:37.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-017-answer",
+          "block_type": "text",
+          "text_content": "traceroute or tracepath\n\nExamples:\ntraceroute google.com\ntraceroute 8.8.8.8\ntracepath google.com  (doesn't require root)\ntraceroute6 ipv6.google.com  (IPv6)\nmtr google.com  (combines ping and traceroute)\n\nWindows equivalent: tracert\n\nShows each hop (router) between source and destination with timing information.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:37.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:37.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-018",
+      "information_side": [
+        {
+          "block_id": "net-018-info",
+          "block_type": "text",
+          "text_content": "How do you configure a basic firewall using iptables?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:38.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-018-answer",
+          "block_type": "text",
+          "text_content": "Basic iptables commands:\n\n# Allow SSH\niptables -A INPUT -p tcp --dport 22 -j ACCEPT\n\n# Allow HTTP/HTTPS\niptables -A INPUT -p tcp --dport 80 -j ACCEPT\niptables -A INPUT -p tcp --dport 443 -j ACCEPT\n\n# Allow established connections\niptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT\n\n# Drop all other incoming\niptables -P INPUT DROP\n\n# Save rules\niptables-save > /etc/iptables/rules.v4",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:38.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:38.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-019",
+      "information_side": [
+        {
+          "block_id": "net-019-info",
+          "block_type": "text",
+          "text_content": "How do you perform DNS lookups and troubleshooting?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:39.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-019-answer",
+          "block_type": "text",
+          "text_content": "DNS lookup tools:\n\nnslookup google.com\ndig google.com\ndig @8.8.8.8 google.com  (specific DNS server)\ndig google.com MX  (mail records)\ndig google.com NS  (name servers)\nhost google.com\nresolvectl query google.com  (systemd-resolved)\n\nReverse lookup:\ndig -x 8.8.8.8\nnslookup 8.8.8.8\n\ndig is preferred over nslookup for scripting",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:39.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:39.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-020",
+      "information_side": [
+        {
+          "block_id": "net-020-info",
+          "block_type": "text",
+          "text_content": "How do you set up a basic HTTP server for file sharing?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:40.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-020-answer",
+          "block_type": "text",
+          "text_content": "Quick HTTP servers:\n\nPython 3:\npython3 -m http.server 8000\npython3 -m http.server 8080 --bind 192.168.1.100\n\nPython 2:\npython -m SimpleHTTPServer 8000\n\nNode.js (if installed):\nnpx http-server\n\nBusyBox:\nbusybox httpd -f -p 8000\n\nApache/Nginx for production use. These serve files from current directory.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:40.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:40.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-021",
+      "information_side": [
+        {
+          "block_id": "net-021-info",
+          "block_type": "text",
+          "text_content": "How do you configure and manage network interfaces?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:41.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-021-answer",
+          "block_type": "text",
+          "text_content": "Modern tools:\n\nip link show  (list interfaces)\nip link set eth0 up  (bring interface up)\nip link set eth0 down  (bring interface down)\nip addr show eth0  (show IP addresses)\nip addr add 192.168.1.100/24 dev eth0\n\nLegacy tools:\nifconfig  (show all interfaces)\nifconfig eth0 up/down\nifup eth0 / ifdown eth0\n\nNetworkManager:\nnmcli device status\nnmcli connection show",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:41.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:41.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-022",
+      "information_side": [
+        {
+          "block_id": "net-022-info",
+          "block_type": "text",
+          "text_content": "How do you set up an FTP server in Linux?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:42.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-022-answer",
+          "block_type": "text",
+          "text_content": "Install and configure vsftpd:\n\nsudo apt install vsftpd  (Ubuntu/Debian)\nsudo yum install vsftpd  (CentOS/RHEL)\n\nEdit /etc/vsftpd.conf:\nlocal_enable=YES\nwrite_enable=YES\nchroot_local_user=YES\n\nsudo systemctl start vsftpd\nsudo systemctl enable vsftpd\n\nCreate FTP user:\nsudo useradd -m ftpuser\nsudo passwd ftpuser\n\nConnect: ftp server_ip",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:42.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:42.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-023",
+      "information_side": [
+        {
+          "block_id": "net-023-info",
+          "block_type": "text",
+          "text_content": "What commands show network interface statistics and traffic?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:43.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-023-answer",
+          "block_type": "text",
+          "text_content": "Network statistics commands:\n\nip -s link  (interface statistics)\ncat /proc/net/dev  (raw interface stats)\nnetstat -i  (interface statistics)\niftop  (real-time traffic by connection)\nnload  (real-time bandwidth usage)\nbmon  (bandwidth monitor)\nsar -n DEV 1  (network stats every second)\nss -s  (socket statistics summary)\nwatch -n 1 'cat /proc/net/dev'  (continuous monitoring)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:43.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:43.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-024",
+      "information_side": [
+        {
+          "block_id": "net-024-info",
+          "block_type": "text",
+          "text_content": "How do you configure a VPN connection using OpenVPN?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:44.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-024-answer",
+          "block_type": "text",
+          "text_content": "OpenVPN client setup:\n\nInstall: sudo apt install openvpn\n\nConnect with config file:\nsudo openvpn --config client.ovpn\n\nBackground connection:\nsudo openvpn --config client.ovpn --daemon\n\nSystemd service:\nsudo cp client.ovpn /etc/openvpn/client.conf\nsudo systemctl start openvpn@client\nsudo systemctl enable openvpn@client\n\nCheck connection:\nip route | grep tun",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:44.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:44.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-025",
+      "information_side": [
+        {
+          "block_id": "net-025-info",
+          "block_type": "text",
+          "text_content": "How do you configure network bonding/teaming for redundancy?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:45.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-025-answer",
+          "block_type": "text",
+          "text_content": "Network bonding setup:\n\nLoad bonding module:\nsudo modprobe bonding\n\nCreate bond interface:\necho '+bond0' > /sys/class/net/bonding_masters\n\nSet bonding mode:\necho 'active-backup' > /sys/class/net/bond0/bonding/mode\n\nAdd slave interfaces:\necho '+eth0' > /sys/class/net/bond0/bonding/slaves\necho '+eth1' > /sys/class/net/bond0/bonding/slaves\n\nConfigure IP:\nip addr add 192.168.1.100/24 dev bond0\nip link set bond0 up",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:45.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:45.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-026",
+      "information_side": [
+        {
+          "block_id": "net-026-info",
+          "block_type": "text",
+          "text_content": "What commands help troubleshoot network performance issues?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:46.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-026-answer",
+          "block_type": "text",
+          "text_content": "Network performance tools:\n\nping -f hostname  (flood ping)\niperf3 -c server_ip  (bandwidth test)\niperf3 -s  (start iperf server)\nethtool eth0  (interface capabilities/stats)\nethtool -S eth0  (detailed interface statistics)\nss -tuln  (listening sockets)\nlsof -i  (network connections by process)\ntcpdump -i eth0  (packet capture)\nwireshark  (GUI packet analyzer)\nmtr --report hostname  (network path analysis)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:46.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:46.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-027",
+      "information_side": [
+        {
+          "block_id": "net-027-info",
+          "block_type": "text",
+          "text_content": "How do you set up a simple DHCP server?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:47.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-027-answer",
+          "block_type": "text",
+          "text_content": "ISC DHCP server setup:\n\nInstall: sudo apt install isc-dhcp-server\n\nEdit /etc/dhcp/dhcpd.conf:\nsubnet 192.168.1.0 netmask 255.255.255.0 {\n  range 192.168.1.100 192.168.1.200;\n  option routers 192.168.1.1;\n  option domain-name-servers 8.8.8.8, 8.8.4.4;\n  default-lease-time 600;\n  max-lease-time 7200;\n}\n\nStart service:\nsudo systemctl start isc-dhcp-server\nsudo systemctl enable isc-dhcp-server",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:47.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:47.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-028",
+      "information_side": [
+        {
+          "block_id": "net-028-info",
+          "block_type": "text",
+          "text_content": "How do you configure SSH key-based authentication?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:48.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-028-answer",
+          "block_type": "text",
+          "text_content": "SSH key authentication setup:\n\n1. Generate key pair:\nssh-keygen -t ed25519 -C \"user@hostname\"\n\n2. Copy public key to server:\nssh-copy-id user@server\n\n3. Or manually:\ncat ~/.ssh/id_ed25519.pub | ssh user@server 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'\n\n4. Set permissions on server:\nchmod 700 ~/.ssh\nchmod 600 ~/.ssh/authorized_keys\n\n5. Disable password auth in /etc/ssh/sshd_config:\nPasswordAuthentication no",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:48.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:48.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-029",
+      "information_side": [
+        {
+          "block_id": "net-029-info",
+          "block_type": "text",
+          "text_content": "What are common network troubleshooting steps in Linux?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:49.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-029-answer",
+          "block_type": "text",
+          "text_content": "Network troubleshooting workflow:\n\n1. Check physical connectivity:\nip link show  (interface status)\nethtool eth0  (link detection)\n\n2. Check IP configuration:\nip addr show\nip route show\n\n3. Test local connectivity:\nping 127.0.0.1  (loopback)\nping gateway_ip\n\n4. Test DNS:\nnslookup google.com\ndig google.com\n\n5. Check services:\nss -tuln  (listening services)\nsystemctl status networking\n\n6. Check logs:\njournalctl -u NetworkManager\ntail /var/log/syslog",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:49.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:49.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-030",
+      "information_side": [
+        {
+          "block_id": "net-030-info",
+          "block_type": "text",
+          "text_content": "How do you configure network bridges for virtualization?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:50.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-030-answer",
+          "block_type": "text",
+          "text_content": "Network bridge setup:\n\nInstall bridge utilities:\nsudo apt install bridge-utils\n\nCreate bridge:\nsudo brctl addbr br0\nsudo brctl addif br0 eth0\nsudo ip link set dev br0 up\nsudo ip link set dev eth0 up\n\nConfigure IP on bridge:\nsudo ip addr add 192.168.1.100/24 dev br0\nsudo ip route add default via 192.168.1.1\n\nModern method with ip command:\nsudo ip link add br0 type bridge\nsudo ip link set eth0 master br0\n\nShow bridge info:\nbrctl show\nbridge link",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:50.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:50.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-031",
+      "information_side": [
+        {
+          "block_id": "net-031-info",
+          "block_type": "text",
+          "text_content": "How do you configure VLAN interfaces in Linux?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:51.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-031-answer",
+          "block_type": "text",
+          "text_content": "VLAN configuration:\n\nInstall VLAN support:\nsudo apt install vlan\nsudo modprobe 8021q\n\nCreate VLAN interface:\nsudo ip link add link eth0 name eth0.100 type vlan id 100\nsudo ip link set dev eth0.100 up\nsudo ip addr add 192.168.100.10/24 dev eth0.100\n\nLegacy method:\nsudo vconfig add eth0 100\nsudo ifconfig eth0.100 192.168.100.10/24 up\n\nPersistent: add to /etc/network/interfaces or use NetworkManager",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:51.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:51.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-032",
+      "information_side": [
+        {
+          "block_id": "net-032-info",
+          "block_type": "text",
+          "text_content": "What commands manage wireless networking in Linux?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:52.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-032-answer",
+          "block_type": "text",
+          "text_content": "Wireless network tools:\n\nScan for networks:\nsudo iwlist scan\nsudo iw dev wlan0 scan | grep SSID\n\nConnect to network:\nsudo iwconfig wlan0 essid \"NetworkName\" key \"password\"\n\nModern tools:\nnmcli dev wifi list\nnmcli dev wifi connect \"SSID\" password \"password\"\n\nLow-level tools:\nwpa_supplicant  (WPA/WPA2 authentication)\niw  (modern wireless configuration)\nwireless-tools  (legacy iwconfig, iwlist)\n\nCheck status:\niwconfig wlan0",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:52.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:52.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-033",
+      "information_side": [
+        {
+          "block_id": "net-033-info",
+          "block_type": "text",
+          "text_content": "How do you set up port forwarding with iptables?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:53.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-033-answer",
+          "block_type": "text",
+          "text_content": "Port forwarding with iptables:\n\nEnable IP forwarding:\necho 1 > /proc/sys/net/ipv4/ip_forward\n# Make permanent in /etc/sysctl.conf: net.ipv4.ip_forward=1\n\nNAT rule (external to internal):\niptables -t nat -A PREROUTING -p tcp --dport 8080 -j DNAT --to-destination 192.168.1.100:80\n\nMasquerade for outbound:\niptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE\n\nAllow forwarding:\niptables -A FORWARD -p tcp -d 192.168.1.100 --dport 80 -j ACCEPT",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:53.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:53.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-034",
+      "information_side": [
+        {
+          "block_id": "net-034-info",
+          "block_type": "text",
+          "text_content": "How do you configure a network proxy in Linux?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:54.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-034-answer",
+          "block_type": "text",
+          "text_content": "Proxy configuration methods:\n\nEnvironment variables:\nexport http_proxy=http://proxy.company.com:8080\nexport https_proxy=http://proxy.company.com:8080\nexport no_proxy=localhost,127.0.0.1,*.local\n\nSystem-wide in /etc/environment:\nhttp_proxy=http://proxy.company.com:8080\nhttps_proxy=http://proxy.company.com:8080\n\nAPT proxy (/etc/apt/apt.conf):\nAcquire::http::Proxy \"http://proxy.company.com:8080\";\n\nCurl/wget:\ncurl --proxy http://proxy.company.com:8080 url\nwget --proxy=on url",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:54.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:54.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-035",
+      "information_side": [
+        {
+          "block_id": "net-035-info",
+          "block_type": "text",
+          "text_content": "What are the main network namespaces commands?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:55.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-035-answer",
+          "block_type": "text",
+          "text_content": "Network namespace management:\n\nCreate namespace:\nsudo ip netns add mynetns\n\nList namespaces:\nip netns list\n\nExecute command in namespace:\nsudo ip netns exec mynetns command\nsudo ip netns exec mynetns bash\n\nMove interface to namespace:\nsudo ip link set eth1 netns mynetns\n\nConnect namespaces with veth pair:\nsudo ip link add veth0 type veth peer name veth1\nsudo ip link set veth1 netns mynetns\n\nDelete namespace:\nsudo ip netns delete mynetns",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:55.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:55.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-036",
+      "information_side": [
+        {
+          "block_id": "net-036-info",
+          "block_type": "text",
+          "text_content": "How do you configure NFS server for file sharing?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:56.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-036-answer",
+          "block_type": "text",
+          "text_content": "NFS server setup:\n\nInstall NFS server:\nsudo apt install nfs-kernel-server\n\nConfigure exports in /etc/exports:\n/shared/data 192.168.1.0/24(rw,sync,no_subtree_check)\n/home/user 192.168.1.100(rw,sync,no_root_squash)\n\nExport the shares:\nsudo exportfs -ra\nsudo systemctl restart nfs-kernel-server\n\nCheck exports:\nsudo exportfs -v\nshowmount -e localhost\n\nFirewall (if needed):\nsudo ufw allow nfs",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:56.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:56.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-037",
+      "information_side": [
+        {
+          "block_id": "net-037-info",
+          "block_type": "text",
+          "text_content": "What commands help with network packet analysis?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:57.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-037-answer",
+          "block_type": "text",
+          "text_content": "Packet analysis tools:\n\ntcpdump -i eth0  (capture packets)\ntcpdump -i eth0 port 80  (HTTP traffic only)\ntcpdump -i eth0 -w capture.pcap  (save to file)\ntcpdump -r capture.pcap  (read from file)\n\nwireshark  (GUI packet analyzer)\ntshark -i eth0  (command-line Wireshark)\n\nngrep -d eth0 \"GET\" tcp port 80  (grep for packets)\nss -i  (socket statistics with details)\nnetstat -anp  (active connections with processes)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:57.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:57.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-038",
+      "information_side": [
+        {
+          "block_id": "net-038-info",
+          "block_type": "text",
+          "text_content": "How do you set up SSH agent for key management?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:58.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-038-answer",
+          "block_type": "text",
+          "text_content": "SSH agent management:\n\nStart SSH agent:\neval $(ssh-agent)\n# Or: ssh-agent bash\n\nAdd keys to agent:\nssh-add ~/.ssh/id_rsa\nssh-add ~/.ssh/id_ed25519\nssh-add -l  (list loaded keys)\n\nRemove keys:\nssh-add -d ~/.ssh/id_rsa  (remove specific key)\nssh-add -D  (remove all keys)\n\nAutomatic on login (add to ~/.bashrc):\nif [ -z \"$SSH_AUTH_SOCK\" ]; then\n  eval $(ssh-agent)\n  ssh-add\nfi",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:58.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:58.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-039",
+      "information_side": [
+        {
+          "block_id": "net-039-info",
+          "block_type": "text",
+          "text_content": "How do you configure UFW (Uncomplicated Firewall)?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:59.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-039-answer",
+          "block_type": "text",
+          "text_content": "UFW firewall configuration:\n\nBasic commands:\nsudo ufw enable  (enable firewall)\nsudo ufw disable  (disable firewall)\nsudo ufw status  (show current rules)\nsudo ufw status verbose  (detailed status)\n\nAllow/deny rules:\nsudo ufw allow 22  (allow SSH)\nsudo ufw allow ssh  (allow SSH by name)\nsudo ufw allow 80/tcp  (allow HTTP)\nsudo ufw deny 23  (deny telnet)\nsudo ufw allow from 192.168.1.0/24\n\nDelete rules:\nsudo ufw delete allow 80\nsudo ufw --force reset  (reset all rules)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:59.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:59.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-040",
+      "information_side": [
+        {
+          "block_id": "net-040-info",
+          "block_type": "text",
+          "text_content": "What are the key files for persistent network configuration?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:00.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-040-answer",
+          "block_type": "text",
+          "text_content": "Important network configuration files:\n\n/etc/network/interfaces  (Debian/Ubuntu traditional)\n/etc/netplan/*.yaml  (Ubuntu 18.04+ with netplan)\n/etc/sysconfig/network-scripts/  (CentOS/RHEL)\n/etc/hosts  (hostname to IP mappings)\n/etc/resolv.conf  (DNS configuration)\n/etc/hostname  (system hostname)\n/etc/nsswitch.conf  (name resolution order)\n/etc/systemd/network/  (systemd-networkd)\n\nNetworkManager config:\n/etc/NetworkManager/NetworkManager.conf\n/etc/NetworkManager/system-connections/",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:00.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:00.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-041",
+      "information_side": [
+        {
+          "block_id": "net-041-info",
+          "block_type": "text",
+          "text_content": "How do you configure IPv6 networking in Linux?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:01.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-041-answer",
+          "block_type": "text",
+          "text_content": "IPv6 configuration:\n\nEnable IPv6:\necho 0 > /proc/sys/net/ipv6/conf/all/disable_ipv6\n\nAdd IPv6 address:\nip -6 addr add 2001:db8::1/64 dev eth0\nip -6 route add default via 2001:db8::1\n\nShow IPv6 info:\nip -6 addr show\nip -6 route show\n\nIPv6 tools:\nping6 ipv6.google.com\ntraceroute6 ipv6.google.com\ndig AAAA google.com  (IPv6 DNS lookup)\n\nAutomatic configuration:\nsysctl net.ipv6.conf.eth0.accept_ra=1",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:01.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:01.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-042",
+      "information_side": [
+        {
+          "block_id": "net-042-info",
+          "block_type": "text",
+          "text_content": "What commands help with network load balancing and high availability?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:02.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-042-answer",
+          "block_type": "text",
+          "text_content": "Load balancing tools:\n\nHAProxy configuration:\n/etc/haproxy/haproxy.cfg\nbackend webservers\n  balance roundrobin\n  server web1 192.168.1.10:80 check\n  server web2 192.168.1.11:80 check\n\nKeepalived (VRRP):\nvrrp_instance VI_1 {\n  state MASTER\n  interface eth0\n  virtual_router_id 51\n  priority 100\n  virtual_ipaddress {\n    192.168.1.100\n  }\n}\n\nNginx load balancing:\nupstream backend {\n  server 192.168.1.10;\n  server 192.168.1.11;\n}",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:02.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:02.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-043",
+      "information_side": [
+        {
+          "block_id": "net-043-info",
+          "block_type": "text",
+          "text_content": "How do you configure network QoS (Quality of Service) with tc?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:03.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-043-answer",
+          "block_type": "text",
+          "text_content": "Traffic control (tc) for QoS:\n\nAdd qdisc (queuing discipline):\ntc qdisc add dev eth0 root tbf rate 1mbit burst 32kbit latency 400ms\n\nLimit bandwidth:\ntc qdisc add dev eth0 root netem delay 100ms\ntc qdisc add dev eth0 root netem loss 1%\n\nClass-based queueing:\ntc qdisc add dev eth0 root handle 1: htb default 12\ntc class add dev eth0 parent 1: classid 1:1 htb rate 100mbit\ntc class add dev eth0 parent 1:1 classid 1:10 htb rate 80mbit ceil 100mbit\n\nShow rules:\ntc qdisc show dev eth0\ntc class show dev eth0",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:03.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:03.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-044",
+      "information_side": [
+        {
+          "block_id": "net-044-info",
+          "block_type": "text",
+          "text_content": "How do you set up WireGuard VPN in Linux?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:04.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-044-answer",
+          "block_type": "text",
+          "text_content": "WireGuard VPN setup:\n\nInstall WireGuard:\nsudo apt install wireguard\n\nGenerate keys:\nwg genkey | tee private.key | wg pubkey > public.key\n\nCreate config /etc/wireguard/wg0.conf:\n[Interface]\nPrivateKey = <private_key>\nAddress = 10.0.0.1/24\nListenPort = 51820\n\n[Peer]\nPublicKey = <peer_public_key>\nAllowedIPs = 10.0.0.2/32\nEndpoint = peer.example.com:51820\n\nStart WireGuard:\nsudo wg-quick up wg0\nsudo systemctl enable wg-quick@wg0",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:04.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:04.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-045",
+      "information_side": [
+        {
+          "block_id": "net-045-info",
+          "block_type": "text",
+          "text_content": "What commands monitor network security and intrusion detection?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:05.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-045-answer",
+          "block_type": "text",
+          "text_content": "Network security monitoring:\n\nPort scanning detection:\nnmap -sS target_ip  (SYN scan)\nnmap -sU target_ip  (UDP scan)\nnmap -A target_ip  (aggressive scan)\n\nNetwork monitoring:\narp-scan 192.168.1.0/24  (discover devices)\nfail2ban-client status  (intrusion prevention)\nrkhunter --check  (rootkit detection)\nchkrootkit  (rootkit checker)\n\nLog monitoring:\ntail -f /var/log/auth.log  (authentication attempts)\njournal -f _SYSTEMD_UNIT=ssh.service\nlastb  (failed login attempts)\nlast  (successful logins)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:05.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:05.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-046",
+      "information_side": [
+        {
+          "block_id": "net-046-info",
+          "block_type": "text",
+          "text_content": "How do you configure network multicast in Linux?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:06.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-046-answer",
+          "block_type": "text",
+          "text_content": "Multicast configuration:\n\nEnable multicast routing:\necho 1 > /proc/sys/net/ipv4/conf/all/mc_forwarding\n\nAdd multicast route:\nroute add -net 224.0.0.0 netmask 240.0.0.0 dev eth0\nip route add 224.0.0.0/4 dev eth0\n\nJoin multicast group:\nsmcroute -j eth0 239.1.1.1\n\nTest multicast:\nping 224.0.0.1  (all systems multicast)\nnetstat -gn  (show multicast group memberships)\n\nTools:\nmcjoin  (join multicast groups)\niperf3 -c 239.1.1.1  (multicast performance test)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:06.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:06.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-047",
+      "information_side": [
+        {
+          "block_id": "net-047-info",
+          "block_type": "text",
+          "text_content": "How do you configure network time synchronization?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:07.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-047-answer",
+          "block_type": "text",
+          "text_content": "Network time synchronization:\n\nNTP configuration (/etc/ntp.conf):\nserver 0.pool.ntp.org iburst\nserver 1.pool.ntp.org iburst\nserver 2.pool.ntp.org iburst\n\nSystemd-timesyncd (/etc/systemd/timesyncd.conf):\nNTP=0.pool.ntp.org 1.pool.ntp.org\nFallbackNTP=time.nist.gov\n\nCommands:\ntimedatectl status  (show time sync status)\ntimedatectl set-ntp true  (enable NTP)\nchrony sources  (chrony time sources)\nntpq -p  (NTP peer status)\ndate  (show current time)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:07.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:07.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-048",
+      "information_side": [
+        {
+          "block_id": "net-048-info",
+          "block_type": "text",
+          "text_content": "What are the main commands for managing SSL/TLS certificates?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:08.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-048-answer",
+          "block_type": "text",
+          "text_content": "SSL/TLS certificate management:\n\nGenerate private key:\nopenssl genrsa -out private.key 2048\n\nCreate certificate signing request:\nopenssl req -new -key private.key -out request.csr\n\nSelf-signed certificate:\nopenssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365 -nodes\n\nView certificate:\nopenssl x509 -in cert.pem -text -noout\nopenssl s_client -connect google.com:443 -servername google.com\n\nLet's Encrypt:\ncertbot --nginx -d example.com\ncertbot renew",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:08.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:08.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-049",
+      "information_side": [
+        {
+          "block_id": "net-049-info",
+          "block_type": "text",
+          "text_content": "How do you configure and monitor network bandwidth usage?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:09.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-049-answer",
+          "block_type": "text",
+          "text_content": "Bandwidth monitoring and control:\n\nReal-time monitoring:\niftop -i eth0  (interface traffic)\nnethogs  (per-process bandwidth)\nbandwidth  (command-line monitoring)\nslurm -i eth0  (network statistics)\nvnstat -i eth0  (historical usage)\n\nTraffic shaping:\ntc qdisc add dev eth0 root tbf rate 1mbit burst 32kbit\nwonderland  (graphical traffic shaper)\ntrickle -d 50 -u 10 wget large_file  (per-process limiting)\n\nMonitoring tools:\nsar -n DEV 1  (network device statistics)\niptraf-ng  (network monitoring)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:09.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:09.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-050",
+      "information_side": [
+        {
+          "block_id": "net-050-info",
+          "block_type": "text",
+          "text_content": "How do you configure network logging and syslog?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:10.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-050-answer",
+          "block_type": "text",
+          "text_content": "Network logging configuration:\n\nRsyslog configuration (/etc/rsyslog.conf):\n# Enable remote logging\n*.* @@logserver.example.com:514\n\n# Log iptables\nkern.warning /var/log/iptables.log\n\nSystemd journal:\njournalctl -u systemd-networkd\njournalctl -f --grep ssh\njournalctl --since \"1 hour ago\" _SYSTEMD_UNIT=NetworkManager.service\n\nNetwork service logs:\ntail -f /var/log/syslog | grep dhcp\ntail -f /var/log/auth.log | grep ssh\nlogger -p local0.info \"Custom network message\"\n\nLog rotation:\n/etc/logrotate.d/networking",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:10.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:10.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-051",
+      "information_side": [
+        {
+          "block_id": "net-051-info",
+          "block_type": "text",
+          "text_content": "How do you configure network bridges in Linux?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:11.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-051-answer",
+          "block_type": "text",
+          "text_content": "Network bridge configuration:\n\nCreate bridge:\nip link add name br0 type bridge\nip link set dev br0 up\n\nAdd interfaces to bridge:\nip link set dev eth0 master br0\nip link set dev eth1 master br0\n\nBridge utilities:\nbrctl addbr br0\nbrctl addif br0 eth0\nbrctl addif br0 eth1\nbrctl stp br0 on  (enable spanning tree)\n\nShow bridge info:\nbridge link show\nbrctl show\nbridge fdb show  (forwarding database)\n\nRemove from bridge:\nip link set dev eth0 nomaster",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:11.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:11.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-052",
+      "information_side": [
+        {
+          "block_id": "net-052-info",
+          "block_type": "text",
+          "text_content": "What commands help with network packet filtering and analysis?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:12.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-052-answer",
+          "block_type": "text",
+          "text_content": "Packet filtering and analysis:\n\nTcpdump filters:\ntcpdump -i eth0 host 192.168.1.1\ntcpdump -i eth0 port 80\ntcpdump -i eth0 'tcp and dst port 443'\ntcpdump -i eth0 icmp\ntcpdump -i eth0 -w capture.pcap\n\nWireshark (text mode):\ntshark -i eth0 -c 100\ntshark -r capture.pcap -Y \"http.request\"\n\nAdvanced filtering:\ntcpdump 'src net 192.168.1.0/24 and dst port 22'\ntcpdump 'tcp[tcpflags] & tcp-syn != 0'\nngrep -d eth0 \"GET\" port 80",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:12.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:12.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-053",
+      "information_side": [
+        {
+          "block_id": "net-053-info",
+          "block_type": "text",
+          "text_content": "How do you configure network namespaces in Linux?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:13.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-053-answer",
+          "block_type": "text",
+          "text_content": "Network namespaces:\n\nCreate namespace:\nip netns add myns\nip netns list\n\nExecute in namespace:\nip netns exec myns bash\nip netns exec myns ip addr show\n\nConnect namespaces:\nip link add veth0 type veth peer name veth1\nip link set veth1 netns myns\nip netns exec myns ip addr add 10.0.1.2/24 dev veth1\nip netns exec myns ip link set veth1 up\n\nDelete namespace:\nip netns delete myns\n\nNetwork isolation:\nunshare --net --uts /bin/bash",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:13.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:13.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-054",
+      "information_side": [
+        {
+          "block_id": "net-054-info",
+          "block_type": "text",
+          "text_content": "What are the essential commands for DHCP client and server management?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:14.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-054-answer",
+          "block_type": "text",
+          "text_content": "DHCP management:\n\nDHCP client:\ndhclient eth0  (request new lease)\ndhclient -r eth0  (release lease)\ndhclient -v eth0  (verbose mode)\ncat /var/lib/dhcp/dhclient.leases  (view leases)\n\nDHCP server (dhcpd):\n/etc/dhcp/dhcpd.conf configuration:\nsubnet 192.168.1.0 netmask 255.255.255.0 {\n  range 192.168.1.100 192.168.1.200;\n  option domain-name-servers 8.8.8.8;\n  option routers 192.168.1.1;\n}\n\nDHCP logs:\ntail -f /var/log/syslog | grep dhcp\nsystemctl status isc-dhcp-server",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:14.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:14.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-055",
+      "information_side": [
+        {
+          "block_id": "net-055-info",
+          "block_type": "text",
+          "text_content": "How do you configure network bonding (link aggregation) in Linux?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:15.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-055-answer",
+          "block_type": "text",
+          "text_content": "Network bonding configuration:\n\nLoad bonding module:\nmodprobe bonding\n\nCreate bond interface:\necho +bond0 > /sys/class/net/bonding_masters\necho 802.3ad > /sys/class/net/bond0/bonding/mode\necho 100 > /sys/class/net/bond0/bonding/miimon\n\nAdd slaves:\nifconfig eth0 down\nifconfig eth1 down\necho +eth0 > /sys/class/net/bond0/bonding/slaves\necho +eth1 > /sys/class/net/bond0/bonding/slaves\n\nBonding modes:\n0 = balance-rr\n1 = active-backup\n2 = balance-xor\n4 = 802.3ad (LACP)\n\nShow bond status:\ncat /proc/net/bonding/bond0",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:15.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:15.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-056",
+      "information_side": [
+        {
+          "block_id": "net-056-info",
+          "block_type": "text",
+          "text_content": "What commands help with network performance tuning and optimization?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:16.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-056-answer",
+          "block_type": "text",
+          "text_content": "Network performance tuning:\n\nTCP tuning parameters:\necho 'net.core.rmem_max = 67108864' >> /etc/sysctl.conf\necho 'net.core.wmem_max = 67108864' >> /etc/sysctl.conf\necho 'net.ipv4.tcp_window_scaling = 1' >> /etc/sysctl.conf\necho 'net.ipv4.tcp_timestamps = 1' >> /etc/sysctl.conf\n\nInterface optimization:\nethtool -G eth0 rx 4096 tx 4096  (ring buffers)\nethtool -K eth0 tso on gso on  (offloading)\nethtool -A eth0 rx on tx on  (flow control)\n\nCongestion control:\necho cubic > /proc/sys/net/ipv4/tcp_congestion_control\nsysctl -p  (apply sysctl changes)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:16.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:16.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-057",
+      "information_side": [
+        {
+          "block_id": "net-057-info",
+          "block_type": "text",
+          "text_content": "How do you configure network access control with MAC address filtering?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:17.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-057-answer",
+          "block_type": "text",
+          "text_content": "MAC address filtering:\n\nView MAC addresses:\narp -a  (ARP table)\nip neigh show  (neighbor table)\ncat /proc/net/arp\n\niptables MAC filtering:\niptables -A INPUT -m mac --mac-source 00:11:22:33:44:55 -j ACCEPT\niptables -A INPUT -m mac --mac-source ! 00:11:22:33:44:55 -j DROP\n\nChange MAC address:\nifconfig eth0 down\nifconfig eth0 hw ether 00:11:22:33:44:66\nifconfig eth0 up\n\nOr with ip command:\nip link set dev eth0 address 00:11:22:33:44:66\n\nMAC address tools:\nmacchanger -r eth0  (random MAC)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:17.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:17.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-058",
+      "information_side": [
+        {
+          "block_id": "net-058-info",
+          "block_type": "text",
+          "text_content": "What are the essential commands for DNS troubleshooting and configuration?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:18.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-058-answer",
+          "block_type": "text",
+          "text_content": "DNS troubleshooting:\n\nBasic DNS queries:\nnslookup google.com\ndig google.com\ndig @8.8.8.8 google.com\ndig google.com MX  (mail exchange records)\ndig google.com NS  (name servers)\ndig -x 8.8.8.8  (reverse lookup)\n\nDNS configuration:\n/etc/resolv.conf:\nnameserver 8.8.8.8\nnameserver 1.1.1.1\nsearch example.com\n\nLocal DNS:\n/etc/hosts:\n192.168.1.10 server.local\n\nDNS cache:\nsystemd-resolve --flush-caches\nsystemd-resolve --status",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:18.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:18.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-059",
+      "information_side": [
+        {
+          "block_id": "net-059-info",
+          "block_type": "text",
+          "text_content": "How do you configure network monitoring with SNMP?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:19.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-059-answer",
+          "block_type": "text",
+          "text_content": "SNMP configuration and monitoring:\n\nInstall SNMP:\nsudo apt install snmp snmp-mibs-downloader\n\nSNMP queries:\nsnmpwalk -v2c -c public localhost system\nsnmpget -v2c -c public localhost 1.3.6.1.2.1.1.1.0\nsnmpbulkwalk -v2c -c public localhost 1.3.6.1.2.1.2.2.1.2\n\nSNMPd configuration (/etc/snmp/snmpd.conf):\nrocommunity public localhost\nsyslocation \"Server Room\"\nsyscontact \"admin@example.com\"\n\nNetwork device monitoring:\nsnmpwalk -v2c -c public router_ip 1.3.6.1.2.1.2.2.1.10  (interface stats)\n\nMIB browser:\nsnmptranslate -Td 1.3.6.1.2.1.1.1.0",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:19.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:19.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "net-060",
+      "information_side": [
+        {
+          "block_id": "net-060-info",
+          "block_type": "text",
+          "text_content": "What are the key commands for network troubleshooting and diagnostics?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:20.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "net-060-answer",
+          "block_type": "text",
+          "text_content": "Comprehensive network diagnostics:\n\nConnectivity tests:\nping -c 4 google.com\ntraceroute google.com\nmtr google.com  (continuous trace)\ntelnet host port  (port connectivity)\nnc -zv host port  (netcat port scan)\n\nInterface diagnostics:\nethtool eth0  (link status)\nmii-tool eth0  (media info)\ndmesg | grep eth  (kernel messages)\n\nNetwork stack:\nss -tuln  (listening ports)\nlsof -i  (network connections)\nnetstat -rn  (routing table)\nip addr show  (interface info)\nip route show  (routes)\n\nPerformance:\niperf3 -s  (server mode)\niperf3 -c server_ip  (client test)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:20.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:20.000000",
+      "last_studied": null
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Linux System Administration",
+  "description": "Core system administration tasks, process management, and system monitoring commands",
+  "icon_set": "default",
+  "tags": ["linux", "sysadmin", "processes", "services", "intermediate"],
+  "difficulty_level": 3,
+  "created_date": "2025-10-14T16:45:00.000000",
+  "last_accessed": null,
+  "card_count": 60
+}

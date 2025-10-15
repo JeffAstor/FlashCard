@@ -1,0 +1,28 @@
+{
+  "app_codes": {
+    "flashcards_app_001": {
+      "name": "FlashCards App",
+      "allowed_request_types": [
+        "generate_flashcard",
+        "explain_concept", 
+        "create_quiz",
+        "summarize_content",
+        "generate_questions",
+        "create_study_guide"
+      ],
+      "rate_limit": "100/hour",
+      "max_tokens": 1000,
+      "temperature": 0.7
+    },
+    "test_app_123": {
+      "name": "Test Application",
+      "allowed_request_types": [
+        "test_request",
+        "debug_request"
+      ],
+      "rate_limit": "50/hour", 
+      "max_tokens": 500,
+      "temperature": 0.5
+    }
+  }
+}

@@ -1,0 +1,1564 @@
+{
+  "cards": [
+    {
+      "card_id": "sa-001",
+      "information_side": [
+        {
+          "block_id": "sa-001-info",
+          "block_type": "text",
+          "text_content": "What command shows all running processes?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:11.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-001-answer",
+          "block_type": "text",
+          "text_content": "ps aux\n\nThis shows all processes with detailed information:\n- a: show processes for all users\n- u: display user-oriented format\n- x: include processes not attached to a terminal\n\nAlternatively: ps -ef",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:11.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:11.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-002",
+      "information_side": [
+        {
+          "block_id": "sa-002-info",
+          "block_type": "text",
+          "text_content": "How do you kill a process by its PID?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:12.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-002-answer",
+          "block_type": "text",
+          "text_content": "kill PID\n\nExamples:\nkill 1234  (terminate process with PID 1234)\nkill -9 1234  (force kill with SIGKILL)\nkill -15 1234  (graceful termination with SIGTERM)\n\nUse 'ps aux | grep processname' to find the PID first.",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:12.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:12.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-003",
+      "information_side": [
+        {
+          "block_id": "sa-003-info",
+          "block_type": "text",
+          "text_content": "What command displays real-time system resource usage?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:13.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-003-answer",
+          "block_type": "text",
+          "text_content": "top\n\nShows real-time view of:\n- CPU usage\n- Memory usage\n- Running processes\n- Load average\n\nUseful keys in top:\nq: quit\nk: kill process\nr: renice process\nP: sort by CPU\nM: sort by memory",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:13.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:13.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-004",
+      "information_side": [
+        {
+          "block_id": "sa-004-info",
+          "block_type": "text",
+          "text_content": "How do you check available disk space?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:14.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-004-answer",
+          "block_type": "text",
+          "text_content": "df -h\n\nDisplays disk space usage in human-readable format:\n- Shows mounted filesystems\n- Available and used space\n- Mount points\n- Percentage used\n\nFor directory usage: du -h /path/to/directory",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:14.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:14.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-005",
+      "information_side": [
+        {
+          "block_id": "sa-005-info",
+          "block_type": "text",
+          "text_content": "What command shows memory usage?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:15.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-005-answer",
+          "block_type": "text",
+          "text_content": "free -h\n\nDisplays memory usage in human-readable format:\n- Total, used, free memory\n- Buffer/cache usage\n- Swap usage\n\nAlternatively:\ncat /proc/meminfo  (detailed memory information)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:15.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:15.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-006",
+      "information_side": [
+        {
+          "block_id": "sa-006-info",
+          "block_type": "text",
+          "text_content": "How do you start a service using systemctl?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:16.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-006-answer",
+          "block_type": "text",
+          "text_content": "systemctl start service_name\n\nExamples:\nsystemctl start apache2\nsystemctl start mysql\nsystemctl start ssh\n\nOther systemctl commands:\nstop, restart, reload, enable, disable, status",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:16.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:16.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-007",
+      "information_side": [
+        {
+          "block_id": "sa-007-info",
+          "block_type": "text",
+          "text_content": "How do you add a new user to the system?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:17.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-007-answer",
+          "block_type": "text",
+          "text_content": "useradd username\n\nCommon options:\nuseradd -m username  (create home directory)\nuseradd -s /bin/bash username  (set shell)\nuseradd -G groupname username  (add to group)\n\nAfter creation: passwd username (set password)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:17.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:17.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-008",
+      "information_side": [
+        {
+          "block_id": "sa-008-info",
+          "block_type": "text",
+          "text_content": "What file contains user account information?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:18.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-008-answer",
+          "block_type": "text",
+          "text_content": "/etc/passwd\n\nContains:\n- Username\n- User ID (UID)\n- Group ID (GID)\n- Home directory\n- Default shell\n\nFormat: username:x:UID:GID:comment:home:shell\nPassword hashes are stored in /etc/shadow",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:18.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:18.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-009",
+      "information_side": [
+        {
+          "block_id": "sa-009-info",
+          "block_type": "text",
+          "text_content": "How do you view system logs?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:19.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-009-answer",
+          "block_type": "text",
+          "text_content": "journalctl (systemd systems)\n\nExamples:\njournalctl  (all logs)\njournalctl -f  (follow logs in real-time)\njournalctl -u service_name  (logs for specific service)\njournalctl --since today  (today's logs)\n\nTraditional: tail -f /var/log/syslog",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:19.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:19.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-010",
+      "information_side": [
+        {
+          "block_id": "sa-010-info",
+          "block_type": "text",
+          "text_content": "What command shows who is currently logged in?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:20.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-010-answer",
+          "block_type": "text",
+          "text_content": "who or w\n\nwho: shows logged-in users\nw: shows users and what they're doing\nwhoami: shows current username\nlast: shows login history\nusers: simple list of logged-in users",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:20.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:20.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-011",
+      "information_side": [
+        {
+          "block_id": "sa-011-info",
+          "block_type": "text",
+          "text_content": "How do you manage users and groups in Linux?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:21.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-011-answer",
+          "block_type": "text",
+          "text_content": "User management:\nuseradd username  (add user)\nusermod -aG groupname username  (add user to group)\nuserdel username  (delete user)\npasswd username  (set password)\n\nGroup management:\ngroupadd groupname  (create group)\ngroupdel groupname  (delete group)\ngroups username  (show user's groups)\nid username  (show user/group IDs)\n\nUser info:\ncat /etc/passwd  (user accounts)\ncat /etc/group  (group information)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:21.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:21.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-012",
+      "information_side": [
+        {
+          "block_id": "sa-012-info",
+          "block_type": "text",
+          "text_content": "What commands help with system resource monitoring?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:22.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-012-answer",
+          "block_type": "text",
+          "text_content": "System monitoring commands:\n\nCPU and Memory:\ntop  (real-time process viewer)\nhtop  (enhanced top)\nfree -h  (memory usage)\nuptime  (system load)\nvmstat 1  (virtual memory stats)\n\nDisk Usage:\ndf -h  (filesystem usage)\ndu -sh /path  (directory size)\niostat  (I/O statistics)\nlsblk  (block devices)\n\nSystem Info:\nuname -a  (system information)\nlscpu  (CPU information)\nlsusb  (USB devices)\nlspci  (PCI devices)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:22.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:22.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-013",
+      "information_side": [
+        {
+          "block_id": "sa-013-info",
+          "block_type": "text",
+          "text_content": "How do you schedule tasks with cron?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:23.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-013-answer",
+          "block_type": "text",
+          "text_content": "Cron job management:\n\ncrontab -e  (edit cron jobs)\ncrontab -l  (list cron jobs)\ncrontab -r  (remove all cron jobs)\n\nCron syntax (minute hour day month weekday command):\n0 2 * * * /path/to/script  (daily at 2 AM)\n*/15 * * * * /path/to/script  (every 15 minutes)\n0 0 1 * * /path/to/script  (monthly on 1st)\n0 9 * * 1-5 /path/to/script  (weekdays at 9 AM)\n\nSystem cron:\n/etc/crontab\n/etc/cron.d/\n/etc/cron.daily/",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:23.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:23.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-014",
+      "information_side": [
+        {
+          "block_id": "sa-014-info",
+          "block_type": "text",
+          "text_content": "What are the essential log file locations and commands?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:24.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-014-answer",
+          "block_type": "text",
+          "text_content": "Important log files:\n/var/log/syslog  (system messages)\n/var/log/auth.log  (authentication)\n/var/log/kern.log  (kernel messages)\n/var/log/dmesg  (boot messages)\n/var/log/messages  (general system)\n\nLog viewing commands:\ntail -f /var/log/syslog  (follow log)\nhead -n 50 /var/log/auth.log  (first 50 lines)\ngrep \"error\" /var/log/syslog  (search logs)\n\nSystemd logs:\njournalctl -f  (follow journal)\njournalctl -u service_name  (service logs)\njournalctl --since \"1 hour ago\"",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:24.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:24.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-015",
+      "information_side": [
+        {
+          "block_id": "sa-015-info",
+          "block_type": "text",
+          "text_content": "How do you manage disk partitions and filesystems?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:25.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-015-answer",
+          "block_type": "text",
+          "text_content": "Disk and filesystem management:\n\nPartitioning:\nfdisk /dev/sda  (partition disk)\nparted /dev/sda  (advanced partitioning)\nlsblk  (view block devices)\nblkid  (view filesystem UUIDs)\n\nFilesystem operations:\nmkfs.ext4 /dev/sda1  (create ext4 filesystem)\nmount /dev/sda1 /mnt  (mount filesystem)\numount /mnt  (unmount filesystem)\nfsck /dev/sda1  (check filesystem)\nresize2fs /dev/sda1  (resize ext filesystem)\n\nPersistent mounting:\n/etc/fstab  (filesystem table)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:25.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:25.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-016",
+      "information_side": [
+        {
+          "block_id": "sa-016-info",
+          "block_type": "text",
+          "text_content": "What commands help with system backup and recovery?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:26.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-016-answer",
+          "block_type": "text",
+          "text_content": "Backup and recovery tools:\n\nFile-level backups:\ntar -czf backup.tar.gz /home/user  (create archive)\ntar -xzf backup.tar.gz  (extract archive)\nrsync -av /source/ /destination/  (sync directories)\ndd if=/dev/sda of=backup.img  (disk image)\n\nAdvanced backup:\ndump -0u -f /backup/home.dump /home  (dump filesystem)\nrestore -rf /backup/home.dump  (restore dump)\ncpio -o < filelist > archive.cpio  (create cpio archive)\n\nScheduled backups:\ncrontab with rsync or tar commands",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:26.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:26.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-017",
+      "information_side": [
+        {
+          "block_id": "sa-017-info",
+          "block_type": "text",
+          "text_content": "How do you manage environment variables and system configuration?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:27.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-017-answer",
+          "block_type": "text",
+          "text_content": "Environment variables:\n\nView variables:\nenv  (all environment variables)\necho $PATH  (specific variable)\necho $HOME  (home directory)\nprintenv USER  (specific variable)\n\nSet variables:\nexport MYVAR=\"value\"  (temporary)\necho 'export MYVAR=\"value\"' >> ~/.bashrc  (permanent)\n\nSystem configuration:\n/etc/environment  (system-wide variables)\n/etc/profile  (system-wide profile)\n~/.bashrc  (user shell configuration)\n~/.profile  (user login profile)\n\nReload configuration:\nsource ~/.bashrc",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:27.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:27.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-018",
+      "information_side": [
+        {
+          "block_id": "sa-018-info",
+          "block_type": "text",
+          "text_content": "What are the key commands for package management?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:28.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-018-answer",
+          "block_type": "text",
+          "text_content": "Package management (varies by distribution):\n\nDebian/Ubuntu (apt):\napt update  (update package list)\napt upgrade  (upgrade packages)\napt install package  (install package)\napt remove package  (remove package)\napt search keyword  (search packages)\ndpkg -l  (list installed packages)\n\nRed Hat/CentOS (yum/dnf):\nyum update  (update packages)\nyum install package  (install package)\nyum remove package  (remove package)\nrpm -qa  (list installed packages)\n\nUniversal:\nsnap install package  (snap packages)\nflatpak install package  (flatpak packages)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:28.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:28.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-019",
+      "information_side": [
+        {
+          "block_id": "sa-019-info",
+          "block_type": "text",
+          "text_content": "How do you manage system startup and boot process?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:29.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-019-answer",
+          "block_type": "text",
+          "text_content": "Boot and startup management:\n\nSystemd targets:\nsystemctl get-default  (current default target)\nsystemctl set-default multi-user.target  (set target)\nsystemctl isolate graphical.target  (switch target)\n\nBoot process:\ndmesg  (kernel boot messages)\njournalctl -b  (boot log)\nsystemctl --failed  (failed services)\n\nGRUB bootloader:\n/etc/default/grub  (GRUB configuration)\nupdate-grub  (update GRUB menu)\ngrub-install /dev/sda  (install GRUB)\n\nRunlevels (legacy):\nrunlevel  (current runlevel)\ninit 3  (change to runlevel 3)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:29.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:29.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-020",
+      "information_side": [
+        {
+          "block_id": "sa-020-info",
+          "block_type": "text",
+          "text_content": "What commands help with system security and access control?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:30.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-020-answer",
+          "block_type": "text",
+          "text_content": "Security and access control:\n\nSudo management:\nsudo command  (run as root)\nsudo -u user command  (run as specific user)\nvisudo  (edit sudoers file)\nsudo -l  (list sudo privileges)\n\nFile permissions:\nchmod 755 file  (change permissions)\nchown user:group file  (change ownership)\numask 022  (set default permissions)\ngetfacl file  (get ACL)\nsetfacl -m u:user:rwx file  (set ACL)\n\nSecurity tools:\nlast  (login history)\nwho  (current users)\nsudo passwd -l user  (lock user account)\nfail2ban  (intrusion prevention)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:30.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:30.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-021",
+      "information_side": [
+        {
+          "block_id": "sa-021-info",
+          "block_type": "text",
+          "text_content": "How do you manage system performance and optimize resources?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:31.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-021-answer",
+          "block_type": "text",
+          "text_content": "Performance optimization:\n\nProcess priority:\nnice -n 10 command  (start with lower priority)\nrenice -n 5 -p PID  (change process priority)\nionice -c 3 -p PID  (set I/O priority)\n\nSystem tuning:\nsysctl -a  (view all kernel parameters)\necho value > /proc/sys/path  (temporary change)\n/etc/sysctl.conf  (permanent kernel tuning)\n\nMemory management:\nswapoff -a  (disable swap)\nswapon -a  (enable swap)\necho 3 > /proc/sys/vm/drop_caches  (clear cache)\n\nPerformance monitoring:\nsar -u 1 10  (CPU usage)\nsar -r 1 10  (memory usage)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:31.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:31.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-022",
+      "information_side": [
+        {
+          "block_id": "sa-022-info",
+          "block_type": "text",
+          "text_content": "What commands help with kernel module management?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:32.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-022-answer",
+          "block_type": "text",
+          "text_content": "Kernel module management:\n\nModule operations:\nlsmod  (list loaded modules)\nmodprobe module_name  (load module)\nmodprobe -r module_name  (remove module)\ninsmod /path/to/module.ko  (insert module)\nrmmod module_name  (remove module)\n\nModule information:\nmodinfo module_name  (module details)\nlsmod | grep module_name  (check if loaded)\n\nModule configuration:\n/etc/modules  (modules to load at boot)\n/etc/modprobe.d/  (module options)\n/lib/modules/$(uname -r)/  (module location)\n\nKernel info:\nuname -r  (kernel version)\ndepmod -a  (update module dependencies)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:32.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:32.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-023",
+      "information_side": [
+        {
+          "block_id": "sa-023-info",
+          "block_type": "text",
+          "text_content": "How do you configure and manage swap space?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:33.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-023-answer",
+          "block_type": "text",
+          "text_content": "Swap space management:\n\nCreate swap file:\ndd if=/dev/zero of=/swapfile bs=1M count=1024\nchmod 600 /swapfile\nmkswap /swapfile\nswapon /swapfile\n\nCreate swap partition:\nmkswap /dev/sdb1\nswapon /dev/sdb1\n\nManage swap:\nswapon -s  (show swap usage)\nswapoff /swapfile  (disable swap)\nfree -h  (view swap usage)\n\nPersistent swap:\necho '/swapfile none swap sw 0 0' >> /etc/fstab\n\nSwap tuning:\necho 10 > /proc/sys/vm/swappiness  (adjust swap tendency)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:33.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:33.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-024",
+      "information_side": [
+        {
+          "block_id": "sa-024-info",
+          "block_type": "text",
+          "text_content": "What are the essential commands for hardware management?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:34.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-024-answer",
+          "block_type": "text",
+          "text_content": "Hardware management:\n\nHardware information:\nlshw  (detailed hardware info)\nlscpu  (CPU information)\nlsmem  (memory information)\nlsusb  (USB devices)\nlspci  (PCI devices)\nlsblk  (block devices)\n\nSystem sensors:\nsensors  (temperature, fan speeds)\nlm-sensors  (hardware monitoring)\n\nDisk health:\nsmartctl -a /dev/sda  (SMART disk info)\nhdparm -I /dev/sda  (disk parameters)\nhdparm -t /dev/sda  (disk speed test)\n\nDevice management:\n/dev/  (device files)\n/proc/  (process and system info)\n/sys/  (system information)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:34.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:34.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-025",
+      "information_side": [
+        {
+          "block_id": "sa-025-info",
+          "block_type": "text",
+          "text_content": "How do you manage system time and timezone?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:35.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-025-answer",
+          "block_type": "text",
+          "text_content": "Time and timezone management:\n\nSystem time:\ndate  (show current date/time)\ndate -s \"2025-01-01 12:00:00\"  (set date/time)\nhwclock  (hardware clock)\nhwclock --systohc  (sync system to hardware clock)\n\nTimezone:\ntimedatectl  (show time settings)\ntimedatectl set-timezone America/New_York\ntimedatectl list-timezones  (available timezones)\nln -sf /usr/share/zoneinfo/UTC /etc/localtime\n\nNTP synchronization:\ntimedatectl set-ntp true  (enable NTP)\nsystemctl status systemd-timesyncd\nntpdate pool.ntp.org  (manual sync)\n\nTime formats:\ndate +\"%Y-%m-%d %H:%M:%S\"  (custom format)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:35.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:35.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-026",
+      "information_side": [
+        {
+          "block_id": "sa-026-info",
+          "block_type": "text",
+          "text_content": "What commands help with system automation and scripting?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:36.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-026-answer",
+          "block_type": "text",
+          "text_content": "System automation:\n\nScript execution:\nbash script.sh  (run bash script)\nchmod +x script.sh  (make executable)\n./script.sh  (execute script)\n\nScheduling:\ncrontab -e  (user cron jobs)\nsudo crontab -e  (root cron jobs)\nat now + 1 hour  (one-time task)\nbatch  (run when load is low)\n\nSystemd timers:\nsystemctl list-timers  (active timers)\nsystemctl enable timer.timer\n\nProcess control:\nnohup command &  (run in background)\nscreen -S session_name  (persistent session)\ntmux new -s session_name  (terminal multiplexer)\nkillall process_name  (kill by name)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:36.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:36.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-027",
+      "information_side": [
+        {
+          "block_id": "sa-027-info",
+          "block_type": "text",
+          "text_content": "How do you manage system locales and internationalization?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:37.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-027-answer",
+          "block_type": "text",
+          "text_content": "Locale management:\n\nLocale commands:\nlocale  (show current locale)\nlocale -a  (available locales)\nlocalectl  (systemd locale control)\nlocalectl list-locales  (available locales)\n\nSet locale:\nlocalectl set-locale LANG=en_US.UTF-8\nexport LANG=en_US.UTF-8  (temporary)\necho 'LANG=en_US.UTF-8' > /etc/locale.conf\n\nGenerate locales:\nlocale-gen en_US.UTF-8\ndpkg-reconfigure locales  (Debian/Ubuntu)\n\nKeyboard layout:\nlocalectl set-keymap us\nlocalectl list-keymaps  (available keymaps)\nloadkeys us  (temporary keyboard change)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:37.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:37.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-028",
+      "information_side": [
+        {
+          "block_id": "sa-028-info",
+          "block_type": "text",
+          "text_content": "What are the key commands for system security auditing?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:38.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-028-answer",
+          "block_type": "text",
+          "text_content": "Security auditing:\n\nSystem integrity:\nrkhunter --check  (rootkit detection)\nchkrootkit  (rootkit checker)\nlynis audit system  (security auditing)\ntripwire --check  (file integrity monitoring)\n\nAccess monitoring:\nlastlog  (last login times)\nutmpdump /var/log/wtmp  (login records)\nwho -a  (detailed user info)\nw  (who is doing what)\n\nFile permissions:\nfind / -perm -4000 -type f  (find SUID files)\nfind / -perm -2000 -type f  (find SGID files)\nfind / -type f -perm 777  (world-writable files)\n\nProcess auditing:\nlsof  (open files)\nfuser /path/to/file  (processes using file)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:38.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:38.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-029",
+      "information_side": [
+        {
+          "block_id": "sa-029-info",
+          "block_type": "text",
+          "text_content": "How do you manage system quotas and disk usage limits?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:39.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-029-answer",
+          "block_type": "text",
+          "text_content": "Disk quota management:\n\nEnable quotas:\n/etc/fstab: /dev/sda1 /home ext4 defaults,usrquota,grpquota 0 2\nmount -o remount /home\nquotacheck -cum /home  (create quota files)\nquotaon /home  (enable quotas)\n\nSet quotas:\nedquota username  (edit user quota)\nedquota -g groupname  (edit group quota)\nsetquota username 100000 110000 1000 1100 /home\n\nMonitor quotas:\nquota username  (user quota usage)\nrepquota /home  (quota report)\nquotacheck -avum  (check all quotas)\n\nQuota commands:\nquotaoff /home  (disable quotas)\nwarnquota  (send quota warnings)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:39.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:39.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-030",
+      "information_side": [
+        {
+          "block_id": "sa-030-info",
+          "block_type": "text",
+          "text_content": "What commands help with system troubleshooting and debugging?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:40.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-030-answer",
+          "block_type": "text",
+          "text_content": "System troubleshooting:\n\nSystem diagnosis:\nstrace command  (trace system calls)\nltrace command  (trace library calls)\ngdb program  (GNU debugger)\nvalgrind program  (memory error detection)\n\nProcess debugging:\npstree  (process tree)\nlsof -p PID  (files opened by process)\n/proc/PID/  (process information)\nkill -USR1 PID  (send signal)\n\nSystem state:\ndmesg | tail  (kernel messages)\njournalctl -xe  (systemd logs with details)\nsystemctl --failed  (failed services)\nsystemctl status service_name\n\nResource issues:\niotop  (I/O usage by process)\nlsof | grep deleted  (deleted but open files)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:40.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:40.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-031",
+      "information_side": [
+        {
+          "block_id": "sa-031-info",
+          "block_type": "text",
+          "text_content": "How do you manage system containers and virtualization?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:41.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-031-answer",
+          "block_type": "text",
+          "text_content": "Containerization and virtualization:\n\nDocker commands:\ndocker ps  (running containers)\ndocker images  (available images)\ndocker run -it ubuntu bash  (run interactive container)\ndocker exec -it container_id bash  (enter container)\ndocker stop container_id  (stop container)\ndocker rm container_id  (remove container)\n\nSystemd containers:\nmachinectl list  (list containers)\nsystemd-nspawn -D /path/to/container  (spawn container)\n\nVirtualization:\nvirsh list  (list VMs)\nqemu-img create -f qcow2 disk.qcow2 10G  (create disk)\nkvm -m 1024 -hda disk.qcow2  (start VM)\nvboxmanage list vms  (VirtualBox VMs)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:41.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:41.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-032",
+      "information_side": [
+        {
+          "block_id": "sa-032-info",
+          "block_type": "text",
+          "text_content": "What commands help with system encryption and cryptography?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:42.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-032-answer",
+          "block_type": "text",
+          "text_content": "Encryption and cryptography:\n\nDisk encryption (LUKS):\ncryptsetup luksFormat /dev/sdb1  (encrypt partition)\ncryptsetup luksOpen /dev/sdb1 encrypted_disk  (open)\nmount /dev/mapper/encrypted_disk /mnt  (mount)\ncryptsetup luksClose encrypted_disk  (close)\n\nFile encryption:\ngpg --symmetric file.txt  (encrypt file)\ngpg --decrypt file.txt.gpg  (decrypt file)\nencfs ~/encrypted ~/decrypted  (encrypted filesystem)\n\nSSL/TLS:\nopenssl genrsa -out private.key 2048  (generate key)\nopenssl req -new -x509 -key private.key -out cert.pem\n\nHashing:\nsha256sum file.txt  (SHA256 hash)\nmd5sum file.txt  (MD5 hash)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:42.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:42.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-033",
+      "information_side": [
+        {
+          "block_id": "sa-033-info",
+          "block_type": "text",
+          "text_content": "How do you manage system archives and compression?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:43.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-033-answer",
+          "block_type": "text",
+          "text_content": "Archive and compression management:\n\nTar archives:\ntar -czf archive.tar.gz directory/  (create gzip archive)\ntar -xzf archive.tar.gz  (extract gzip archive)\ntar -cjf archive.tar.bz2 directory/  (create bzip2 archive)\ntar -tf archive.tar.gz  (list contents)\ntar --exclude='*.log' -czf archive.tar.gz dir/\n\nCompression tools:\ngzip file.txt  (compress file)\ngunzip file.txt.gz  (decompress)\nbzip2 file.txt  (better compression)\nbunzip2 file.txt.bz2  (decompress bzip2)\nxz file.txt  (best compression)\nunxz file.txt.xz  (decompress xz)\n\nZip archives:\nzip -r archive.zip directory/\nunzip archive.zip",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:43.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:43.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-034",
+      "information_side": [
+        {
+          "block_id": "sa-034-info",
+          "block_type": "text",
+          "text_content": "What are the essential commands for system monitoring and alerting?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:44.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-034-answer",
+          "block_type": "text",
+          "text_content": "System monitoring and alerting:\n\nReal-time monitoring:\nwatch -n 1 'free -h'  (monitor memory every second)\nwatch -n 5 'df -h'  (monitor disk space)\nglances  (comprehensive system monitor)\nbmon  (bandwidth monitor)\n\nSystem alerts:\nmail -s \"Alert\" admin@example.com < message.txt\nlogger \"Custom log message\"  (send to syslog)\nwall \"System maintenance in 10 minutes\"  (broadcast)\n\nMonitoring scripts:\n#!/bin/bash\nif [ $(df / | tail -1 | awk '{print $5}' | sed 's/%//') -gt 90 ]; then\n  echo \"Disk space critical\" | mail admin@example.com\nfi\n\nNotification:\nnotify-send \"Title\" \"Message\"  (desktop notification)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:44.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:44.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-035",
+      "information_side": [
+        {
+          "block_id": "sa-035-info",
+          "block_type": "text",
+          "text_content": "How do you manage system databases and data stores?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:45.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-035-answer",
+          "block_type": "text",
+          "text_content": "Database and data store management:\n\nMySQL/MariaDB:\nsystemctl start mysql  (start service)\nmysql -u root -p  (connect to database)\nmysqldump database > backup.sql  (backup)\nmysql database < backup.sql  (restore)\nmysqlcheck --all-databases  (check integrity)\n\nPostgreSQL:\nsudo -u postgres psql  (connect as postgres user)\npg_dump database > backup.sql  (backup)\npsql database < backup.sql  (restore)\nvacuumdb --all  (maintenance)\n\nSQLite:\nsqlite3 database.db  (open database)\n.backup backup.db  (backup in SQLite)\n\nRedis:\nredis-cli  (connect to Redis)\nredis-cli BGSAVE  (background save)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:45.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:45.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-036",
+      "information_side": [
+        {
+          "block_id": "sa-036-info",
+          "block_type": "text",
+          "text_content": "What commands help with system configuration management?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:46.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-036-answer",
+          "block_type": "text",
+          "text_content": "Configuration management:\n\nConfiguration files:\n/etc/  (system configuration)\n~/.config/  (user configuration)\ncp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak  (backup)\n\nVersion control:\ngit init /etc  (version control config)\ngit add .\ngit commit -m \"Initial config\"\netckeeper  (automatic config versioning)\n\nConfiguration validation:\nnginx -t  (test nginx config)\napache2ctl configtest  (test Apache config)\nsshd -t  (test SSH config)\nsystemctl --dry-run reload service\n\nTemplate management:\nenvsubst < template.conf > actual.conf  (environment substitution)\nsed 's/OLD/NEW/g' config.template > config.conf",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:46.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:46.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-037",
+      "information_side": [
+        {
+          "block_id": "sa-037-info",
+          "block_type": "text",
+          "text_content": "How do you manage system capacity planning and resource allocation?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:47.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-037-answer",
+          "block_type": "text",
+          "text_content": "Capacity planning and resource allocation:\n\nResource limits:\nulimit -a  (show all limits)\nulimit -n 2048  (set file descriptor limit)\n/etc/security/limits.conf  (persistent limits)\nuser hard nofile 2048\n\nSystemd resource control:\nsystemctl set-property service.service MemoryLimit=1G\nsystemctl set-property service.service CPUQuota=50%\nsystemd-cgtop  (control group resource usage)\n\nCapacity monitoring:\nsar -u 1 3600  (CPU usage over 1 hour)\nsar -r 1 3600  (memory usage)\nsar -d 1 3600  (disk usage)\ncollectd  (system statistics collection)\nmunin  (network monitoring)\n\nResource planning:\nfree -h && df -h && uptime  (quick resource check)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:47.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:47.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-038",
+      "information_side": [
+        {
+          "block_id": "sa-038-info",
+          "block_type": "text",
+          "text_content": "What are the key commands for system disaster recovery?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:48.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-038-answer",
+          "block_type": "text",
+          "text_content": "Disaster recovery:\n\nSystem imaging:\ndd if=/dev/sda of=/backup/system.img bs=1M  (full disk image)\npartclone.ext4 -c -s /dev/sda1 -o sda1.img  (partition clone)\nclonezilla  (disk cloning tool)\n\nBootable rescue:\ngrub-rescue  (GRUB rescue mode)\nchroot /mnt/sysroot  (change root)\nmount --bind /proc /mnt/sysroot/proc\nmount --bind /sys /mnt/sysroot/sys\n\nFilesystem recovery:\nfsck -y /dev/sda1  (force filesystem check)\ntestdisk  (partition recovery)\nddrescue /dev/sda /backup/recovered.img  (data recovery)\n\nSystem restore:\nrsync -av /backup/ /  (restore from backup)\nsystemctl rescue  (rescue target)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:48.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:48.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-039",
+      "information_side": [
+        {
+          "block_id": "sa-039-info",
+          "block_type": "text",
+          "text_content": "How do you manage system compliance and hardening?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:49.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-039-answer",
+          "block_type": "text",
+          "text_content": "System compliance and hardening:\n\nSecurity benchmarks:\nlynis audit system  (security audit)\nopenscap xccdf eval profile.xml  (SCAP compliance)\ninspec exec profile  (compliance testing)\n\nSystem hardening:\nchmod 700 /root  (secure root directory)\nchmod 600 /etc/ssh/sshd_config  (secure SSH config)\nfind / -perm -002 -type f  (world-writable files)\nfind / -nouser -o -nogroup  (orphaned files)\n\nSELinux/AppArmor:\ngetenforce  (SELinux status)\nsetsebool -P httpd_can_network_connect on\naa-status  (AppArmor status)\naa-enforce /etc/apparmor.d/usr.bin.firefox\n\nCompliance reporting:\nauditctl -w /etc/passwd -p wa  (audit file access)\nausearch -f /etc/passwd",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:49.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:49.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-040",
+      "information_side": [
+        {
+          "block_id": "sa-040-info",
+          "block_type": "text",
+          "text_content": "What commands help with system integration and APIs?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:50.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-040-answer",
+          "block_type": "text",
+          "text_content": "System integration and APIs:\n\nHTTP clients:\ncurl -X GET http://api.example.com/data  (GET request)\ncurl -X POST -H \"Content-Type: application/json\" -d '{\"key\":\"value\"}' url\nwget --post-data='data' http://example.com\nhttpie: http GET api.example.com\n\nSystem D-Bus:\ndbus-send --system --dest=org.freedesktop.systemd1 /org/freedesktop/systemd1\ngdbus call --system --dest org.freedesktop.hostname1\nbusctl list  (list D-Bus services)\n\nSystemd API:\nsystemctl show unit.service  (unit properties)\nsystemd-analyze critical-chain  (boot analysis)\nmachinectl show machine  (container properties)\n\nProcess communication:\nmkfifo /tmp/mypipe  (named pipe)\necho \"data\" > /tmp/mypipe &\nread data < /tmp/mypipe",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:50.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:50.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-041",
+      "information_side": [
+        {
+          "block_id": "sa-041-info",
+          "block_type": "text",
+          "text_content": "How do you manage system clustering and high availability?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:51.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-041-answer",
+          "block_type": "text",
+          "text_content": "Clustering and high availability:\n\nPacemaker/Corosync:\ncrm status  (cluster status)\ncrm configure show  (cluster configuration)\ncrm resource start resource_name\ncrm resource stop resource_name\ncrm node standby node_name  (put node in standby)\n\nSystemd clustering:\nsystemctl enable --now corosync\nsystemctl enable --now pacemaker\ncrm configure property stonith-enabled=false\n\nFailover testing:\ncrm resource migrate resource_name node2\ncrm resource unmigrate resource_name\n\nCluster monitoring:\ncrm_mon -1  (cluster monitoring)\ncorosync-quorumtool  (quorum status)\ncrm_verify -L  (verify configuration)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:51.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:51.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-042",
+      "information_side": [
+        {
+          "block_id": "sa-042-info",
+          "block_type": "text",
+          "text_content": "What commands help with system migration and deployment?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:52.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-042-answer",
+          "block_type": "text",
+          "text_content": "System migration and deployment:\n\nSystem migration:\nrsync -avz --progress /source/ user@target:/destination/\nscp -r /source/ user@target:/destination/\ntar -czf - /source | ssh user@target \"cd /dest && tar -xzf -\"\n\nDeployment automation:\nansible-playbook -i hosts playbook.yml  (Ansible)\nsalt '*' state.apply  (SaltStack)\npuppet agent --test  (Puppet)\nchef-client  (Chef)\n\nContainer deployment:\ndocker build -t app:latest .\ndocker run -d --name app -p 80:80 app:latest\nkubectl apply -f deployment.yaml  (Kubernetes)\n\nImage deployment:\ndd if=system.img of=/dev/sdb bs=1M  (restore image)\npartclone.restore -s backup.img -o /dev/sdb1",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:52.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:52.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-043",
+      "information_side": [
+        {
+          "block_id": "sa-043-info",
+          "block_type": "text",
+          "text_content": "How do you manage system DNS and name resolution?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:53.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-043-answer",
+          "block_type": "text",
+          "text_content": "DNS and name resolution management:\n\nDNS configuration:\n/etc/resolv.conf:\nnameserver 8.8.8.8\nnameserver 1.1.1.1\nsearch example.com\n\nSystemd-resolved:\nsystemd-resolve --status\nsystemd-resolve --flush-caches\nresolvectl query google.com\nresolvectl dns eth0 8.8.8.8\n\nLocal name resolution:\n/etc/hosts:\n192.168.1.10 server.local\n192.168.1.20 database.local\n\nDNS server (BIND):\nnamed-checkconf  (check configuration)\nnamed-checkzone example.com /etc/bind/example.com.zone\nrndc reload  (reload zones)\nrndc flush  (flush cache)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:53.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:53.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-044",
+      "information_side": [
+        {
+          "block_id": "sa-044-info",
+          "block_type": "text",
+          "text_content": "What are the essential commands for system patching and updates?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:54.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-044-answer",
+          "block_type": "text",
+          "text_content": "System patching and updates:\n\nApt (Debian/Ubuntu):\napt update  (update package lists)\napt list --upgradable  (show available updates)\napt upgrade  (install updates)\napt full-upgrade  (full system upgrade)\napt autoremove  (remove unused packages)\n\nYum/DNF (Red Hat/CentOS):\nyum check-update  (check for updates)\nyum update  (install updates)\ndnf upgrade  (DNF upgrade)\nyum history  (update history)\n\nUpdate automation:\nunattended-upgrades  (automatic security updates)\nyum-cron  (automated yum updates)\n\nKernel updates:\napt install linux-image-generic  (new kernel)\nupdate-grub  (update bootloader)\nreboot  (apply kernel updates)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:54.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:54.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-045",
+      "information_side": [
+        {
+          "block_id": "sa-045-info",
+          "block_type": "text",
+          "text_content": "How do you manage system load balancing and traffic distribution?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:55.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-045-answer",
+          "block_type": "text",
+          "text_content": "Load balancing and traffic distribution:\n\nNginx load balancing:\nupstream backend {\n    server 192.168.1.10:80;\n    server 192.168.1.11:80;\n    server 192.168.1.12:80;\n}\nserver {\n    location / {\n        proxy_pass http://backend;\n    }\n}\n\nHAProxy:\nbackend webservers\n    balance roundrobin\n    server web1 192.168.1.10:80 check\n    server web2 192.168.1.11:80 check\n\nIPTables load balancing:\niptables -t nat -A PREROUTING -p tcp --dport 80 -m statistic --mode nth --every 2 --packet 0 -j DNAT --to-destination 192.168.1.10:80\n\nMonitoring:\nhaproxy -f /etc/haproxy/haproxy.cfg -D -p /var/run/haproxy.pid",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:55.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:55.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-046",
+      "information_side": [
+        {
+          "block_id": "sa-046-info",
+          "block_type": "text",
+          "text_content": "What commands help with system certificate and key management?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:56.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-046-answer",
+          "block_type": "text",
+          "text_content": "Certificate and key management:\n\nSSL certificate operations:\nopenssl x509 -in cert.pem -text -noout  (view certificate)\nopenssl x509 -in cert.pem -dates -noout  (check expiry)\nopenssl verify -CAfile ca.pem cert.pem  (verify certificate)\nopenssl s_client -connect domain.com:443  (test SSL connection)\n\nKey operations:\nopenssl rsa -in private.key -check  (verify private key)\nopenssl rsa -in private.key -pubout  (extract public key)\nopenssl rsa -in encrypted.key -out decrypted.key  (decrypt key)\n\nCertificate authority:\nopenssl req -new -x509 -days 365 -key ca.key -out ca.crt\nupdate-ca-certificates  (update system CA store)\n\nLet's Encrypt:\ncertbot certificates  (list certificates)\ncertbot renew --dry-run  (test renewal)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:56.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:56.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-047",
+      "information_side": [
+        {
+          "block_id": "sa-047-info",
+          "block_type": "text",
+          "text_content": "How do you manage system mail and messaging services?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:57.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-047-answer",
+          "block_type": "text",
+          "text_content": "Mail and messaging services:\n\nPostfix mail server:\npostconf -n  (show non-default settings)\npostqueue -p  (view mail queue)\npostsuper -d ALL  (delete all queued mail)\nmailq  (show mail queue)\npostmap /etc/postfix/virtual  (update virtual maps)\n\nMail testing:\necho \"Test message\" | mail -s \"Subject\" user@domain.com\ntelnet localhost 25  (test SMTP)\npostfix check  (check configuration)\n\nDovecot (IMAP/POP3):\ndoveconf -n  (show configuration)\ndoveadm user list  (list users)\ndoveadm mailbox list -u user@domain.com\n\nMail logs:\ntail -f /var/log/mail.log\njournalctl -u postfix -f",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:57.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:57.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-048",
+      "information_side": [
+        {
+          "block_id": "sa-048-info",
+          "block_type": "text",
+          "text_content": "What are the key commands for system resource quotas and limits?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:58.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-048-answer",
+          "block_type": "text",
+          "text_content": "Resource quotas and limits:\n\nUser limits (/etc/security/limits.conf):\nusername soft nofile 1024\nusername hard nofile 2048\nusername soft nproc 256\n@group hard memlock 64\n\nSystemd service limits:\nsystemctl edit service.service\n[Service]\nLimitNOFILE=2048\nLimitNPROC=256\nMemoryLimit=1G\nCPUQuota=50%\n\nCgroup limits:\necho 1000000000 > /sys/fs/cgroup/memory/mygroup/memory.limit_in_bytes\necho 1000 > /sys/fs/cgroup/cpu/mygroup/cpu.shares\n\nRuntime limits:\nulimit -n 2048  (file descriptors)\nulimit -u 256  (processes)\nulimit -m 1000000  (memory)\nulimit -t 60  (CPU time)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:58.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:58.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-049",
+      "information_side": [
+        {
+          "block_id": "sa-049-info",
+          "block_type": "text",
+          "text_content": "How do you manage system web servers and HTTP services?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:59.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-049-answer",
+          "block_type": "text",
+          "text_content": "Web server management:\n\nApache HTTP Server:\napache2ctl configtest  (test configuration)\napache2ctl graceful  (graceful restart)\na2ensite site.conf  (enable site)\na2dissite default  (disable site)\na2enmod rewrite  (enable module)\na2dismod module  (disable module)\n\nNginx:\nnginx -t  (test configuration)\nnginx -s reload  (reload configuration)\nnginx -s stop  (stop server)\nsystemctl reload nginx\n\nSSL configuration:\nopenssl dhparam -out /etc/ssl/certs/dhparam.pem 2048\ncertbot --nginx -d example.com  (Let's Encrypt)\n\nWeb server logs:\ntail -f /var/log/apache2/access.log\ntail -f /var/log/nginx/error.log",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:45:59.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:45:59.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-050",
+      "information_side": [
+        {
+          "block_id": "sa-050-info",
+          "block_type": "text",
+          "text_content": "What commands help with system orchestration and infrastructure as code?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:00.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-050-answer",
+          "block_type": "text",
+          "text_content": "Orchestration and Infrastructure as Code:\n\nTerraform:\nterraform init  (initialize)\nterraform plan  (preview changes)\nterraform apply  (apply changes)\nterraform destroy  (destroy infrastructure)\nterraform state list  (list resources)\n\nAnsible:\nansible all -m ping  (test connectivity)\nansible-playbook -i inventory playbook.yml\nansible-vault encrypt secrets.yml\nansible-galaxy install role_name\n\nDocker Compose:\ndocker-compose up -d  (start services)\ndocker-compose down  (stop services)\ndocker-compose logs -f  (follow logs)\ndocker-compose scale web=3  (scale service)\n\nKubernetes:\nkubectl get pods  (list pods)\nkubectl apply -f deployment.yaml\nkubectl logs pod_name\nkubectl exec -it pod_name bash",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:00.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:00.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-051",
+      "information_side": [
+        {
+          "block_id": "sa-051-info",
+          "block_type": "text",
+          "text_content": "How do you manage system storage technologies and RAID?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:01.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-051-answer",
+          "block_type": "text",
+          "text_content": "Storage technologies and RAID:\n\nSoftware RAID (mdadm):\nmdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sdb1 /dev/sdc1\nmdadm --detail /dev/md0  (RAID status)\nmdadm --add /dev/md0 /dev/sdd1  (add device)\nmdadm --fail /dev/md0 /dev/sdb1  (mark device failed)\nmdadm --remove /dev/md0 /dev/sdb1  (remove device)\n\nLVM (Logical Volume Management):\npvcreate /dev/sdb1  (create physical volume)\nvgcreate vg01 /dev/sdb1  (create volume group)\nlvcreate -L 10G -n lv01 vg01  (create logical volume)\nlvextend -L +5G /dev/vg01/lv01  (extend volume)\nresize2fs /dev/vg01/lv01  (resize filesystem)\n\nStorage monitoring:\ncat /proc/mdstat  (RAID status)\nvgdisplay  (volume group info)\nlvdisplay  (logical volume info)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:01.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:01.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-052",
+      "information_side": [
+        {
+          "block_id": "sa-052-info",
+          "block_type": "text",
+          "text_content": "What commands help with system process management and IPC?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:02.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-052-answer",
+          "block_type": "text",
+          "text_content": "Process management and IPC:\n\nAdvanced process control:\npgrep -f process_name  (find process by name)\npkill -TERM process_name  (kill by name)\nkillall -9 process_name  (force kill all)\nfuser -k /path/to/file  (kill processes using file)\nlsof +D /directory  (processes using directory)\n\nProcess priorities:\nchrt -p 1 PID  (set real-time priority)\nionice -c 1 -n 4 -p PID  (set I/O priority)\ntaskset -p 0x1 PID  (set CPU affinity)\n\nInter-Process Communication:\nipcs  (show IPC resources)\nipcrm -m shmid  (remove shared memory)\nipcrm -s semid  (remove semaphore)\nipcrm -q msgid  (remove message queue)\n\nProcess namespaces:\nunshare --pid --fork bash  (new PID namespace)\nnsenter -t PID -n -p  (enter namespace)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:02.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:02.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-053",
+      "information_side": [
+        {
+          "block_id": "sa-053-info",
+          "block_type": "text",
+          "text_content": "How do you manage system device drivers and firmware?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:03.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-053-answer",
+          "block_type": "text",
+          "text_content": "Device drivers and firmware:\n\nDriver management:\nlsmod | grep driver_name  (check if driver loaded)\nmodprobe driver_name  (load driver)\nmodprobe -r driver_name  (unload driver)\nmodinfo driver_name  (driver information)\ndmesg | grep -i driver  (driver messages)\n\nFirmware management:\nls /lib/firmware/  (firmware files)\nfwupdmgr get-devices  (firmware update daemon)\nfwupdmgr refresh  (update firmware database)\nfwupdmgr update  (install firmware updates)\n\nHardware detection:\nlshw -short  (hardware summary)\nlspci -v  (PCI devices verbose)\nlsusb -v  (USB devices verbose)\nudevadm info --query=all --name=/dev/sda  (device info)\nudevadm monitor  (monitor device events)\n\nDriver troubleshooting:\ndmesg | tail -20  (recent kernel messages)\nlsmod | wc -l  (number of loaded modules)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:03.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:03.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-054",
+      "information_side": [
+        {
+          "block_id": "sa-054-info",
+          "block_type": "text",
+          "text_content": "What are the essential commands for system firewall management?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:04.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-054-answer",
+          "block_type": "text",
+          "text_content": "Firewall management:\n\niptables:\niptables -L  (list rules)\niptables -A INPUT -p tcp --dport 22 -j ACCEPT  (allow SSH)\niptables -A INPUT -s 192.168.1.0/24 -j ACCEPT  (allow subnet)\niptables -A INPUT -j DROP  (default deny)\niptables-save > /etc/iptables/rules.v4  (save rules)\niptables-restore < /etc/iptables/rules.v4  (restore rules)\n\nUFW (Uncomplicated Firewall):\nufw enable  (enable firewall)\nufw allow 22  (allow port 22)\nufw allow from 192.168.1.0/24  (allow subnet)\nufw deny 80  (deny port 80)\nufw status numbered  (show rules with numbers)\nufw delete 1  (delete rule by number)\n\nfirewalld:\nfirewall-cmd --list-all  (show configuration)\nfirewall-cmd --add-service=http --permanent\nfirewall-cmd --reload  (reload rules)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:04.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:04.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-055",
+      "information_side": [
+        {
+          "block_id": "sa-055-info",
+          "block_type": "text",
+          "text_content": "How do you manage system remote access and SSH?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:05.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-055-answer",
+          "block_type": "text",
+          "text_content": "Remote access and SSH management:\n\nSSH server configuration (/etc/ssh/sshd_config):\nPort 2222  (change default port)\nPermitRootLogin no  (disable root login)\nPasswordAuthentication no  (key-only auth)\nAllowUsers user1 user2  (restrict users)\nMaxAuthTries 3  (limit auth attempts)\n\nSSH key management:\nssh-keygen -t rsa -b 4096  (generate key pair)\nssh-copy-id user@server  (copy public key)\nssh-add ~/.ssh/id_rsa  (add key to agent)\nssh-agent bash  (start SSH agent)\n\nSSH tunneling:\nssh -L 8080:localhost:80 user@server  (local port forward)\nssh -R 9090:localhost:22 user@server  (remote port forward)\nssh -D 1080 user@server  (SOCKS proxy)\n\nSSH monitoring:\nwho  (current SSH sessions)\nlast  (login history)\nssh -v user@server  (verbose connection)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:05.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:05.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-056",
+      "information_side": [
+        {
+          "block_id": "sa-056-info",
+          "block_type": "text",
+          "text_content": "What commands help with system power management and ACPI?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:06.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-056-answer",
+          "block_type": "text",
+          "text_content": "Power management and ACPI:\n\nPower states:\nsystemctl suspend  (suspend to RAM)\nsystemctl hibernate  (suspend to disk)\nsystemctl hybrid-sleep  (hybrid suspend)\npoweroff  (shutdown system)\nreboot  (restart system)\n\nACPI information:\nacpi -V  (battery and thermal info)\nacpi -t  (temperature)\nacpi -a  (AC adapter status)\ncat /proc/acpi/battery/BAT0/state  (battery state)\n\nCPU frequency scaling:\ncpufreq-info  (frequency scaling info)\ncpufreq-set -f 1000MHz  (set frequency)\necho performance > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\n\nPower monitoring:\npowertop  (power consumption analyzer)\nturbostat  (CPU power and frequency stats)\niostat -x 1  (I/O power impact)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:06.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:06.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-057",
+      "information_side": [
+        {
+          "block_id": "sa-057-info",
+          "block_type": "text",
+          "text_content": "How do you manage system printing and CUPS?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:07.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-057-answer",
+          "block_type": "text",
+          "text_content": "Printing and CUPS management:\n\nCUPS administration:\nlpadmin -p printer_name -E -v device_uri  (add printer)\nlpadmin -d printer_name  (set default printer)\nlpadmin -x printer_name  (remove printer)\ncupsctl --remote-admin  (enable remote admin)\n\nPrint queue management:\nlpq  (show print queue)\nlprm job_id  (remove print job)\nlpc status  (printer status)\nlpstat -t  (show all printer info)\n\nPrinting commands:\nlp file.txt  (print file)\nlp -d printer_name file.txt  (print to specific printer)\nlp -n 3 file.txt  (print 3 copies)\ncancel job_id  (cancel print job)\n\nCUPS logs:\ntail -f /var/log/cups/error_log\ntail -f /var/log/cups/access_log\n\nWeb interface:\nhttp://localhost:631  (CUPS web interface)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:07.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:07.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-058",
+      "information_side": [
+        {
+          "block_id": "sa-058-info",
+          "block_type": "text",
+          "text_content": "What are the key commands for system benchmarking and testing?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:08.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-058-answer",
+          "block_type": "text",
+          "text_content": "System benchmarking and testing:\n\nCPU benchmarks:\nsysbench cpu run  (CPU benchmark)\nstress --cpu 4 --timeout 60s  (CPU stress test)\nyes > /dev/null &  (simple CPU load)\n\nMemory benchmarks:\nsysbench memory run  (memory benchmark)\nstress --vm 2 --vm-bytes 1G --timeout 60s  (memory stress)\nmbw 1024  (memory bandwidth test)\n\nDisk benchmarks:\ndd if=/dev/zero of=testfile bs=1G count=1 oflag=direct  (write test)\ndd if=testfile of=/dev/null bs=1G iflag=direct  (read test)\niozone -a  (comprehensive I/O test)\nfio --name=test --ioengine=libaio --rw=randread --bs=4k --numjobs=4 --size=1G\n\nNetwork benchmarks:\niperf3 -s  (iperf server)\niperf3 -c server_ip  (iperf client)\nping -c 100 server_ip  (latency test)",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:08.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:08.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-059",
+      "information_side": [
+        {
+          "block_id": "sa-059-info",
+          "block_type": "text",
+          "text_content": "How do you manage system cross-platform compatibility and emulation?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:09.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-059-answer",
+          "block_type": "text",
+          "text_content": "Cross-platform compatibility and emulation:\n\nArchitecture emulation:\nqemu-user-static  (user-mode emulation)\nqemu-system-x86_64  (system emulation)\nupdate-binfmts --display  (binary format support)\n\nDocker multi-platform:\ndocker buildx create --use  (multi-platform builder)\ndocker buildx build --platform linux/amd64,linux/arm64 .\ndocker run --platform linux/arm64 image_name\n\n32-bit compatibility:\ndpkg --add-architecture i386  (enable 32-bit packages)\napt update && apt install libc6:i386\n\nWine (Windows compatibility):\nwine program.exe  (run Windows program)\nwinecfg  (Wine configuration)\nwinetricks  (Wine helper)\n\nFile format conversion:\nunix2dos file.txt  (Unix to DOS line endings)\ndos2unix file.txt  (DOS to Unix line endings)\niconv -f windows-1252 -t utf-8 file.txt",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:09.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:09.000000",
+      "last_studied": null
+    },
+    {
+      "card_id": "sa-060",
+      "information_side": [
+        {
+          "block_id": "sa-060-info",
+          "block_type": "text",
+          "text_content": "What are the essential commands for system documentation and knowledge management?",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:10.000000"
+        }
+      ],
+      "answer_side": [
+        {
+          "block_id": "sa-060-answer",
+          "block_type": "text",
+          "text_content": "Documentation and knowledge management:\n\nSystem documentation:\nman command  (manual pages)\ninfo command  (info documents)\ncommand --help  (help option)\napropos keyword  (search man pages)\nwhatis command  (brief description)\n\nSystem information export:\nlshw -html > hardware.html  (hardware report)\ninxi -Fxz > system_info.txt  (system summary)\nsystemctl list-units --all > services.txt\ndf -h > disk_usage.txt\n\nConfiguration backup:\ntar -czf config_backup.tar.gz /etc /home/user/.config\ncp -r /etc /backup/etc_$(date +%Y%m%d)\ngit init /etc && git add . && git commit -m \"Config snapshot\"\n\nDocumentation tools:\npandoc file.md -o file.pdf  (convert markdown)\nrstcheck file.rst  (check reStructuredText)\nmkdocs serve  (serve documentation)\nsphinx-build -b html source build",
+          "font_size": 14,
+          "alignment": "left",
+          "created_date": "2025-10-14T16:46:10.000000"
+        }
+      ],
+      "status": "Unknown",
+      "created_date": "2025-10-14T16:46:10.000000",
+      "last_studied": null
+    }
+  ]
+}
